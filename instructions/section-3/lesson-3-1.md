@@ -17,15 +17,10 @@ This assignment will teach you the following:
 
 ### Getting Started:
 
-Merge your pull request from the previous lesson (if you haven't already):
+Merge your pull request from the previous lesson (if you haven't already).  You do NOT need to wait for your reviewer to comment on your last pull request before you merge:
 
-[View tutorial](../common/how-to-merge.md)
+[View tutorial for merging your pull request](../common/how-to-merge.md)
 
-Fetch the updated instructions from the base repository:
-
-> Note: you may receive a conflict if you've made changes to the README or other instructions
-
-![Fetch Upstream: Step 1](../assets/fetch-upstream/step-1.jpg)
 
 Checkout your main branch and pull changes:
 
