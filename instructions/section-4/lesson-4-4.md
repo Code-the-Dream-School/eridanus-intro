@@ -67,13 +67,15 @@ For this assignment, there are some general requirements but **the design is up 
 **This is the basic rubric, but we encourage you to think beyond this list and come up with your own ideas to make your webpage unique!**
 
 #### STRETCH GOAL
-**Optional** Thhe next five checkboxes are not required for this assignment, but if you'd like to practice your file structure building, file linking, HTML and CSS coding skills give it a try:
+**Optional** The next five checkboxes are not required for this assignment, but if you'd like to practice your file structure building, file linking, HTML and CSS coding skills give it a try:
 
 - [ ] Add an `images` folder to the root level
 - [ ] Add/upload your favorite picture of yourself or a headshot
 - [ ] In the `index.html` file add an `<img>` tag by your name at the top of your website inside the body
 - [ ] Use the img tag to add your favorite picture from the images folder to your website
 - [ ] Use CSS to change the style of your picture (ex. add a border to the picture, or round the edges of the photo, etc.)
+
+**NOTE:** You can also use the above steps to add a background image to a section or the body of your page if you don't want to share a picture of yourself.  Be sure if you use a photo that it's either one you took, or one you have copyright permissions to use.
 
 ### Final Step:
 
