@@ -22,11 +22,6 @@ Merge your pull request from the previous lesson (if you haven't already):
 
 [View tutorial](../common/how-to-merge.md)
 
-Fetch the updated instructions from the base repository:
-
-> Note: you may receive a conflict if you've made changes to the README or other instructions
-
-![Fetch Upstream: Step 1](../assets/fetch-upstream/step-1.jpg)
 
 Checkout your main branch and pull changes:
 
