@@ -64,7 +64,7 @@ Stretch goals are additional things you can do with your portfolio to make it mo
 
 ## Example
 
-Here is an example portfolio that demonstrates all the requirements above: [View website](https://intro-to-programming-ethompson.netlify.app/)
+Here is an example portfolio that demonstrates all the requirements above: <a href="https://intro-to-programming-ethompson.netlify.app/" target="_blank">View Example Portfolio</a>
 
 ---
 
