@@ -21,11 +21,6 @@ Merge your pull request from the previous lesson (if you haven't already):
 
 [View tutorial](../common/how-to-merge.md)
 
-Fetch the updated instructions from the base repository:
-
-> Note: you may receive a conflict if you've made changes to the README or other instructions
-
-![Fetch Upstream: Step 1](../assets/fetch-upstream/step-1.jpg)
 
 Checkout your main branch and pull changes:
 
@@ -44,7 +39,7 @@ For this assignment, you will be transforming your webpage with a more robust gr
 
 - [ ] Add a navigational header to your webpage
   - [ ] The navigation menu should include a link to each of your sections (i.e. "About", "Experience", etc.)
-  - [ ] (Optional) Make the header sticky/fixed on the page
+  - [ ] (Optional Stretch Goal) Make the header sticky/fixed on the page
 - [ ] Change the layout of your "Experience" section using rows and columns so items are displayed in a grid rather than a list
   - [ ] Hint: use either Flexbox or CSS Grid
 - [ ] Update the "Leave a Message" form to use Flexbox or CSS Grid
