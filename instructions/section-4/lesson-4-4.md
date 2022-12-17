@@ -33,7 +33,7 @@ Now, open the project directory in your code editor and continue to the next sec
 
 ### Task List:
 
-#### Create and Load Stylesheet
+#### Create Stylesheet
 
 - [ ] Create a folder called `css/` at the root level (the same level as your instructions and js folders and your index.html file)
 - [ ] Inside that folder, create a Cascading Style Sheets (CSS) file called `index.css`
