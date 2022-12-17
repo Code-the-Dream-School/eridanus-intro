@@ -20,11 +20,6 @@ Merge your pull request from the previous lesson (if you haven't already):
 
 [View tutorial](../common/how-to-merge.md)
 
-Fetch the updated instructions from the base repository:
-
-> Note: you may receive a conflict if you've made changes to the README or other instructions
-
-![Fetch Upstream: Step 1](../assets/fetch-upstream/step-1.jpg)
 
 Checkout your main branch and pull changes:
 
@@ -115,7 +110,7 @@ Now, open the project directory in your code editor and continue to the next sec
 
 These tasks are **entirely optional**, but if you'd like a challenge then do your best to complete each item.
 
-- [ ] (Optional) Hide the #messages section when the list is empty
+- [ ] (Optional) Hide the #messages section including its header when the list is empty
 - [ ] (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
 
 
