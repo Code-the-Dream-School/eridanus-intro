@@ -14,7 +14,8 @@
 
 ![Create Pull Request: Step 3](../assets/create-pull-request/step-3.jpg)
 
-## Step 4: Select the "Base" repository dropdown and choose **your** forked repository.  THIS IS THE MOST IMPORTANT STEP!  BE SURE THE BASE REPOSITORY IS YOUR GITHUB ACCOUNT (NOT THE CODE THE DREAM SCHOOL ACCOUNT) EVERY TIME YOU MAKE A PULL REQUEST.  If you accidentally make a pull request to the school repository instead of your own repository, your work from the week will not be merged/update your repository with your work.
+## Step 4: Select the "Base" repository dropdown and choose **your** forked repository.  
+**THIS IS THE MOST IMPORTANT STEP!  BE SURE THE BASE REPOSITORY IS YOUR GITHUB ACCOUNT (NOT THE CODE THE DREAM SCHOOL ACCOUNT) EVERY TIME YOU MAKE A PULL REQUEST.**  If you accidentally make a pull request to the school repository instead of your own repository, your work from the week will not be merged/update your repository with your work.
 
 ![Create Pull Request: Step 4](../assets/create-pull-request/step-4.jpg)
 
