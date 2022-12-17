@@ -60,7 +60,7 @@ The "head" of an HTML document contains all the page's meta information, such as
 
 - [ ] In between the opening and closing `<html>` tags, insert a `<head>` element
 - [ ] Inside the `<head>` element, add a `<title>` element for the title of your webpage
-- [ ] Below that, add additional `<meta>` elements ([learn more](https://www.w3schools.com/html/html_head.asp))
+- [ ] Below that, add additional `<meta>` elements (<a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank">learn more</a>)
 
 #### **Body Element**
 
