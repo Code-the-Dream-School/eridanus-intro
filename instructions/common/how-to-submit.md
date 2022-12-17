@@ -4,7 +4,7 @@
 
 ## Step 1: Locate the link in Slack or on your lesson page, or use this link: [Assignment Submission Form](https://airtable.com/shrBpqHbS6wgInoF9)
 
-![Submit Assignment: Step 1](../assets/submit-assignment/step-1.png)
+![Submit Assignment: Step 1](../assets/submit-assignment/assignment-sub-form.png)
 
 ## Step 2: Select "Squibby" from the menu and click "Ask Squibby"
 
