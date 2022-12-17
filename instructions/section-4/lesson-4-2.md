@@ -17,11 +17,6 @@ Merge your pull request from the previous lesson (if you haven't already):
 
 [View tutorial](../common/how-to-merge.md)
 
-Fetch the updated instructions from the base repository:
-
-> Note: you may receive a conflict if you've made changes to the README or other instructions
-
-![Fetch Upstream: Step 1](../assets/fetch-upstream/step-1.jpg)
 
 Checkout your main branch and pull changes:
 
@@ -38,11 +33,14 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Create a JavaScript file
 
-- [ ] Create a folder called `js/`
+- [ ] Create a folder called `js/` at the root level (the same level as your instructions folder and inde.xhtml file)
 - [ ] Inside that folder, create a JavaScript file called `index.js`
+
+#### Link your JavaScript file to your HTML file
+
 - [ ] Open your `index.html` file
 - [ ] Before the closing `</body>` tag, insert a `<script>` element with a `src` attribute that specifies the relative path to your JavaScript file (i.e. `js/index.js`)
-- [ ] Save and open in your browser
+- [ ] Save and open the index.html file in your browser
 
 #### Add Footer Element
 
@@ -50,7 +48,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Above the `<script>` element, add an empty `<footer>` element
 - [ ] Save and refresh your browser
 
-#### Insert Copyright Text in Footer
+#### Insert Copyright Text in Footer via JavaScript
 
 - [ ] Open your `index.js` file
 
@@ -69,6 +67,12 @@ Now, open the project directory in your code editor and continue to the next sec
   - hint: `appendChild` method
 - [ ] Save and refresh your browser
   - You should see the text "Your Name 2021" at the bottom of the page
+
+**STRETCH GOAL** the next checkbox is optional.  If you'd like to stretch your skills an knowledge attempt it:
+
+- [ ] Use unicode to insert a copyright symbol in front of the year <a href="https://www.w3schools.com/charsets/ref_utf_symbols.asp" target="_blank">Learn more about unicode</a>
+
+
 
 #### Add Skills Section
 
