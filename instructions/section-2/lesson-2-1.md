@@ -19,9 +19,9 @@ Fork this GitHub repository to create your own working version:
 
 ![Fork Assignment: Step 1](../assets/fork-assignment/fork-step-1.png)
 
-Select your GitHub account from the list:
+On the new screen be sure your GitHub username is selected then click the green Create Fork button:
 
-![Fork Assignment: Step 2](../assets/fork-assignment/step-2.jpg)
+![Fork Assignment: Step 2](../assets/fork-assignment/fork-step-2.png)
 
 You should be directed to your forked GitHub repository:
 
