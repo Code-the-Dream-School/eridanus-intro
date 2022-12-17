@@ -17,7 +17,7 @@ This assignment will teach you the following:
 
 Fork this GitHub repository to create your own working version:
 
-![Fork Assignment: Step 1](../assets/fork-assignment/Screen Shot 2022-12-17 at 4.36.52 PM.png)
+![Fork Assignment: Step 1](../assets/fork-assignment/fork-step-1.png)
 
 Select your GitHub account from the list:
 
