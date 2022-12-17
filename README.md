@@ -29,6 +29,7 @@ Grading for this project is less rigid, given the open-ended instructions ([View
 ### **Section 5:** How the Internet Works
 
 - [Lesson 5.1: How the Internet Works and Debugging](https://github.com/Code-the-Dream-School/intro-to-programming-section-5/blob/main/README.md)
+**NOTE: ** Section 5 is a debugging exercise.  Clicking the above link takes you to a second Code the Dream School repository where a guessing game is already built... but it's not working as expected!  Use the debugging skills you've learned so far in class to find and fix the bugs.  Be sure you fork and clone the section 5 repository like you did in week 6.  BE SURE YOU ARE **NOT** INSIDE YOUR LOCAL FOLDER FOR YOUR PORTFOLIO WHEN YOU CLONE SECTION 5!
 
 ### **Section 6:** AJAX Basics
 
