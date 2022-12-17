@@ -27,9 +27,9 @@ You should be directed to your forked GitHub repository.  You'll know it's yours
 
 ![Fork Assignment: Step 3](../assets/fork-assignment/fork-step-3.png)
 
-Click the "Code" button and copy the URL for your repository:
+Click the "Code" button (1) make sure you have HTTPS select (2) and copy the URL (3) for your repository:
 
-![Fork Assignment: Step 4](../assets/fork-assignment/step-4.jpg)
+![Fork Assignment: Step 4](../assets/fork-assignment/fork-step-4.png)
 
 Clone this repository so that the code is available on your local machine:
 
