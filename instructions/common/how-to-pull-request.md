@@ -14,7 +14,7 @@
 
 ![Create Pull Request: Step 3](../assets/create-pull-request/step-3.jpg)
 
-## Step 4: Select the "Base" repository dropdown and choose your forked repository
+## Step 4: Select the "Base" repository dropdown and choose **your** forked repository.  THIS IS THE MOST IMPORTANT STEP!  BE SURE YOU CHANGE THE BASE REPOSITORY TO YOUR GITHUB ACCOUNT FROM THE CODE THE DREAM SCHOOL ACCOUNT EVERY TIME YOU MAKE A PULL REQUEST.
 
 ![Create Pull Request: Step 4](../assets/create-pull-request/step-4.jpg)
 
