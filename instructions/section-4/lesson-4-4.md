@@ -67,7 +67,7 @@ For this assignment, there are some general requirements but **the design is up 
 **This is the basic rubric, but we encourage you to think beyond this list and come up with your own ideas to make your webpage unique!**
 
 #### STRETCH GOAL
-**Optional** Stretch your file structure skills by 
+**Optional** Thhe next five checkboxes are not required for this assignment, but if you'd like to practice your file structure building, file linking, HTML and CSS coding skills give it a try:
 
 - [ ] Add an `images` folder to the root level
 - [ ] Add/upload your favorite picture of yourself or a headshot
