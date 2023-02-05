@@ -60,6 +60,33 @@
                 <li>here!</li>
             </ul>
         </section>
+        <!-- Message Form -->
+        <section>
+            <h2>Leave a Message</h2>
+            <form action="POST" name="leave_message">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter name please" required> 
+                <br>
+                <br>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email please" required>
+                <br>
+                <br>
+                <label for="message">Leave Message here</label>
+                <br>
+                <textarea name="message" id="" cols="30" rows="10" label="message" placeholder="Type message here please" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <!-- End Message Form -->
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul>
+
+            </ul>
+        </section>
+        <!-- Footer section -->
         <footer></footer>
         <script src="js/index.js" async defer></script>
     </body>

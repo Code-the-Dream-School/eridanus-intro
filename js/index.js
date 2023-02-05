@@ -6,14 +6,13 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement("p");
 
-copyright.innerHTML = `${fullName} ${thisYear} &copy`;
+copyright.innerHTML = ` &copy ${fullName} ${thisYear}`;
 footer.appendChild(copyright)
+// end Footer
 
 // Skills section
 const skills = ["HTML", "CSS", "Ruby", "Rails", "Python"]
-
-let skillsSection = document.getElementById("skills");
-
+const skillsSection = document.getElementById("skills");
 let skillsList = skillsSection.querySelector("ul")
 // console.log(skillsList);
 for (let i = 0; i < skills.length; i++) {
@@ -21,3 +20,38 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML = `${skills[i]}`;
     skillsList.appendChild(skill);
 }
+// end Skills
+
+// Messages
+const messageForm = document.getElementsByName("leave_message")
+
+document.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = event.target.name.value.trim();
+    const email = event.target.email.value.trim();
+    const message = event.target.message.value;
+
+    //Start message display
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector("ul");
+    const newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
+
+    // Remove button (to remove message display)
+    const removeButton = document.createElement("button")
+    removeButton.innerHTML = "remove"; 
+    
+    removeButton.addEventListener("click", function(event) {
+        // trying with entry variable
+        const entry = event.target.parentElement;
+        entry.remove();
+        // below works also - streamlined code?
+        // newMessage.remove();
+    });
+
+    //functionality to add the removeButton, newMessage, and reset the form
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    messageForm[0].reset();
+});
+    // End Messages
