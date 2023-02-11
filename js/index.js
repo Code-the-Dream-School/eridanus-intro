@@ -30,43 +30,54 @@ const messageForm = document.getElementsByName("leave_message")
 const messageSection = document.getElementById("messages");
 const messageHeader = messageSection.querySelector("h2");
 console.log("messageList is " + messageHeader)
-function hideMessageHeader() {
-    if (messageHeader.innerHTML === "Messages") {
-        messageH2.style.display = "block";
-    } else {
-        messageH2.style.display = "none";
-    }
-}
+// function hideMessageHeader() {
+//     if (messageHeader.innerHTML === "Messages") {
+//         messageH2.style.display = "block";
+//     } else {
+//         messageH2.style.display = "none";
+//     }
+// }
 
 
 
 document.addEventListener("submit", function(event) {
     event.preventDefault();
-    hideMessageHeader()
+    //hideMessageHeader()
     const name = event.target.name.value.trim();
     const email = event.target.email.value.trim();
     const message = event.target.message.value;
 
     //Start message display
-
     const messageList = messageSection.querySelector("ul");
-    const newMessage = document.createElement("li");
+    let newMessage = document.createElement("li");
     newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
 
     // Remove button (to remove message display)
     const removeButton = document.createElement("button")
     removeButton.innerHTML = "remove"; 
-    
-    removeButton.addEventListener("click", function(event) {
-        // trying with entry variable
-        const entry = event.target.parentElement;
-        entry.remove();
-        // below works also - streamlined code?
-        // newMessage.remove();
+    removeButton.addEventListener("click", () => {
+        //const entry = event.target.parentElement;
+        //entry.remove();
+        // below works as streamlined code
+        newMessage.remove();
+    });
+
+    const editButton = document.createElement("button")
+    editButton.innerHTML = "edit";
+
+    editButton.addEventListener("click", () => {
+        let editPrompt = prompt("What edit would you like to make? ", `${message}`)
+        //const entry = event.target.parentElement;
+        //entry.remove();
+        // below works as streamlined code
+        newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${editPrompt}</span>  `;
+        newMessage.appendChild(removeButton);
+        newMessage.appendChild(editButton);
     });
 
     //functionality to add the removeButton, newMessage, and reset the form
     newMessage.appendChild(removeButton);
+    newMessage.appendChild(editButton);
     messageList.appendChild(newMessage);
     messageForm[0].reset();
 });
