@@ -23,16 +23,32 @@ for (let i = 0; i < skills.length; i++) {
 // end Skills
 
 // Messages
+// Hide messages header until ready to use
+// pseudo-code here
+
 const messageForm = document.getElementsByName("leave_message")
+const messageSection = document.getElementById("messages");
+const messageHeader = messageSection.querySelector("h2");
+console.log("messageList is " + messageHeader)
+function hideMessageHeader() {
+    if (messageHeader.innerHTML === "Messages") {
+        messageH2.style.display = "block";
+    } else {
+        messageH2.style.display = "none";
+    }
+}
+
+
 
 document.addEventListener("submit", function(event) {
     event.preventDefault();
+    hideMessageHeader()
     const name = event.target.name.value.trim();
     const email = event.target.email.value.trim();
     const message = event.target.message.value;
 
     //Start message display
-    const messageSection = document.getElementById("messages");
+
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
     newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
