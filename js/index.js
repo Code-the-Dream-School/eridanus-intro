@@ -40,19 +40,20 @@ messageForm.item(0).addEventListener("submit", (event) => {  // messageForm. chi
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 
-    // const editButton = document.createElement("button");
-    // editButton.innerText = "edit";
-    // editButton.type = "button";
-    // editButton.addEventListener("click", function() {
-    //     const entry = this.parentNode;
-    //     const message = prompt("Enter your new message:");
-    //     entry.innerText = newMessage;
-    //     nameInput.contentEditable = true;
-    //     messageInput.contentEditable = true;
-    //     emailInput.contentEditable = true;
-    // })
-    // newMessage.appendChild(editButton);
-    // messageList.appendChild(newMessage);
+    const editButton = document.createElement("button");
+    editButton.innerText = "edit";
+    editButton.type = "button";
+    editButton.addEventListener("click", (event) => {
+        // const editEntry = this.parentNode;
+        // const editEntry = event.target.messageInput;
+        console.log("this.parentNode is" + event[0]);
+        const newMessage = prompt("Enter your new message:");
+        // messageInput = newMessage;
+        // console.log(editEntry);
+        
+    })
+    newMessage.appendChild(editButton);
+    messageList.appendChild(newMessage);
 
     // const messagesHeader = messageSection.getElementsByTagName("h2");
     // if (!messageList.hasChildNodes()) {
