@@ -56,12 +56,12 @@ document.addEventListener("submit", function(event) {
     const removeButton = document.createElement("button")
     removeButton.innerHTML = "remove"; 
     removeButton.addEventListener("click", () => {
-        //const entry = event.target.parentElement;
-        //entry.remove();
+        // const entry = event.target.parentElement;
+        // entry.remove();
         // below works as streamlined code
         newMessage.remove();
     });
-
+    // Make the button
     const editButton = document.createElement("button")
     editButton.innerHTML = "edit";
 
