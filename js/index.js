@@ -5,8 +5,11 @@ const footer = document.querySelector("footer");
 let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement("p");
+let image = document.createElement("img");
+image.src = "/img/codelogo_v2.svg"
 
-copyright.innerHTML = ` &copy ${fullName} ${thisYear}`;
+copyright.innerHTML = `&copy ${fullName} ${thisYear}`;
+footer.appendChild(image)
 footer.appendChild(copyright)
 // end Footer
 
@@ -23,30 +26,19 @@ for (let i = 0; i < skills.length; i++) {
 // end Skills
 
 // Messages
-// Hide messages header until ready to use
-// pseudo-code here
-
 const messageForm = document.getElementsByName("leave_message")
 const messageSection = document.getElementById("messages");
 const messageHeader = messageSection.querySelector("h2");
 console.log("messageList is " + messageHeader)
-// function hideMessageHeader() {
-//     if (messageHeader.innerHTML === "Messages") {
-//         messageH2.style.display = "block";
-//     } else {
-//         messageH2.style.display = "none";
-//     }
-// }
-
-
+// hide the messages button
+messageHeader.style.display = "none";
 
 document.addEventListener("submit", function(event) {
     event.preventDefault();
-    //hideMessageHeader()
     const name = event.target.name.value.trim();
     const email = event.target.email.value.trim();
     const message = event.target.message.value;
-
+    messageHeader.style.display = "inherit";
     //Start message display
     const messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
@@ -56,12 +48,13 @@ document.addEventListener("submit", function(event) {
     const removeButton = document.createElement("button")
     removeButton.innerHTML = "remove"; 
     removeButton.addEventListener("click", () => {
-        //const entry = event.target.parentElement;
-        //entry.remove();
+        // const entry = event.target.parentElement;
+        // entry.remove();
         // below works as streamlined code
         newMessage.remove();
+        messageHeader.style.display = "none";
     });
-
+    // Make the button
     const editButton = document.createElement("button")
     editButton.innerHTML = "edit";
 
@@ -76,8 +69,8 @@ document.addEventListener("submit", function(event) {
     });
 
     //functionality to add the removeButton, newMessage, and reset the form
-    newMessage.appendChild(removeButton);
     newMessage.appendChild(editButton);
+    newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     messageForm[0].reset();
 });
