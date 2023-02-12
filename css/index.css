@@ -103,7 +103,12 @@ body {
     color: var(--main-font);
 }
 
-#about {
+h2 {
+    color: var(--blue-gray);
+}
+
+#about,
+#connect {
     margin: 25px 25px 25px;
 }
 
@@ -111,6 +116,7 @@ body {
     color: var(--dark-red);
 }
 
-#experience {
+#experience,
+#skills {
     margin: 25px 50px 25px;
 }
