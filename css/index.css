@@ -91,6 +91,23 @@ ul {
     margin: 0;
     padding: 0
 }
+
+ul {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    flex-wrap: nowrap;
+    /* -ms-flex-pack: distribute; */
+    justify-content: space-around;
+    /* -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: flex-start;
+    /* -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row; */
+    flex-direction: row;
+    /* -webkit-box-flex: 1; */
+}
 /* below is from previous site - use sparingly */
 /* *::before,
 *::after {
@@ -174,22 +191,7 @@ h5 {
     margin: 2rem
 } */
 
-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: nowrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-flex: 1;
-}
+
 
 ul a {
     background: 0 0;
