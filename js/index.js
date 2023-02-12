@@ -30,16 +30,15 @@ const messageForm = document.getElementsByName("leave_message")
 const messageSection = document.getElementById("messages");
 const messageHeader = messageSection.querySelector("h2");
 console.log("messageList is " + messageHeader)
-
-
+// hide the messages button
+messageHeader.style.display = "none";
 
 document.addEventListener("submit", function(event) {
     event.preventDefault();
-    //hideMessageHeader()
     const name = event.target.name.value.trim();
     const email = event.target.email.value.trim();
     const message = event.target.message.value;
-
+    messageHeader.style.display = "inherit";
     //Start message display
     const messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
@@ -53,6 +52,7 @@ document.addEventListener("submit", function(event) {
         // entry.remove();
         // below works as streamlined code
         newMessage.remove();
+        messageHeader.style.display = "none";
     });
     // Make the button
     const editButton = document.createElement("button")
@@ -69,8 +69,8 @@ document.addEventListener("submit", function(event) {
     });
 
     //functionality to add the removeButton, newMessage, and reset the form
-    newMessage.appendChild(removeButton);
     newMessage.appendChild(editButton);
+    newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     messageForm[0].reset();
 });
