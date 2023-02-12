@@ -5,8 +5,11 @@ const footer = document.querySelector("footer");
 let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement("p");
+let image = document.createElement("img");
+image.src = "/img/codelogo_v2.svg"
 
-copyright.innerHTML = ` &copy ${fullName} ${thisYear}`;
+copyright.innerHTML = `&copy ${fullName} ${thisYear}`;
+footer.appendChild(image)
 footer.appendChild(copyright)
 // end Footer
 
