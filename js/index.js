@@ -26,20 +26,10 @@ for (let i = 0; i < skills.length; i++) {
 // end Skills
 
 // Messages
-// Hide messages header until ready to use
-// pseudo-code here
-
 const messageForm = document.getElementsByName("leave_message")
 const messageSection = document.getElementById("messages");
 const messageHeader = messageSection.querySelector("h2");
 console.log("messageList is " + messageHeader)
-// function hideMessageHeader() {
-//     if (messageHeader.innerHTML === "Messages") {
-//         messageH2.style.display = "block";
-//     } else {
-//         messageH2.style.display = "none";
-//     }
-// }
 
 
 
