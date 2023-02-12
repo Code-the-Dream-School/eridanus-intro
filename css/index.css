@@ -24,17 +24,38 @@
     --dark-mode-font: #ccc;
 }
 
-html,
-body {
-    height: 100%;
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
     scroll-behavior: smooth;
 }
 
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--bg-color);
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li, button, label, input, a, p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 5.2rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h4,
+h5 {
+    font-size: 2.3rem;
 }
 
 img,
@@ -150,7 +171,7 @@ h5 {
 
  */
 
-/*  */
+
 
 /* nav {
     display: -webkit-box;
@@ -193,7 +214,8 @@ ul li {
     padding: 25px;
 }
 
-.intro {
+.experience,
+.about-text {
     min-height: 90vh;
     width: 90vw;
     margin: auto;
@@ -205,7 +227,7 @@ ul li {
     flex-direction: row
 }
 
-.intro h2 {
+.experience h2 {
     font-size: 7.5rem;
     padding-top: 1rem;
     display: inline-block;
@@ -213,14 +235,14 @@ ul li {
     /* text-shadow: 2px 1px var(--dark-red); */
 }
 
-.intro h3 {
+.experience h3 {
     font-size: 4.5rem;
     margin-bottom: 1rem;
     margin: 0;
     text-align: left;
 }
 
-.intro p {
+.experience p {
     color: #2c2c2c;
     padding: 1rem 0;
     text-align: left;
@@ -229,7 +251,7 @@ ul li {
     text-align: justify
 }
 
-.intro-socials {
+.experience-socials {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -246,12 +268,12 @@ ul li {
     margin-top: 1rem
 }
 
-.intro-socials a {
+.experience-socials a {
     margin-right: 10rem
 }
 
-.intro-text,
-.intro-images {
+.experience-text,
+.experience-image {
     flex: 1 1 40rem;
 }
 
@@ -304,64 +326,12 @@ ul li {
 }
 
 .projects-container .button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     min-width: 70%;
     padding: 1rem 0
-}
-
-.photo-site,
-.gym-site,
-.dps-site,
-.tip-site {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 50rem;
-    flex: 1 1 50rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 3rem;
-    border: 2px solid #e2e2e2;
-    text-align: left;
-    border-radius: 8px;
-    background: #e2e2e2
-}
-
-.photo-site img,
-.gym-site img,
-.dps-site img,
-.tip-site img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px
-}
-
-.photo-site p,
-.gym-site p,
-.dps-site p,
-.tip-site p {
-    width: 50%;
-    text-align: left
 }
 
 #contact {
@@ -406,7 +376,7 @@ ul li {
     font-size: 3rem;
 }
 
-#contact-form form {
+#messages-form form {
     display: flex;
     justify-content: center;
     /* align-items: left; */
@@ -415,8 +385,8 @@ ul li {
     /* max-height: 60%; */
 }
 
-.contact-form form input,
-.contact-form form textarea {
+.messages-form form input,
+.messages-form form textarea {
     border-radius: 8px;
     width: 100%;
     padding: 1.5rem;
@@ -425,29 +395,27 @@ ul li {
     font-size: 2.5rem;
 }
 
-.contact-form form input:focus,
-.contact-form form textarea:focus {
+.messages-form form input:focus,
+.messages-form form textarea:focus {
     border-bottom: var(--dark-red) 3px solid;
     border-right: var(--dark-red) 3px solid;
     outline: none;
 }
 
-#contact-submit-button {
+#messages-submit-button {
     padding: 1.5rem 6rem;
     margin-top: 5rem;
     font-size: 2rem;
     border-radius: 50px;
     border: 4px solid var(--dark-mode-font);
     background: var(--blue-gray);
-    -webkit-transition: .3s ease all;
     transition: .3s ease all;
     color: var(--dark-mode-font);
     cursor: pointer;
-    font-family: montserrat,
-        sans-serif;
+    font-family: "montserrat", sans-serif;
 }
 
-#contact-submit-button:hover {
+#messages-submit-button:hover {
     background: 0 0;
     background-color: var(--dark-red);
     color: var(--gold);
@@ -582,7 +550,7 @@ footer img {
 }
 
 /* this is for smaller device screens */
-/* @media screen and (min-width: 2048px) {
+@media screen and (min-width: 2048px) {
     html {
         font-size: 70%
     }
