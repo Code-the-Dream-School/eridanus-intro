@@ -18,11 +18,17 @@ const skills = ["HTML", "CSS", "Ruby", "Rails", "Python"]
 const skillsSection = document.getElementById("skills");
 let skillsList = skillsSection.querySelector("ul")
 // console.log(skillsList);
-for (let i = 0; i < skills.length; i++) {
-    let skill = document.createElement("li");
-    skill.innerHTML = `${skills[i]}`;
-    skillsList.appendChild(skill);
-}
+
+skills.forEach(skill => {
+    let listItem = document.createElement("li");
+    listItem.textContent = skill;
+    skillsList.appendChild(listItem);
+});
+// for (let i = 0; i < skills.length; i++) {
+//     let skill = document.createElement("li");
+//     skill.innerHTML = `${skills[i]}`;
+//     skillsList.appendChild(skill);
+// }
 // end Skills
 
 // Messages
