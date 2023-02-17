@@ -103,17 +103,69 @@ body {
     color: var(--main-font);
 }
 
-h2 {
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-direction: row;
+    min-height: 10vh;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 2rem;
+}
+
+.logo h1 {
+    margin: .5rem
+}
+
+.main-head {
+    overflow: hidden;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
     color: var(--blue-gray);
 }
 
-/* Header */
 .main-head ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+.main-head ul a {
+    background: 0 0;
+    color: var(--main-font);
+    padding: .8rem;
+    border-radius: 50px;
+    transition: .5s ease all;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.main-head ul a:hover {
+    background: var(--dark-red);
+    color: var(--gold);
+}
+
+.main-head ul li {
+    padding: 25px;
+}
 /* end Header */
+
+h2 {
+    color: var(--blue-gray);
+}
+
 #about,
 #connect {
     margin: 25px 25px 25px;
@@ -125,7 +177,10 @@ h2 {
 
 
 #experience,
-#skills {
+#skills,
+#connect,
+#message {
     margin: 25px 50px 25px;
+
 }
 
