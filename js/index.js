@@ -8,7 +8,8 @@ let copyright = document.createElement("p");
 let image = document.createElement("img");
 image.src = "/img/codelogo_v2.svg"
 
-copyright.textContent = `&copy ${fullName} ${thisYear}`;
+copyright.innerText = `&copy ${fullName} ${thisYear}`
+console.log("copyright is: " + copyright);
 footer.appendChild(image)
 footer.appendChild(copyright)
 // end Footer
@@ -21,12 +22,12 @@ let skillsList = skillsSection.querySelector("ul")
 
 skills.forEach(skill => {
     let listItem = document.createElement("li");
-    listItem.textContent = skill;
+    listItem.innerText = skill;
     skillsList.appendChild(listItem);
 });
 // for (let i = 0; i < skills.length; i++) {
 //     let skill = document.createElement("li");
-//     skill.textContent = `${skills[i]}`;
+//     skill.innerText = `${skills[i]}`;
 //     skillsList.appendChild(skill);
 // }
 // end Skills
@@ -48,11 +49,11 @@ document.addEventListener("submit", function(event) {
     //Start message display
     const messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
-    newMessage.textContent = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
+    newMessage.innerText = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
 
     // Remove button (to remove message display)
     const removeButton = document.createElement("button")
-    removeButton.textContent = "remove"; 
+    removeButton.innerText = "remove"; 
     removeButton.addEventListener("click", () => {
         // const entry = event.target.parentElement;
         // entry.remove();
@@ -62,14 +63,14 @@ document.addEventListener("submit", function(event) {
     });
     // Make the button
     const editButton = document.createElement("button")
-    editButton.textContent = "edit";
+    editButton.innerText = "edit";
 
     editButton.addEventListener("click", () => {
         let editPrompt = prompt("What edit would you like to make? ", `${message}`)
         //const entry = event.target.parentElement;
         //entry.remove();
         // below works as streamlined code
-        newMessage.textContent = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${editPrompt}</span>  `;
+        newMessage.innerText = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${editPrompt}</span>  `;
         newMessage.appendChild(removeButton);
         newMessage.appendChild(editButton);
     });
