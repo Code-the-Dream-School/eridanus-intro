@@ -66,8 +66,9 @@ document.addEventListener("submit", function(event) {
     messageForm[0].reset();
 });
     // End Messages
-    
-    // Footer
+
+
+// Footer
 const fullName = "Greg Curl";
 const footer = document.querySelector("footer");
 
@@ -77,10 +78,10 @@ let copyright = document.createElement("p");
 let image = document.createElement("img");
 image.src = "/img/codelogo_v2.svg"
 
-
 copyright.innerText = `\u00A9 ${fullName} ${thisYear}`
 console.log("copyright is: " + copyright);
 
 footer.appendChild(image)
 footer.appendChild(copyright)
-    // end Footer
+// end Footer
+
