@@ -79,7 +79,7 @@ let image = document.createElement("img");
 image.src = "/img/codelogo_v2.svg"
 
 copyright.innerText = `\u00A9 ${fullName} ${thisYear}`
-console.log("copyright is: " + copyright);
+// console.log("copyright is: " + copyright);
 
 footer.appendChild(image)
 footer.appendChild(copyright)
