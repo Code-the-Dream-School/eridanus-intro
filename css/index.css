@@ -111,9 +111,8 @@ nav {
     align-items: center;
     flex-direction: row;
     min-height: 10vh;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
-    padding: auto;
 }
 
 .logo {
@@ -122,9 +121,11 @@ nav {
     flex: 1 1 2rem;
 }
 
-/* .logo h1 {
-    margin: 1rem
-} */
+.logo_img {
+    margin: auto;
+    align-items: start;
+    display: flex;
+}
 
 .main-head {
     overflow: hidden;
