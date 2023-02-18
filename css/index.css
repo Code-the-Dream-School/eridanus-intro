@@ -106,30 +106,28 @@ body {
 /* Header */
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     flex-direction: row;
     min-height: 10vh;
     width: 80vw;
-    flex-wrap: wrap;
     margin: auto;
+    padding: auto;
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: row;
     flex: 1 1 2rem;
 }
 
-.logo h1 {
-    margin: .5rem
-}
+/* .logo h1 {
+    margin: 1rem
+} */
 
 .main-head {
     overflow: hidden;
-    margin: 0 0 0 0;
     box-sizing: border-box;
     color: var(--blue-gray);
 }
