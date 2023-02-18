@@ -33,7 +33,7 @@ document.addEventListener("submit", function(event) {
     //Start message display
     const messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
-    newMessage.innerText = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
+    newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${message}</span>  `;
 
     // Remove button (to remove message display)
     const removeButton = document.createElement("button")
@@ -54,9 +54,9 @@ document.addEventListener("submit", function(event) {
         //const entry = event.target.parentElement;
         //entry.remove();
         // below works as streamlined code
-        newMessage.innerText = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${editPrompt}</span>  `;
-        newMessage.appendChild(removeButton);
+        newMessage.innerHTML = `<a href="mailto:${email}"> ${name}</a> wrote: <span>${editPrompt}</span>  `;
         newMessage.appendChild(editButton);
+        newMessage.appendChild(removeButton);
     });
 
     //functionality to add the removeButton, newMessage, and reset the form
