@@ -160,15 +160,19 @@ nav {
 .main-head ul li {
     padding: 25px;
 }
-
 /* end Header */
 
 h2 {
     color: var(--blue-gray);
 }
 
+/* about section */
 #about {
     margin: 25px 25px 25px;
+}
+
+.about-text p {
+    padding: 10px;
 }
 
 .about-text h3:hover {
@@ -182,31 +186,58 @@ h2 {
 
 .reach-out-link a:hover {
     text-decoration: none;
+    background-color: var(--dark-red);
     color: var(--gold);
-    background-color: var(--bright-red);
     padding: .8rem;
     border-radius: 50px;
     transition: .5s ease all;
 }
 
-
+/* other sections */
 #experience,
 #skills,
 #connect,
 #message {
     margin: 25px 50px 25px;
 }
-
-/* .experience ul li {
-    
-} */
-
-.about-text p {
-    padding: 10px;
-}
-
+/* experience section */
 .experience li {
     list-style-type: none;
     padding: 10px;
     text-align: justify;
 }
+
+.experience li:hover {
+    color: var(--dark-red)
+}
+
+/* skills section */
+
+#skills li {
+    list-style-type: none;
+    padding: 2px;
+    text-align: justify;
+    position: relative;
+    margin-left: 25px;
+    padding-left: 25px;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+}
+#skills li:nth-child(2) {
+    top: 10px;
+}
+
+#skills li:nth-child(3) {
+    top: 20px;
+}
+
+#skills li:nth-child(4) {
+    top: 30px;
+}
+
+#skills li:nth-child(5) {
+    top: 40px;
+}
+
+/* connect section */
