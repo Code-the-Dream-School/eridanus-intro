@@ -184,3 +184,8 @@ h2 {
 
 }
 
+.experience li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: justify;
+}
