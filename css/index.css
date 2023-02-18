@@ -167,8 +167,7 @@ h2 {
     color: var(--blue-gray);
 }
 
-#about,
-#connect {
+#about {
     margin: 25px 25px 25px;
 }
 
@@ -188,3 +187,12 @@ h2 {
     
 } */
 
+.about-text p {
+    padding: 10px;
+}
+
+.experience li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: justify;
+}
