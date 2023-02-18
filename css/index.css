@@ -247,7 +247,6 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    
 }
 
 .connect-list a {
@@ -270,4 +269,12 @@ h2 {
 
 .connect-list i {
     padding-right: 25px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
