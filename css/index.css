@@ -166,8 +166,7 @@ h2 {
     color: var(--blue-gray);
 }
 
-#about,
-#connect {
+#about {
     margin: 25px 25px 25px;
 }
 
@@ -182,6 +181,10 @@ h2 {
 #message {
     margin: 25px 50px 25px;
 
+}
+
+.about-text p {
+    padding: 10px;
 }
 
 .experience li {
