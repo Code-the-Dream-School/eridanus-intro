@@ -175,6 +175,20 @@ h2 {
     color: var(--dark-red);
 }
 
+.reach-out-link a {
+    text-decoration: none;
+    color: var(--main-font);
+}
+
+.reach-out-link a:hover {
+    text-decoration: none;
+    color: var(--gold);
+    background-color: var(--bright-red);
+    padding: .8rem;
+    border-radius: 50px;
+    transition: .5s ease all;
+}
+
 
 #experience,
 #skills,
