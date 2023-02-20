@@ -1,0 +1,117 @@
+body {
+    color: rgb(48, 41, 141);
+    background-color: beige;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 40px;
+    /* font-size: 20px; */
+    font-weight: 500;
+}
+
+section {
+    padding: 30px;
+    margin: 30px;
+    display: block;
+    width: 40 0px;
+    height: 340px;
+    background: rgb(202, 216, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border: 10px solid rebeccapurple;
+    border-radius: 1em;
+    border-top-right-radius: 10% 30%;
+}
+
+h1{
+    color: rgb(78, 89, 189);
+    font-size: 40px;
+    font-weight: 750;
+}
+
+h2 {
+    color: rgb(63, 105, 183);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+div {
+    padding-top: 0%;
+    padding-left: 10px;
+    text-align: left;
+    margin: 20px;
+}
+
+.connect a {
+    color:rgb(28, 8, 116)
+}
+
+.experience li:hover,
+.skills li:hover,
+.connect a:hover {
+    list-style: none;
+    color: rgb(177, 56, 153);
+    font-size: x-large;
+}
+
+.leave_message label {
+    /* color: black; */
+    font-size: medium;
+}
+
+.leave_message button,
+.messages ul li button {
+    background-color: rgb(57, 82, 160);
+    color: white;
+    width: 120px;
+    padding: 5px 25px;
+    margin: 4px;
+    font-size: medium;
+}
+
+.leave_message button:hover,
+.messages ul li button:hover {
+    background-color: rgb(160, 57, 126);
+    color: white;
+    padding: 5px 25px;
+    margin: 4px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    width: 35%;
+    font-size: medium;
+    padding: 5px 2px;
+    margin: 10px 0;
+    color: rgb(170, 23, 141);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+img {
+    border: 3px solid rgb(87, 10, 100);
+    border-radius: 1em;
+}
+
+footer {
+    background-color: rgb(242, 192, 55);
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    font-size: small;
+    font-weight: 500;
+}
+
+/* this the deviding blocks exp*/
+/* .test_div_43 {
+    border-color: green;
+    border-style: dashed;
+    display: flex;
+    flex-direction: row; 
+ } */ 
+ /* this is commenting out list items */
+
+ /* ul li:nth-child(2) {
+    color: blue;
+    /* list-style: none; 
+ } */
