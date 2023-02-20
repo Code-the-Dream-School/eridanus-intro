@@ -32,7 +32,7 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
     //Remove button
     const removeButton = document.createElement("button");
-    removeButton.innerText = "remove";
+    removeButton.innerText = "Remove";
     removeButton.type = "button";
     removeButton.addEventListener("click", function() {
         const entry = removeButton.parentNode;
@@ -43,7 +43,7 @@ messageForm.item(0).addEventListener("submit", (event) => {
 
     //Edit button
     const editButton = document.createElement("button");
-    editButton.innerText = "edit";
+    editButton.innerText = "Edit";
     editButton.type = "button";
     editButton.addEventListener("click", () => {
         let editMessage = prompt("Enter your new message:", `${messageInput}`);
