@@ -1,7 +1,7 @@
 // Skills section
-const skills = ["HTML", "CSS", "Ruby", "Rails", "Python"]
+const skills = ["HTML", "CSS", "Ruby", "Rails", "Python"];
 const skillsSection = document.getElementById("skills");
-let skillsList = skillsSection.querySelector("ul")
+let skillsList = skillsSection.querySelector("ul");
 // console.log(skillsList);
 
 skills.forEach(skill => {
@@ -17,10 +17,10 @@ skills.forEach(skill => {
 // end Skills
 
 // Messages
-const messageForm = document.getElementsByName("leave_message")
+const messageForm = document.getElementsByName("leave_message");
 const messageSection = document.getElementById("messages");
 const messageHeader = messageSection.querySelector("h2");
-console.log("messageList is " + messageHeader)
+// console.log("messageList is " + messageHeader);
 // hide the messages button
 messageHeader.style.display = "none";
 
@@ -46,7 +46,7 @@ document.addEventListener("submit", function(event) {
         messageHeader.style.display = "none";
     });
     // Make the button
-    const editButton = document.createElement("button")
+    const editButton = document.createElement("button");
     editButton.innerText = "edit";
 
     editButton.addEventListener("click", () => {
@@ -67,7 +67,6 @@ document.addEventListener("submit", function(event) {
 });
     // End Messages
 
-
 // Footer
 const fullName = "Greg Curl";
 const footer = document.querySelector("footer");
@@ -76,12 +75,33 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement("p");
 let image = document.createElement("img");
-image.src = "/img/codelogo_v2.svg"
+image.src = "img/logo_v2.svg"
 
 copyright.innerText = `\u00A9 ${fullName} ${thisYear}`
 // console.log("copyright is: " + copyright);
-
-footer.appendChild(image)
-footer.appendChild(copyright)
+// console.log(image.src)
+// footer.appendChild(image)
+// footer.appendChild(copyright)
 // end Footer
+
+// Fetch GH repos
+let githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/gacurl/repos");
+githubRequest.onload = (event) => {
+    let repositories = JSON.parse(githubRequest.responseText);
+    renderProjectList(repositories);
+};
+githubRequest.send();
+
+const projectSection = document.getElementById("projects");
+let projectList = projectSection.querySelector("ul");
+
+function renderProjectList(repositories) {
+    for (let i = 0; i < repositories.length; i++) {
+        // console.log(repositories[i].name)
+        let project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+};
 

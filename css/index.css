@@ -112,6 +112,7 @@ nav {
 
 .main-head {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .logo_img {
@@ -179,6 +180,7 @@ h2 {
 /* other sections */
 #experience,
 #skills,
+#projects,
 #connect,
 #message {
     margin: 25px 50px 25px;
@@ -267,7 +269,6 @@ h2 {
 }
 
 /* media queries follow */
-
 
 @media screen and (max-width: 768px){
     html {
