@@ -101,7 +101,7 @@ function renderProjectList(repositories) {
         // console.log(repositories[i].name)
         let project = document.createElement("li");
         project.innerText = repositories[i].name;
-        projectList.appendChild(project);
+        projectList.appendChild(project)
     }
 };
 
