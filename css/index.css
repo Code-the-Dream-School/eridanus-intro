@@ -1,0 +1,282 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* color map for page */
+:root {
+    --bg-color: #e7eef1;
+    --bright-red: #aa0505;
+    --dark-red: #6a0c0b;
+    --gold: #b97d10;
+    --yellow: #fbca03;
+    --blue-gray: #5d869d;
+    --main-font: #2c2c2c;
+    --dark-mode-font: #ccc;
+}
+/* end color map */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--main-font);
+}
+
+/* Header */
+nav {
+    display: flex;
+    align-items: center;
+    color: var(--blue-gray);
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo_img {
+    display: flex;
+    padding: 25px;
+}
+
+.header-right ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.header-right ul a {
+    color: var(--main-font);
+    padding: .8rem;
+    border-radius: 50px;
+    transition: .5s ease all;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-right ul a:hover {
+    background: var(--dark-red);
+    color: var(--gold);
+}
+
+.header-right ul li {
+    padding: 25px;
+}
+
+/* end Header */
+
+h2 {
+    color: var(--blue-gray);
+}
+
+/* about section */
+#about {
+    margin: 25px 25px 25px;
+}
+
+.about-text p {
+    padding: 10px;
+}
+
+.about-text h3:hover {
+    color: var(--dark-red);
+}
+
+.reach-out-link a {
+    text-decoration: none;
+    color: var(--main-font);
+}
+
+.reach-out-link a:hover {
+    text-decoration: none;
+    background-color: var(--dark-red);
+    color: var(--gold);
+    padding: .8rem;
+    border-radius: 50px;
+    transition: .5s ease all;
+}
+
+/* other sections */
+#experience,
+#skills,
+#projects,
+#connect,
+#message {
+    margin: 25px 50px 25px;
+}
+/* experience section */
+.experience li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: justify;
+}
+
+.experience li:hover {
+    color: var(--dark-red)
+}
+
+/* skills section */
+
+#skills li {
+    list-style-type: none;
+    padding: 2px;
+    text-align: justify;
+    position: relative;
+    margin-left: 25px;
+    padding-left: 25px;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+}
+
+#skills li:nth-child(2) {
+    top: 10px;
+}
+
+#skills li:nth-child(3) {
+    top: 20px;
+}
+
+#skills li:nth-child(4) {
+    top: 10px;
+}
+
+/* #skills li:nth-child(5) {
+    top: 0px;
+} */
+
+/* connect section */
+.connect-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.connect-list a {
+    background: 0 0;
+    color: var(--main-font);
+    padding: .8rem;
+    border-radius: 50px;
+    transition: .5s ease all;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 4px;
+}
+
+.connect-list a:hover {
+    background: var(--dark-red);
+    color: var(--gold);
+}
+
+.connect-list i {
+    padding-right: 25px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer img {
+    padding-right: 50px;
+}
+
+/* media queries follow */
+
+@media screen and (max-width: 768px){
+    html {
+        font-size: 45%;
+    }
+
+    .connect-list a {
+        font-size: 45%;
+        line-height: 45%;
+    }
+}
