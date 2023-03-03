@@ -21,6 +21,6 @@ for(let i = 0; i< skills.length; i++){
   let skill = document.createElement('li')
   skill.innerText = skills[i]
   skillsList.appendChild(skill);
-}
+};
 
 
