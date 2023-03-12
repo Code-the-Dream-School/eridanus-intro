@@ -6,66 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
 </head>
-<body>
-  <h1>Yulia Lopatko</h1>
+  <body>
+    <h1>Yulia Lopatko</h1>
 
-  <section>
-    <h2>About</h2> 
-  
-  <p>
     <section>
+      <h2>About</h2> 
+    
+    <p>
+      <section>
+        <ul>
+          <li>
+            My name is Yulia
+          </li>
+          <li>
+            I'm an QA engineer   
+          </li>
+          
+        </ul>
+      </section>
+      
+      
+    <h2>Experience</h2>
+    <p>
       <ul>
+        I have skills in:
         <li>
-          My name is Yulia
+          Manual testing
         </li>
         <li>
-          I'm an QA engineer   
+          JavaScript
         </li>
-        
-      </ul>
+        <li>
+          Cypress
+        </li>
+        <li>
+          API and UI test automation
+        </li>
+        <li>
+          Databases
+        </li>
+      </ul> 
+    </p>
     </section>
-    
-    
-  <h2>Experience</h2>
-  <p>
-    <ul>
-      I have skills in:
-      <li>
-        Manual testing
-      </li>
-      <li>
-        JavaScript
-      </li>
-      <li>
-        Cypress
-      </li>
-      <li>
-        API and UI test automation
-      </li>
-      <li>
-        Databases
-      </li>
-    </ul> 
-.</p>
-  </section>
 
-  <section>
-    <img 
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__tnmEofX-OLK_5A3SX0s5buJlglbhxe4PQ&usqp=CAU/400/400"
-      alt="cuddly"
-      title="Look at this"
-    />
-  </section>
+    <section>
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__tnmEofX-OLK_5A3SX0s5buJlglbhxe4PQ&usqp=CAU/400/400"
+        alt="cuddly"
+        title="Look at this"
+      />
+    </section>
 
-  <section>
-    <h2>Connect</h2>
-    <a href="engineeryulia@gmail.com" target="_blank">Email me</a>
-    <a href="https://www.linkedin.com/in/yulia-l-20781a1a7/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/engineeryulia" target="_blank">gitHub</a>
-  </section>
-  <footer>
-    
-  </footer>
-  <script src="index.js"></script>
-</body>
+    <section>
+      <h2>Connect</h2>
+      <a href="engineeryulia@gmail.com" target="_blank">Email me</a>
+      <a href="https://www.linkedin.com/in/yulia-l-20781a1a7/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/engineeryulia" target="_blank">gitHub</a>
+    </section>
+    <section>
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <lable for="userName">Your Name</lable>
+        <input type="text" name="userName" required="true" />
+        <br />
+        <lable for="userEmail">Your Email</lable>
+        <input type="email" name="userEmail" required="true" />
+        <br />
+        <lable for="userMessage">Your Message</lable>
+        <textarea name="userMassage" required="true"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+    <footer>
+      
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
