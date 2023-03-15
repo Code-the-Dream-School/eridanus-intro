@@ -14,3 +14,11 @@ skill.textContent = skills[i];
 skillsList.appendChild(skill);
 }
 
+const messageForm = document.getElementsByName('leave_message');
+messageForm.addEventlistener("submit", function answer (evt)){
+    evt.preventDefault();
+    const name = evt.target.name;
+    const email = evt.target.email;
+    const message = evt.target.message;
+    console.log(name + email + message
+});
