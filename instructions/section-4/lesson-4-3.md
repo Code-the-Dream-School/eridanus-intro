@@ -74,7 +74,7 @@ Now, open the project directory in your code editor and continue to the next sec
   - hint: `preventDefault` method
 - [ ] Save and refresh your browser
 - [ ] Fill out the HTML form in your browser and hit "Submit"
-  - You should see that the page **does not** refresh and your values are logged in the console
+  - You should see that  the page **does not** refresh and your values are logged in the console
 
 > Note: at this point, you should notice that the form is submitting properly but the form fields are not reset after submit
 
