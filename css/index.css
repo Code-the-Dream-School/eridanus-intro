@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding: 1000;
+    box-sizing: border-box;
+    font-family: “Lato”, “Courier New”, Courier, monospace;
+  }
+  h1 {
+    color: rgb(64, 184, 236);
+  }
+  h2 {
+    color: rgb(149, 33, 239);
+    font-weight: bold;
+    text-align: left;
+  }
+  img {
+    width: 300px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 30px;
+  }
+  .box {
+    background-color: rgb(179, 107, 235);
+    border-radius: 10px;
+    height: 100px;
+    width: 1650px;
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid rgb(64, 184, 236);
+  }
+  section {
+    margin: 5px 150px 5px;
+    padding: 10px;
+    border: 10px;
+  }
+  .submit-btn {
+     background: rgb(179, 107, 235);
+     color: rgb(64, 184, 236);
+     padding: 15px 150px;
+     border: 10px solid rgb(64, 184, 236);
+     text-decoration-color: 10px solid rgb(117, 204, 240) ;
+     font-size: 22px;
+     font-weight: 900;
+     border-radius: 20px;
+     width: 30%;
+     text-align: center;
+  }
+  .label-form {
+    padding: 20px;
+    font-family: inherit;
+  }
+  #field_label_name{
+    border-color: rgb(193, 144, 239);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+  }
+  #field_label_emal{
+    border-color: rgb(193, 144, 239);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+  }
+  #field_label_message {
+    border-color: rgb(193, 144, 239);
+    border-radius: 10px;
+    width: 30%;
+    height: 40%;
+    size-adjust: 100%;
+  }
+  .footer {
+    background-color: rgb(224, 205, 242);
+    margin: auto;
+    padding: 20px;
+    font-size: larger;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
