@@ -4,98 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/js/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>
         My first website
     </title>
-    <style>
-        img {
-           width: 300px; 
-           border-radius: 10px;
-           float: right;
-           margin-right: 30px;
-        }
-    </style>
 </head>
 <body>
-    
-    <h1 id="main-heading"> 
+    <header class="box">
+      <h1 id="main-heading">
         My name is Tatyana!
-        <img src="../images/TatHI.jpeg" alt="My picture">
-
-    </h1>
-    <section>
-        <h2>
-            About me:
-        </h2>
+        <img src="../images/TatHI.jpeg" alt="My picture" />
+      </h1>
+    </header>
+    <main>
+      <section class="section">
+        <h2>About me:</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, accusantium earum fugit eum iusto non dolor at sint pariatur beatae harum atque ut quo nobis nulla minima aliquid ipsa rerum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+          accusantium earum fugit eum iusto non dolor at sint pariatur beatae
+          harum atque ut quo nobis nulla minima aliquid ipsa rerum.
         </p>
-    </section>
-    <section>
-        <h2>
-            Experience: 
-    
-        </h2>
+      </section>
+      <section class="section">
+        <h2>Experience:</h2>
         <p>
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem architecto eum libero placeat provident labore. Perspiciatis sint sit, numquam voluptate laborum illo maxime dolorum, ex omnis sequi earum mollitia vitae.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+          architecto eum libero placeat provident labore. Perspiciatis sint sit,
+          numquam voluptate laborum illo maxime dolorum, ex omnis sequi earum
+          mollitia vitae.
         </p>
-
-    </section>
-    <section id = "skills">
-        <h2>
-            Skills
-        </h2>
-        <ul id = "list">
-        </ul>
-    </section>
-    <section>
-        <h2>
-            Projects
-        </h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eveniet ipsam, veritatis vel necessitatibus unde asperiores tenetur suscipit molestias fuga laudantium excepturi quasi architecto cum similique aperiam, enim in vero?s</p>
-    </section>
-    <section>
-        <h2>
-            Contact me 
-        </h2>
+      </section>
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul id="list"></ul>
+      </section>
+      <section class="section">
+        <h2>Projects</h2>
         <p>
-            <a href="https://github.com/tatkh21">Github</a>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eveniet
+          ipsam, veritatis vel necessitatibus unde asperiores tenetur suscipit
+          molestias fuga laudantium excepturi quasi architecto cum similique
+          aperiam, enim in vero?s
+        </p>
+      </section>
+      <section class="section">
+        <h2>Contact me</h2>
+        <p>
+          <a href="https://github.com/tatkh21">Github</a>
         </p>
         <p>
-            <a href="mailto:tatkh@gmail.com@gmail.com subject=subject text">Email</a>
+          <a href="mailto:tatkh@gmail.com@gmail.com subject=subject text"
+            >Email</a
+          >
         </p>
         <p>
-            <a href="https://www.linkedin.com/in/tatyana-khudaibergenova-sqa/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/tatyana-khudaibergenova-sqa/"
+            >LinkedIn</a
+          >
         </p>
-    </section>
-    <section>
+      </section>
+      <section class="section">
         <h2>Leave a Message</h2>
-        <form name="leave_message" action="" method="" id="leave_message_form">
-            <label for="field_label_name">Name</label>
-            <br>
-            <input type="text" name="name" id="field_label_name" required>
-            <br>
-            <label for="field_label_emal">Email</label>
-            <br>
-            <input type="email" name="email" id="field_label_emal" required>
-            <br>
-            <label for="field_label_message">Message</label>
-            <br>
-            <textarea name="message" id="field_label_message" required></textarea>
-            <br>
-            <button id="btn" type="submit">Submit</button>
-           
-          
-
+        <div class="container">
+          <form name="leave_message" action="" method="" id="leave_message_form">
+            <label for="field_label_name" class="label-form">Name</label>
+            <br />
+            <input type="text" name="name" id="field_label_name" required /> 
+        </div>
+        <div class="container">
+          <br />
+          <label for="field_label_emal"class="label-form">Email</label>
+          <br />
+          <input type="email" name="email" id="field_label_emal" required />
+        </div>
+        <div class="container">
+          <br />
+          <label for="field_label_message"class="label-form">Message</label>
+          <br />
+          <textarea name="message" id="field_label_message" required></textarea>
+        </div>
+        <div class="container">
+          <br />
+          <button id="btn" type="submit" class="submit-btn">Submit</button>
+        </div>  
         </form>
-    </section>
-    <section id="messages">
+      </section>
+      <section id="messages" class="section">
         <h2>Messages</h2>
         <ul></ul>
-    </section>
-    <footer></footer>
-    <script src="/js/index.js"></script>
+      </section>
+    </main>
 
-</body>
+    <footer class="footer">
+    </footer>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
