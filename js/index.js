@@ -22,6 +22,7 @@ const messageForm = document.getElementsByName('leave_message');
 
 // console.log(messageForm);
 
+
 messageForm[0].addEventListener("submit", function answer(evt){
     evt.preventDefault();
     const name = evt.target.name.value;
@@ -34,16 +35,19 @@ messageForm[0].addEventListener("submit", function answer(evt){
     // console.log(messageSection);
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
-    newMessage.innerHTML = `<span><a href=mailto:${email}>${name}</a></span> wrote: ${message}`;
+    newMessage.innerHTML = `<a href=mailto:${email}>${name}</a><span> wrote: ${message} </span>`;
 
     const removeButton = document.createElement('button');
     removeButton.textContent = 'remove';
     removeButton.setAttribute('type','button');
     
-        removeButton.addEventListener('click', (remBtn)=>{
-            const entry = remBtn.parentNode;
+        removeButton.addEventListener('click', (event)=>{
+            const entry = event.target.parentNode;
             console.log(entry);
-            removeButton.remove();
+            entry.remove();
+            if(messageList.childElementCount === 0){
+                messageSection.style.display = 'none';
+            }
 
         });
         newMessage.appendChild(removeButton);
