@@ -31,6 +31,7 @@ function submitMessage(event) {
     console.log(userMessage);
 
     const messageSection = document.getElementById('messages');
+    const messageHeader = document.createElement('h2');
     messageHeader.textContent = "Messages";
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
@@ -77,7 +78,7 @@ function submitMessage(event) {
     })
     newMessage.appendChild(removeButton);
 
-    const messageHeader = document.createElement('h2');
+    
     if (messageSection.childNodes.length > 1 && messageSection.childNodes.length < 4) {
         messageSection.insertBefore(messageHeader, messageList);
     }
