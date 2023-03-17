@@ -1,7 +1,7 @@
 const today = new Date();
 const thisYear = today.getFullYear();
-console.log("this is year!", thisYear);
-const footer = document.guerySelector('footer');
+//console.log("this is year!", thisYear);
+const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
 
 copyright.innerHTML = `Yulia Lopatko & copy ${thisYear} &#9816`;
@@ -11,7 +11,7 @@ const skills= [
   "HTML",
   "Node.js",
   "Customer service",
-  "Busuness Analitics",
+  "Bisiness Analitics",
 ];
 
 const skillsSection = document.getElementById('skills')

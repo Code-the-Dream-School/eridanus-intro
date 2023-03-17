@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>My Portfolio</title>
+ 
 </head>
   <body>
     <h1>Yulia Lopatko</h1>
@@ -26,9 +30,9 @@
       </section>
       
       
-    <h2>Experience</h2>
+    <h2 class="experience">Experience</h2>
     <p>
-      <ul>
+      <ul id="skills">
         I have skills in:
         <li>
           Manual testing
@@ -74,18 +78,17 @@
         <br />
         <lable for="userMessage">Your Message</lable>
         <textarea name="userMassage" required="true"></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" class="button">Submit</button>
       </form>
-
     </section>
 
-    <section id="messages">
+    <section id="messages" style="display: none">
       <h2>Messages</h2>
       <ul></ul>
     </section>
-    <footer>
-      
-    </footer>
-    <script src="index.js"></script>
+    <footer></footer>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script> 
+    
   </body>
 </html>

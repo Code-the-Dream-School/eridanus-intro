@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(231, 175, 153);
+  color:rgb(80, 25, 4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  margin: 5px;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold
+}
+
+h2 {
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.experience  li{
+text-align: center;
+border: 5px solid bisque;
+border-radius: 10px;
+margin-top: 10px;
+padding: 5px;
+background-color: lemonchiffon;
+list-style-type: none;
+border-radius: 500px;
+max-width: fit-content;
+}
+
+#skills li {
+  text-align: center;
+  border: 1px dashed brown;
+  margin: 20px 0;
+  padding: 20px;
+  list-style-type: none;
+  border-radius: 500px;
+  max-width: fit-content;
+
+}
+
+
+label {
+  background-color: blanchedalmond;
+  color: darkgoldenrod;
+}
+
+input:focus {
+  border: none;
+  
+}
+
+.button {
+  padding: 25px;
+  margin-top: 10px;
+  background-color: rgb(126, 24, 24);
+  color: rgb(211, 148, 188);
+  font-size: 2rem;
+}
+
+button:hover {
+  background-color: rgb(226, 55, 183);
+  color: yellow;
+}
+
+footer {
+  background-color: rgb(111, 64, 114);
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+img {
+  border: 5px sold powderblue;
+  border-style: inset;
+  border-radius: full;
+  box-shadow: 10px 5px gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgb(80, 25, 4);
+}
+
+a:visited {
+  color:blueviolet;
+}
+
