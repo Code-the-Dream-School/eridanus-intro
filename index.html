@@ -43,6 +43,22 @@ new technology and software.
 <a href="https://github.com/AnastasiaKey">GitHub</a> <br>
 <a href="https://www.facebook.com/profile.php?id=100005285920837&sk=about">Facebook</a> <br>
         </section>
+            <section>
+                <h2>Leave a Message</h2>
+                    <form name="leave_message" method="get">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email address</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="submit">Message</label><br>
+                        <textarea name="userMessage"></textarea><br>
+                        <button type="submit">Submit</button>                 
+                     </form>
+            </section>
+            <section id="messages" style="display: none">
+               <h2>Messages</h2> 
+               <ul></ul>
+            </section>
         <footer id="footer"></footer>
         <script src="js/index.js"></script>
     </body>
