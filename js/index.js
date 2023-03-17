@@ -25,6 +25,7 @@ const messageForm = document.getElementsByName('leave_message');
 
 messageForm[0].addEventListener("submit", function answer(evt){
     evt.preventDefault();
+    
     const name = evt.target.name.value;
     const email = evt.target.email.value;
     const message = evt.target.userMessage.value;
@@ -50,9 +51,9 @@ messageForm[0].addEventListener("submit", function answer(evt){
             }
 
         });
+        messageSection.style.display = "block";
         newMessage.appendChild(removeButton);
         messageList.appendChild(newMessage);
    
     messageForm[0].reset();
 });
-
