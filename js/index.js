@@ -7,10 +7,10 @@ const copyright = document.createElement('p');
 copyright.innerHTML = `Anna Iurchyk ${thisYear}`;
 footer.appendChild(copyright);
 
-const skills = ['HTML', 'CSS', 'JavaScript'];
+const skills = ['HTML', 'CSS', 'JavaScript', 'Cypress'];
 const skillSection = document.getElementById('skills');
 
-for(let i = 0; i <= skills.length; i++) {
+for(let i = 0; i < skills.length; i++) {
 
     let skill = document.createElement('li');
     skill.innerText = skills[i];
