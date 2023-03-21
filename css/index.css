@@ -1,0 +1,91 @@
+body {
+    background-color: #CBE4DE;
+    color: #3e4b4b;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+section {
+    padding: 5px;
+    margin: 10px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2E4F4F;
+}
+
+h2 {
+    color: #0E8388;
+    font-weight: bold;
+}
+
+.experience li {
+    border: 5px solid #0E8388;
+}
+
+
+#skills li {
+    text-align: center;
+    border: 1px dashed #0E8388;
+    margin: 20px 0;
+    padding: 10px;
+    list-style-type: none;
+    max-width: fit-content;
+    border-radius: 20px;
+}
+
+label{
+    color:#0E8388;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #0E8388;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color:#2C3333;
+    color: aqua;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 2px;
+    border: 2px solid #2E4F4F;
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  textarea {
+    font-size: 1rem;
+    padding: 2px;
+    border: 2px solid #2E4F4F;
+    max-width: 250px;
+    max-height: fit-content;
+  }
+
+  img {
+    border: 1px solid #0E8388;
+    border-style: inset;
+    border-radius: 150px;
+    box-shadow: 10px 5px 10px black;
+
+  }
+
+  footer {
+    background-color: #799c9c;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
