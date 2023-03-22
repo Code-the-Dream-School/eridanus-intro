@@ -4,14 +4,16 @@ const footerEl = document.querySelector("footer");
 let copyright = document.createElement("p");
 copyright.innerHTML = 'Rojina Pradhan '+ thisyear;
 footerEl.appendChild(copyright);
-const skills = ["MS Office", "Canva", "Adobe", "HTML","JavaScript"];
-const skillSection = document.querySelector("#skills");
-const skillsList = skillSection.querySelector("ul");
+
+const skills = ["MS Office", "Canva", "Adobe", "HTML","JavaScript","Quadralingual","Social media tools"];
+const skillSection = document.getElementById("skills");
+const skillsList = skillSection.querySelector ("ul");
 for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement("li");
     skill.innerText = skills[i];
-skillsList.appendChild(skill);
-} 
+    skillsList.appendChild(skill);
+}
+
 let messageSection = document.getElementById("messages");
 messageSection.style.display = "none";
 messageForm.addEventListener('submit', event => {
@@ -21,7 +23,6 @@ messageForm.addEventListener('submit', event => {
   const message = event.target.message.value;
 });
 const messageForm = document.forms.leave_message;
-const messageSection = document.querySelector('#messages');
 const messageList = messageSection.querySelector('ul');
   // create a new list item (li) element and store it in a variable named newMessage
   const newMessage = document.createElement('li');
