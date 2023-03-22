@@ -28,6 +28,7 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+<<<<<<< HEAD
 // Using "DOM Selection", select the "leave_message" form by name attribute and store it in a variable named messageForm
 
 const messageForm = document.forms.leave_message;
@@ -84,3 +85,5 @@ messageForm.addEventListener('submit', function(event){
 // hint: event.target is the form, event.target.usersName is the first input element
 
 
+=======
+>>>>>>> main
