@@ -1,0 +1,96 @@
+body{
+    background-color:bisque;
+    color: hotpink;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+section{
+    margin: 5rem;
+    padding: 20px;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: blue;
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    color: blue;
+}
+
+.expirience li{
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top:10px;
+    padding: 5px;
+    text-align: center;
+    background-color:blueviolet;
+    text-decoration: wavy;
+    list-style-type: disc;
+}
+#skills li{
+    border: 1px dashed brown;
+    margin: 20px;
+    padding: 20px;
+    list-style-type: disc;
+    border-radius: 500px;
+    max-width: fit-content;
+}
+#skill li:hoover{
+    background-color: black;
+    color:white;
+}
+
+label{
+    background-color: antiquewhite;
+    color: black;    
+}
+
+input{
+    font-size:1rem;
+    padding:15px;
+    border: 3px solid black; 
+}
+
+input:focus{
+    border: none;
+}
+
+.button{
+    color:blueviolet;
+    background-color: burlywood;
+    margin-top: 11px;
+    padding: 25px;
+    font-size: 2rem;
+}
+
+.button:hover{
+    background-color: red;
+    color:yellow;
+}
+footer{
+    background-color: grey;
+    margin-top: 2rem;
+    padding: 20px;
+
+}
+img{
+    border: 5px solid powderblue;
+    border-style: inset;
+    box-shadow: 10px 5px black;
+}
+placeholder{
+    color:brown;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
+a:visited{
+    color:purple;
+}
