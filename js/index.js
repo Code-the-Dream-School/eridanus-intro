@@ -7,14 +7,26 @@ const copyright = document.createElement('p');
 copyright.innerHTML = `Anna Iurchyk ${thisYear}`;
 footer.appendChild(copyright);
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'Cypress'];
+const skills = [
+    'HTML', 
+    'CSS', 
+    'JavaScript',
+    'Cypress',
+    'Git',
+    'GitHub',
+    'MySQL',
+    'DevTools',
+    'Postman',
+    ];
+
 const skillSection = document.getElementById('skills');
+const skillsList = skillSection.querySelector("ul");
 
 for(let i = 0; i < skills.length; i++) {
 
     let skill = document.createElement('li');
     skill.innerText = skills[i];
-    skillSection.appendChild(skill);
+    skillsList.appendChild(skill);
 }
 
 const messageForm = document.forms.leave_message;
@@ -33,7 +45,7 @@ messageForm.addEventListener('submit', (event) => {
     newMessage.innerHTML = `<a href = "mailto:${userEmail}">${userName}</a><span> says: ${userMessage}</span>`;
 
     const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
+    removeButton.innerText = 'Remove';
     removeButton.type = 'button';
 
     removeButton.addEventListener('click', (event) => {
