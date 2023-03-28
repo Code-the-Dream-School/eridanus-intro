@@ -1,0 +1,107 @@
+
+body {
+    background-color: rgb(150, 49, 49);
+    color: rgb(4, 4, 68);
+    font-family: cursive;
+} 
+img {
+    border: 10px groove rgb(6, 55, 79);
+    border-radius: 20px;
+    margin:10px;
+    padding: 0px;
+    width: 300px;
+    height:75px;  
+    image-orientation: 30grad;
+}
+
+section {
+    padding: 15px;
+    border: 10px groove white;
+    margin: 30px;
+    border-radius: 20pt;
+}
+
+h1 {
+font-size: 20pt;
+font-weight: 700;
+color:rgb(4, 4, 68);
+}
+
+h2 {
+    font-size: 22pt;
+    font-weight: 700;
+    color:rgb(4, 4, 68);
+    }
+
+.experience li {
+    border: 3pt groove rgb(4, 4, 68); 
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    max-width: fit-content;
+    background-color: rgb(197, 196, 194);
+}
+#skills li {
+    border: 3pt groove rgb(6, 55, 79); 
+    padding: 5pt;
+    margin: 5pt;
+    max-width: fit-content;
+    border-radius: 10pt;
+    background-color: rgb(197, 196, 194);
+    text-align: center;
+}
+
+label {
+    font-size: 22pt;
+    color: rgb(4, 4, 68);
+    background-color:rgb(197, 196, 194);
+    border: 3pt groove rgb(6,55,79);
+    border-radius: 10pt;
+    margin:5pt;
+    max-width: fit-content;
+    padding: 5pt;
+    text-align: center;
+   
+}
+input,textarea {
+    font-size: 22pt;
+    border: 3pt groove rgb(6, 55, 79); 
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    background-color: rgb(197, 196, 194);
+}
+
+button {font-size: 22pt;
+    border: 5pt groove rgb(6, 55, 79); 
+    padding: 10pt;
+    margin: 15pt;
+    color: rgb(4, 4, 68);
+    border-radius: 10pt;
+    background-color: rgb(197, 196, 194);
+    font-family: cursive;
+}
+
+button:hover {
+    background-color: rgb(241, 241, 6);
+    color:rgb(6, 55, 79);
+}
+#messages  {
+    border: 3pt groove rgb(6, 55, 79); 
+    padding: 5pt;
+    margin: 5pt;
+    max-width: fit-content;
+    background-color: rgb(197, 196, 194);
+    text-align: center;
+
+}
+
+footer {
+    background-color: rgb(197, 196, 194);
+    border: 3pt groove rgb(6, 55, 79); 
+    font-family:fantasy;
+    font-weight: 100;
+    font-size: 12pt;
+    border-radius: 10pt;
+    text-align:center;
+}
