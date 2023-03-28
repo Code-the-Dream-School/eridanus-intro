@@ -7,14 +7,34 @@
     <title>Anna Iurchyk</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Anna Iurchyk</h1>
-    <img src="images/my1.png" alt="my_photo" height="170">
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#connect">Connect</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="about">Anna Iurchyk</h1>
+        <img src="images/my1.png" alt="my_photo" height="170">
 <section class="about">
     <h2>About</h2>
     <p>
@@ -23,12 +43,12 @@
 </section>
 
 <section class="experience">
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
     <p>At this moment I don`t have any experience </p>
 </section>
 
 <section class="connect">
-    <h2>Connect</h2>
+    <h2 id="connect">Connect</h2>
     <ul>
         <li>My phone number is 267356****</li>
         <li>My LinkedIn is </li>
@@ -38,9 +58,7 @@
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            
-        </ul>
+        <ul></ul>
     </section>
 
     <section class="leaveMessage">
@@ -53,7 +71,7 @@
             <input type="email" name="usersEmail"  placeholder='email' required="true">
             <br>
             <label for="usersMessage">Message</label>
-                <textarea name="usersMessage" required="true"></textarea>
+                <textarea name="usersMessage"  placeholder="message" required="true"></textarea>
                 <br>
                 <button type="submit">Submit</button>
         </form>
@@ -61,7 +79,7 @@
 
     <section id="messages">
         <h2>Messages</h2>
-        <ul></ul>
+        <ul class="message-list"></ul>
     </section>
 
     <footer></footer>
