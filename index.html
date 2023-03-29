@@ -10,6 +10,24 @@
 
 </head>
     <body>
+       <header>
+         <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="www.google.com">About</a>
+                </li>
+                <li class="nav-item">
+                      <a href="www.google.com">Experience</a>
+                     </li> 
+                     <li class="nav-item">
+                         <a href="www.google.com">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                         <a href="www.google.com">Contact Me</a>
+                 </li>
+            </ul>
+        </nav>
+    </header>
         <h1>Anastasia Klyucharova</h1>
         <img src="./image/nastya_small6.svg" alt="Anastasia Klyucharova">
         <section>
@@ -49,9 +67,9 @@ new technology and software.
                 <h2>Leave a Message</h2>
                     <form name="leave_message" method="get">
                         <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name"><br>
+                        <input type="text" id="name" name="name" required><br>
                         <label for="email">Email address</label><br>
-                        <input type="text" id="email" name="email"><br>
+                        <input type="text" id="email" name="email" required><br>
                         <label for="submit">Message</label><br>
                         <textarea name="userMessage"></textarea><br>
                         <button class="button" type="submit">Submit</button>                 
@@ -59,7 +77,7 @@ new technology and software.
             </section>
             <section id="messages" style="display: none">
                <h2>Messages</h2> 
-               <ul></ul>
+               <ul class="message-list"></ul>
             </section>
         <footer id="footer"></footer>
         <script src="js/index.js"></script>
