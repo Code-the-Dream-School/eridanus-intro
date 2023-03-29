@@ -6,21 +6,46 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
         <title>CTD Portfolio</title>
         <link rel = "stylesheet" href = "css/index.css"/>
+
     </head>
     <body>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <button>
+                        <a href="#about">About</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button>
+                        <a href="#experience">Experience</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button>
+                        <a href="#skills">Skills</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button>    
+                        <a href="#contact">Contact</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
         <h1>Fany Kreminski</h1>
 
-        <section>           
+        <section id="about">           
             <h2> About</h2>
             <p>
-                Fany Kreminski is a software engenier with Bsc Degree in Computer scince</br>
-                Loves to create and collaborate with people on the daily basis<br/>
+                Fany Kreminski is a software engenier with Bsc Degree in Computer science</br>
+                Loves to create and collaborate with people on a daily basis<br/>
                 Loves to bake and travel</br>
             </p>
             <img src="https://placekitten.com/300/300"/>
         </section>
 
-        <section> 
+        <section id="experience"> 
             <h2> Experience </h2>
 
             <ul class="experience">
@@ -35,7 +60,7 @@
             <h2>Skills</h2>
             <ul></ul>
         </section>
-                <section>   
+                <section id= "contact">   
                     <h2>Connect</h2>
                     <ol>
                         <li>
@@ -52,13 +77,21 @@
         <section>
             <h2>Leave a Message</h2>            
             <form name="leave_message">
-
                 <label for="user_name">Your Name:</label>
-                <input type="text" id="usersName" placeholder="name" required = "true"/>
-                <br>
+                <input 
+                    type="text" 
+                    id="usersName"
+                    placeholder="name"
+                    required = "true"
+                />
+                <br />
                 <label for="email">Your Email:</label>
-                <input type="email" id="usersEmail" required = "true"/>
-                <br>
+                <input 
+                    type="email"
+                    id="usersEmail"
+                    required = "true"
+                />
+                <br />
                 <label for="users_message">Your message here</label>
                 <textarea name="usersMessage" required = "true"></textarea>
                 <br><br>
@@ -68,18 +101,16 @@
             </form>
         </section>
 
-        <section id="messages">
+        <section id="messages" style="display: none">
             <h2>Messages</h2>
-            <ul></ul> 
+            <ul class:"message-list"></ul> 
         </section>
 
         
         <footer>
            
         </footer>
-        <script src="js/index.js">
-
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
 

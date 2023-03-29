@@ -2,12 +2,15 @@ body{
     background-color:bisque;
     color: hotpink;
     font-family:Arial, Helvetica, sans-serif;
-
+}
+html {
+    width: 100 vw;
 }
 section{
     margin: 5rem;
     padding: 20px;
 }
+
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4rem;
@@ -17,7 +20,8 @@ h1{
 h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: bold;
+    text-decoration: underline;
     color: blue;
 }
 
@@ -31,14 +35,7 @@ h2{
     text-decoration: wavy;
     list-style-type: disc;
 }
-#skills li{
-    border: 1px dashed brown;
-    margin: 20px;
-    padding: 20px;
-    list-style-type: disc;
-    border-radius: 500px;
-    max-width: fit-content;
-}
+
 #skill li:hoover{
     background-color: black;
     color:white;
@@ -94,3 +91,80 @@ a:hover{
 a:visited{
     color:purple;
 }
+.nav-item{
+    display:inline;
+}
+.nav-list{
+    background-color:azure;
+    margin-top: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+#skills{
+    max-width:75%;
+}
+/* #skills ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+} */
+#skills ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    justify-content: center;
+}
+#skills li{
+    border: 1px dashed brown;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+    list-style-type: disc;
+    border-radius: 500px;
+    max-width: fit-content;
+}
+#skills li:hover{
+    background-color: black;
+    color:white;
+}
+.messsage-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#messages li{
+    display: inline;
+    margin: 20px 10px;
+}
+@media screen and (max-width: 900px) {
+    p{
+        font-size: 3rem;
+    }
+    img{
+        border-radius: 0px;
+    }
+    h1{
+        color:yellow;
+    }
+
+} 
+@media screen and (max-width: 450px) {
+    p{
+        font-size: 3rem;
+    }
+    img{
+        border-radius: 0px;
+    }
+    h1{
+        color:fuchsia;
+    }
+}
+
