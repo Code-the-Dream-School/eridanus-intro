@@ -4,20 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./index.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600;700&family=Poppins&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
   <title>My Portfolio</title>
  
 </head>
   <body>
+    <nav>
+      <ul class="nava">
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li class="nav-item">
+        <li class="nav-item">
+          <a href="#experience">Experience</a>
+        </li class="nav-item">
+        <li class="nav-item">
+          <a href="#connect">Connect</a>
+        </li class="nav-item">
+        <li class="nav-item">
+          <a href="#messages">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills">Skills</a>
+        </li>
+      </ul>
+    </nav>
+   
     <h1>Yulia Lopatko</h1>
 
+    <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__tnmEofX-OLK_5A3SX0s5buJlglbhxe4PQ&usqp=CAU/400/400"
+        alt="cuddly"
+        title="Look at this"
+      />
+
     <section>
-      <h2>About</h2> 
-    
-    <p>
-      <section>
+      <h2 id="about">About</h2> 
         <ul>
           <li>
             My name is Yulia
@@ -25,57 +49,34 @@
           <li>
             I'm an QA engineer   
           </li>
-          
+      
         </ul>
       </section>
       
-      
-    <h2 class="experience">Experience</h2>
-    <p>
-      <ul id="skills">
-        I have skills in:
-        <li>
-          Manual testing
-        </li>
-        <li>
-          JavaScript
-        </li>
-        <li>
-          Cypress
-        </li>
-        <li>
-          API and UI test automation
-        </li>
-        <li>
-          Databases
-        </li>
-      </ul> 
-    </p>
+    <section class="experience"> 
+      <h2 id="experience">Experience</h2>
+      <p> I don't have any </p>
+     </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
     </section>
 
     <section>
-      <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__tnmEofX-OLK_5A3SX0s5buJlglbhxe4PQ&usqp=CAU/400/400"
-        alt="cuddly"
-        title="Look at this"
-      />
-    </section>
-
-    <section>
-      <h2>Connect</h2>
+      <h2 id="connect">Connect</h2>
       <a href="engineeryulia@gmail.com" target="_blank">Email me</a>
       <a href="https://www.linkedin.com/in/yulia-l-20781a1a7/" target="_blank">LinkedIn</a>
       <a href="https://github.com/engineeryulia" target="_blank">gitHub</a>
     </section>
+
     <section>
       <h2>Leave a Message</h2>
       <form name="leave_message">
         <lable for="userName">Your Name</lable>
-        <input type="text" name="userName" required="true" />
-        <br />
+        <input type="text" name="userName" required="true" /> <br />
         <lable for="userEmail">Your Email</lable>
-        <input type="email" name="userEmail" required="true" />
-        <br />
+        <input type="email" name="userEmail" required= "true" /><br />
         <lable for="userMessage">Your Message</lable>
         <textarea name="userMassage" required="true"></textarea>
         <button type="submit" class="button">Submit</button>
@@ -84,11 +85,11 @@
 
     <section id="messages" style="display: none">
       <h2>Messages</h2>
-      <ul></ul>
+      <ul class="message-list"></ul>
     </section>
+
     <footer></footer>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script> 
     
+    <script src="index.js"></script> 
   </body>
 </html>
