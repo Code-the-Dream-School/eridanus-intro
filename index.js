@@ -11,19 +11,25 @@ const skills= [
   "HTML",
   "Node.js",
   "Customer service",
-  "Bisiness Analitics",
+  'Bisiness',
+  'Analitics',
+  'CSS', 
+  'JavaScript',
+  'DevTools',
+  'Postman',
 ];
 
 const skillsSection = document.getElementById('skills')
-const skillsList = skillsSection.querySelect('ul')
+const skillsList = skillsSection.querySelector('ul')
 
 for(let i = 0; i< skills.length; i++){
-  let skill = document.createElement('li')
-  skill.innerText = skills[i]
+  let skill = document.createElement('li');
+  skill.innerText = skills[i];
   skillsList.appendChild(skill);
 };
 
-const messageForm = document.forms.leave_message;
+const messageForm = document.getElementsByName("leave_message"); 
+
 
 messageForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -37,13 +43,14 @@ messageForm.addEventListener('submit', (event) => {
   let newMessage = doument.createElement('li')
 
   newMessage.innerHTML = `
-    <a href = "mailto:${usersEmail}">S{userName}</a>
-    <span>${usersMessage}</span>
+    <a href = "mailto:${userEmail}">${userName}</a>
+    <span>${userMessage}</span>
     `;
   
   const removeButton = document.createElement('button');
   removeButton.innerText = 'remove'
   removeButton.type = 'button'
+  removeButton.classList.add('btn_remove')
 
   removeButton.addEventListener('click', event => {
     const entry = event.target.parentNode
@@ -84,8 +91,8 @@ messageForm.addEventListener('submit', (event) => {
     userMessage = editInput.value;
 
     newMessage.innerHTML = `
-    <a href = "mailto:${usersEmail}">S{userName}</a>
-    <span>${usersMessage}</span>
+    <a href = "mailto:${userEmail}">${userName}</a>
+    <span>${userMessage}</span>
     `;
     newMessage.appendChild(removeButton);
     newMessage.appendChild(editButton);

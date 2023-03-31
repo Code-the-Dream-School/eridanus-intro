@@ -1,7 +1,8 @@
 body {
   background-color: rgb(231, 175, 153);
   color:rgb(80, 25, 4);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins';
+  font-size: 40px;
 }
 
 section {
@@ -11,12 +12,12 @@ section {
 
 h1 {
   font-size: 4rem;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Poppins';
   font-weight: bold
 }
 
 h2 {
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Poppins';
   font-weight: bold;
 }
 
@@ -32,6 +33,13 @@ border-radius: 500px;
 max-width: fit-content;
 }
 
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
 #skills li {
   text-align: center;
   border: 1px dashed brown;
@@ -40,7 +48,11 @@ max-width: fit-content;
   list-style-type: none;
   border-radius: 500px;
   max-width: fit-content;
-
+}
+#skills li:hover {
+  background-color: white;
+  color:aqua;
+  cursor: pointer;
 }
 
 
@@ -85,11 +97,56 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  color:rgb(80, 25, 4);
+.nava{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: sticky ;
+  margin-top: 30px;
 }
 
-a:visited {
-  color:blueviolet;
+.nav-item {
+  font-family: 'Poppins';
+    list-style-type: none;
+}
+
+.message-list {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media all and (max-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+  .nava {
+    justify-content: flex-start;
+    
+  }
+  .nav-item {
+    padding: 10px;
+    font-size: 20px;
+  }
+  h1 {
+    margin-left: 10px;
+    font-size: 35px;
+  }
+
+  #skills li {
+    padding: 5px;
+    
+  }
+
+  #skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 500px) {
+  .nav-item {
+    padding: 5px;
+    font-size: 10px;
+  }
 }
 
