@@ -1,0 +1,54 @@
+body {
+  background-color: aliceblue;
+  color: rgb(2, 21, 26);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  padding: 5px;
+}
+
+h1,
+h2 {
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(37, 26, 11);
+}
+
+#skills ul li {
+  display: inline-block;
+  border: 2px solid rgb(31, 76, 161);
+  color: rgb(31, 76, 161);
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  font-size: medium;
+  color: rgb(17, 2, 2);
+}
+
+input {
+  display: inline-block;
+}
+
+input,
+textarea {
+  font-size: medium;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+}
+
+footer {
+  background-color: rgb(220, 229, 236);
+  padding: 10px;
+}
