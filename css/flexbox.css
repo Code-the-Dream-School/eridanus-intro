@@ -1,0 +1,37 @@
+.container-header {
+    display: flex;
+}
+.navbar ul{
+    flex-direction: column;
+    list-style: none;    
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+}
+.container-1 li {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;     
+    flex-grow: 1;
+    margin: 1rem;
+}
+
+/* .card {
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: auto;
+  }  */
+  /* .card:not(:last-child) {
+    margin-bottom: 1rem;
+  } */

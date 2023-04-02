@@ -7,75 +7,119 @@
     <meta name="description" content="Code The Dream Project">
     <meta name="author" content="Alzhan B">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alzhan's site</title>
+    <title>Alzhan Braliyev</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+
   </head>
+
   <body>
-     <h1>Welcome to Alzhan's Site</h1>
-     <!-- <div class = "test_div_43"> -->
-      <section>
+    <main>
+    <header>
+      <div class = "container-header">
+        <img src="/images/AB-pic.jpg" height="80" alt="my-logo" class="my-logo">
+        <nav class = "navbar">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#leave_message">Leave a Message</a></li>        
+          </ul>
+        </nav>
+      </div> 
+    </header>
+
+    
+      <h1><strong>Alzhan Braliyev</strong></h1>
+      <section id="about" class="container">
         <h2>About</h2>
-          <p>
-            Hi! My name is <strong>Alzhan</strong>. <img src="/images/Sonic2.jpg" height="140" alt="This is a picture of Sonic"><br>
-            I have more than 15 years of working experience in
-            the field of project management. However, recently I decided to gain new
-            valuable skills in programming. Currently, I am mastering my knowledge and
-            skills in Java Script and learning how to use GitHub. Also, hopefully this
-            year, I will learn how to become a front-end engineer.
-          </p>
-          <!-- <img src="/images/Sonic2.jpg" height="120" alt="This is a picture of Sonic"> -->
+          <div class="container-1">
+            <div class="item-1 item">
+              <p>Aspiring front-end engineer with experience in UI, UX.
+                Proficient in HTML, CSS and JavaScript.
+                Strong analytical and troubleshooting skills to resolve technical and business issues.
+                Excellent team player, quick-learner, and self-starter.
+              </p>
+            </div>
+            <div class="item-2 item">
+              <img src="/images/my-pic.jpg" height="180" alt="my-photo" class="my-photo">
+            </div>
+          </div>
       </section>
-      <section>
-        <div class = "experience">
-          <h2>Experience</h2>
-            <p>
-              Most of my experience come from Kazakhstan. I worked in public and private
-              sectors, as well as in international organizations.
-                <ul>
-                  <strong>I have competencies in:</strong>
-                  <li>Project management</li>
-                  <li>Programming and coding</li>
-                  <li>Web development</li>
-                  <li>Something else</li>
+
+      <section id="experience" class="container">
+        <h2>Experience</h2>
+          <!-- <div class="experience"> -->
+            <div class="container-1">
+                <ul class="role">
+                  <li class="card">
+                    <span>
+                      <strong>Software QA Engineer</strong>
+                      " -- Silkpay"
+                    </span>
+                    <span class="emphasis">01/2021 - 05/2022</span> 
+                  </li>
+                  <li class="card">
+                    <span>
+                      <strong>Software QA</strong>
+                      " -- KGS Space Technologies"
+                    </span>
+                    <span class="emphasis">11/2019 - 01/2021</span>
+                  </li>
+                  <li class="card">
+                    <span>
+                      <strong>QA Analyst</strong>
+                      " -- Kazakh Invest"
+                    </span>
+                    <span class="emphasis">04/2018 - 10/2019</span>
+                  </li>
                 </ul>
-            </p>
-        </div>
+            </div>
       </section>
-    <!-- </div> -->
-      <section id = "skills">
-        <div class = "skills">
-          <h2>Skills</h2>
-          <ul></ul>
-        </div>
+    
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+          <!-- <div class = "skills"> -->
+          <div class="container-1 skills">
+            <ul></ul>
+          </div>
       </section>
-      <section>
-        <div class = "connect">
-          <h2>Connect</h2>
+
+      <section id="connect" class="container">
+        <h2>Connect</h2>
+          <!-- <div class = "connect"> -->
+          <div class="container-1 connect">
             <p><a href="mailto: alzhan.braliyev@gmail.com">Send me email</a></p>
             <p><a href="https://www.instagram.com/alzhan_b1">Instagram</a></p>
+          </div>
+      </section>
+
+      <section id="leave_message" class="container">
+        <h2>Leave a Message</h2>
+        <div class="container-1 form">
+        <form name="leave_message">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" required="true"><br>
+          <label for="email">Email</label><br>  
+          <input type="email" name="email" required="true"><br>
+          <label for="leave_message">Message</label><br>
+          <textarea name="message" required="true"></textarea><br>
+          <button type="submit">Submit</button>
+        </form>
         </div>
       </section>
-      <section>
-        <div class = "leave_message">
-          <h2>Leave a Message</h2>
-          <form name = "leave_message">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" required="true"><br>
-            <label for="email">Email</label><br>  
-            <input type="email" name="email" required="true"><br>
-            <label for="leave_message">Message</label><br>
-            <textarea name="message" required="true"></textarea><br>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+
+      <section id="messages" class="container" style="display: none">
+        <h2>Messages</h2>
+          <div class = "messages">
+            <ul></ul>
+          </div>
       </section>
-      <section id="messages">
-        <div class = "messages">
-          <h2>Messages</h2>
-          <ul></ul>
-        </div>
-      </section>
+
     <footer></footer>  
     <script src="js/index.js"></script>  
+  </main>
   </body>
 </html>
