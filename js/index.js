@@ -5,6 +5,7 @@ const copyright = document.createElement("p");
 
 copyright.innerHTML = `Illia Shabaiev &#169 ${thisYear} &#x2658;`;
 footer.appendChild(copyright);
+
 const skills = ['JavaScript',
     'HTML',
     'CSS',
@@ -16,7 +17,7 @@ const skillsList = skillsSection.querySelector("ul");
 
 for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement("li")
-    skill.innerText = skills[i]
+    skill.innerText = skills[i],
     skillsList.appendChild(skill)
 }
 
@@ -37,17 +38,15 @@ messageForm.addEventListener("submit", (event) => {
         `<a href = "mailto:${usersEmail}">${usersName}</a>
     <span>says: ${usersMessage} </span>`;
 
-    messageList.appendChild(newMessage)
-    messageForm.reset();
-
     const removeButton = document.createElement("button")
     removeButton.innerText = "remove"
     removeButton.setAttribute("type", "button")
-    document.body.appendChild(removeButton)
+    removeButton.setAttribute("id", "remove-button")
     removeButton.addEventListener("click", () => {
         const entry = removeButton.parentNode
         entry.remove()
     })
-    newMessage.appendChild(removeButton)
-    messageList.appendChild(newMessage)
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    messageForm.reset();
 })

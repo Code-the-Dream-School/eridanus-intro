@@ -8,6 +8,11 @@
     <meta name="author" content="Illia Shabaiev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILLIA'S PORTFOLIO</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +21,7 @@
             Illia Shabaiev
         </h1>
     </section>
-    <section>
+    <section id="about"></section>
         <h3>About me</h3>
         <p>My name is Illia Shabaiev and I am front-end developer who has limited experience in the field but has a
             great
@@ -30,10 +35,10 @@
     </section>
 
     <section>
-        <img src="images/pict_1.1.jpeg" alt="My picture" width="360" height="500">
+        <img src="images/pict_1.2.jpeg" alt="avatar" class="avatar">
     </section>
 
-    <section>
+    <section id="experience">
         <h2>Experience</h2>
         <ul>
             <li>QA Engineer</li>
@@ -47,7 +52,7 @@
         <ul class="skillset"></ul>
     </section>
 
-    <section>
+    <section id="contact">
         <h3>Contact</h3>
         <ul>
             <li><a href="mailto:shabievi@gmail.com">Email</a></li>
@@ -60,22 +65,21 @@
         <h2> Leave a Message</h2>
         <form name="leave_message">
             <label for="name">Name </label><br>
-            <input type="text" name="name" required="true"><br>
+            <input type="text" name="name" required="true"/><br>
             <label for="email">Email </label><br>
-            <input type="email" name="email" required="true"><br>
+            <input type="email" name="email" required="true"/><br>
             <label for="message">Message </label><br>
-            <textarea name="message" required="true"></textarea><br>
+            <textarea name="message" required="true" id="textarea-input" rows="7"; cols="60"; placeholder="Enter your message..."></textarea><br>
             <button type="submit">Submit</button>
         </form>
     </section>
 
     <section id="messages">
         <h2>Messages</h2>
-       
         <ul></ul>
     </section>
     <footer></footer>
     <script src="js/index.js"></script>
 </body>
-    
+
 </html>
