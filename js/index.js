@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement("p");
 
-copyright.innerHTML = ` Alzhan B &copy ${thisYear}`;
+copyright.innerHTML = ` Alzhan Braliyev &copy ${thisYear}`;
 footer.appendChild(copyright);
 
 //Putting skills in HTML in ul and li

@@ -2,6 +2,7 @@
     display: flex;
 }
 .navbar ul{
+    display: flex;
     flex-direction: column;
     list-style: none;    
 }
@@ -17,21 +18,103 @@
     text-decoration: none;
     list-style: none;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;     
     flex-grow: 1;
-    margin: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-/* .card {
-    border-radius: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: auto;
-  }  */
-  /* .card:not(:last-child) {
-    margin-bottom: 1rem;
-  } */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav { 
+        margin: auto;
+        float: right; 
+        text-size-adjust: auto; 
+        text-justify: auto;     
+    }
+    nav ul {
+        display: inline-flex;
+        margin: 1rem;
+    }
+}  
+@media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .container-header {
+        justify-content: space-around;  
+    }
+    .my-logo {
+    01/2021 - 05/2022
+    Software QA " -- KGS Space Technologies"
+    11/2019 - 01/2021
+    QA Analyst " -- Kazakh Invest"
+    04/2018 - 10/2019
+    Skills
+    Java Script
+    HTML
+    CSS
+    Node.js
+    Mocha
+    React
+    MySQL
+    Connect
+    Send email
+    
+    Instagram
+    
+    Leave a Message
+    Name
+    
+    Email
+    
+    Message
+    
+    Submit
+    Alzhan B © 2023
+        margin: 20px;
+    }
+    nav {
+        width: 100%;
+    }
+    .navbar ul {
+        flex-direction: row;
+        margin-left: 0rem;
+        margin-top: 3.5rem;
+        justify-content: space-around;
+        font-size: medium;
+    }
+    .container-1.about {
+        flex-direction: row;
+    }
+    .my-photo {
+        margin-top: 1.1rem;
+        margin-right: 5rem ;      
+    }
+}
+@media screen and (min-width: 1025px) {
+    .container-header {
+        justify-content: space-around;    
+    }
+    .my-logo {
+        margin: 30px;
+    }
+    nav {
+        width: 100%;
+    }
+    .navbar ul {
+        flex-direction: row;
+        margin-top: 4rem;
+        justify-content: space-around;
+        font-size: large;
+    }
+    .container-1.about {
+        flex-direction: row;
+    }
+    .my-photo {
+        margin-right: 5rem ;      
+    }
+    .item-1.item {
+        margin-left: 5rem;
+        margin-right: 3rem;
+    }   
+}
