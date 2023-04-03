@@ -42,8 +42,17 @@ li{
     padding: .5em; ;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-ul {
+#skills  {
+  max-width: 75%;
+}
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+ ul {
     display: flex;
+    flex-direction: wrap;
     list-style: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -83,11 +92,30 @@ textarea{
     margin: 6px;
     padding: 8px;
 }
-ul
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+#connect ul
 {
   background-color: burlywood;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
     border: 0dvb;
     block-size: auto;
+}
+ @media (max-width: 768px) {
+  nav ul {
+    flex-direction: repeat;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -8,14 +8,32 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="css/index.css/index.css">
           </head>  
+          <body>
+            <nav>
           <img src= "images/rsz_rojina_pradhan.jpeg">
-      
-    
+          <nav>
+             <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <section id = "about">
     <h1>ABOUT</h1>
-    
-    <p>My name is Rojina Pradhan. I am an onine coach and content creator based in Bay Area. I am originally from Nepal and moved to US when I was 19 years old. I have an associates degree and currently taking a break from my studies. </p>
-<ol>
+   
+    <p>
+      My name is Rojina Pradhan. I am an online coach and content creator based in Bay Area. 
+      I am originally from Nepal and moved to US when I was 19 years old. 
+      I have an associates degree and currently taking a break from my studies. I host a bi-weekly podcast "In the left state of mind" with my friend where we talk about our experiences living abroad. 
+      I love baking banana bread and hiking on my free time. 
+    </p>
+  </section>
+  <section id = "experience" >
+<ol> 
  <h1> EXPERIENCE: </h1>
+
 <h2> Procurement Student Assistant, San Francisco State University </h2>
     <li>Supports confidential student agreement information using Excel and existing filing system to ensure accuracy, documentation, and reporting </li>
     <li>Examines and analyses vendor certificates of insurance and scans documents into digital databases to facilitate ease of accessibility for procurement team</li>
@@ -29,38 +47,43 @@
     <li>	Mentor to 10+ men and women in the creation of sustainable online business systems and residual income </li>
     <li>Provided value-driven trainings and coaching on mindset, marketing and social media practices.</li>
     <li>Built and mentored international teams across language and cultural barriers.</li>
-</ol>
+
+</ol> 
+</section>
 <section id = "skills">
-<h2> Skills </h2>
+ <h2> Skills </h2> 
 <ul> </ul> 
 </section>
-
-<h2>CONNECT: </h2>
+<header>
+ 
+<section id = "contact">
+<h2>Connect: </h2> 
 <ol>
 <li> <a href ="www.google.com">google</a></li>
 <li> <a href = "https://www.instagram.com/rojinayahh/">instagram</a></li> 
 <li> <a href = "https://www.linkedin.com/in/rojina-pradhan-458445bb/">linkedin</a> </li>
-</ol>
+</ol> 
+</section>
+
 <section>
 <h2> Leave a Message </h2>
 <form name="leave_message" >
-  <div>
-          <label for="usersName">Name:</label>
-          <input type="text" name="usersName" required>
-          <br> </div>
-          <div>
-         <label for="usersEmail">Email:</label>
-          <input type="email" name="usersEmail" required>
-          <br> </div>
-          <div>
-          </div><label for="usersMessage">Message:</label>
-          <textarea name="usersMessage" required></textarea>
-          <br></div>
+          <label for="usersName"> Your name: </label>
+          <input type="text" name="usersName" required = "true">
+          <br> 
+         <label for="usersEmail"> Email: </label>
+          <input type="email" name="usersEmail" required = "true">
+          <br> 
+          <label for="usersMessage"> Message:</label>
+          <textarea name="usersMessage" required="true" ></textarea>
+          <br>
           <button type="submit">Submit</button>
         </form>
       </section>
+
       <section id="messages">
-        <h2> <ul> >Messages </ul> </h2>
+        <h2> Messages </h2>
+        <ul class = "message-list"></ul>
       </section>
 <footer> this is my webpage </footer>
 <script src = js/index.js> </script>
