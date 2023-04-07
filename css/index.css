@@ -130,6 +130,11 @@ button:hover {
     margin: 20px 10px;
 }
 
+.projectStyle {
+    list-style-type: none;
+    border-bottom: 1px dashed #083653;
+}
+
 
 @media all and (max-width: 800px) {
     h1 {

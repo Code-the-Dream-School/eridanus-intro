@@ -59,3 +59,44 @@ messageForm.addEventListener('submit', (event) => {
     messageForm.reset();
 });
 
+// function to fix date format from GitHub
+const dateFixer = (date) => {
+    return date.slice(0, 10);
+}
+
+// Method for getiing info from GitHub
+const gitHubRequest = new XMLHttpRequest();
+gitHubRequest.open("GET","https://api.github.com/users/AnnaIurchyk/repos" );
+gitHubRequest.send();
+gitHubRequest.addEventListener('load', () => {
+    const repositories = JSON.parse(gitHubRequest.responseText);
+    console.log(repositories);
+
+// selecting ul in projects section
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul')
+
+//iterating over repo array to display repo data
+for(let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+
+    const projectLink = document.createElement('a');
+    projectLink.innerText = repositories[i].name;
+    projectLink.href = repositories[i].html_url;
+    projectLink.target = "_blank";
+
+    const projectDescription = document.createElement('p');
+    projectDescription.innerText = repositories[i].description;
+
+    const projectDate = document.createElement('p');
+    projectDate.innerText = dateFixer(repositories[i].pushed_at);
+
+    project.appendChild(projectLink);
+    project.appendChild(projectDate);
+    project.appendChild(projectDescription);
+    projectList.appendChild(project);
+
+    project.classList.add('projectStyle');
+
+}
+});
