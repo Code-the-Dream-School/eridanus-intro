@@ -12,6 +12,9 @@ const skills = ["HTML","CSS",".NET","C++","JS","C"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");   
 
+
+
+
 for(let i=0; i<skills.length; i++){
     let skill = document.createElement("li");
     skill.innerText = skills[i];
@@ -22,6 +25,7 @@ const messageForm = document.getElementsByName("leave_message")[0];//<--=documen
 messageForm.addEventListener('submit', e => {
     e.preventDefault();
 
+    
     const usersName = e.target.usersName.value;//target=form
     const usersEmail = e.target.usersEmail.value;
     const usersMessage = e.target.usersMessage.value;
@@ -56,5 +60,32 @@ messageForm.addEventListener('submit', e => {
     
 
     messageForm.reset();
+
 });
-    
+
+//method for getting the info from github repos of mine//
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open("GET","https://api.github.com/users/Kremifany/repos");
+githubRequest.send();
+githubRequest.onload = function(){
+    var repositories = JSON.parse(this.response);
+    console.log(repositories);  
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul"); 
+    for(i=0; i<repositories.length;i++){
+        const project = document.createElement("li");
+        const projectLink = document.createElement("a");        
+        projectLink.innerText = repositories[i].name;
+        projectLink.href = repositories[i].html_url;
+        projectLink.target = "_blank";
+
+
+        projectList.appendChild(projectLink);
+        projectList.appendChild(project);
+
+        project.style.listStyleType = "none";
+        project.style.borderBottom = "2px solid pink";
+        project.style.margin = "1 rem 0";
+    }
+}
