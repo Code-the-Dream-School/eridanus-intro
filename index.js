@@ -28,77 +28,73 @@ for(let i = 0; i< skills.length; i++){
   skillsList.appendChild(skill);
 };
 
-const messageForm = document.getElementsByName("leave_message"); 
-
+const messageForm = document.forms.leave_message;
 
 messageForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  const userName = event.target.userName.value;
-  const userEmail = event.target.userEmail.value;
-  let userMessage = event.target.userMessage.value;
-
-  const messageSection = document.getElementById('message')
-  const messageList = messageSection.querySelector('ul')
-  let newMessage = doument.createElement('li')
-
-  newMessage.innerHTML = `
-    <a href = "mailto:${userEmail}">${userName}</a>
-    <span>${userMessage}</span>
-    `;
-  
-  const removeButton = document.createElement('button');
-  removeButton.innerText = 'remove'
-  removeButton.type = 'button'
-  removeButton.classList.add('btn_remove')
-
-  removeButton.addEventListener('click', event => {
-    const entry = event.target.parentNode
-    entry.remove()
-    if (messageList.childElementCount === 0) {
-      messageSection.style.display = 'none';
-    }
-  });
-  messageSection.style.display = 'block';
-  newMessage.appendChild(removeButton);
-  messageList.appendChild(newMessage);
-
-
-  const editButton = document.createElement('button');
-  editButton.textContent = 'edit';
-  editButton.type = 'button';
-
-  const editForm = document.createElement('form');
-  const editInput = document.createElement('input');
-  editInput.type = 'text';
-  editInput.value = userMessage;
-  const saveButton = document.createElement('button');
-  saveButton.textContent = 'Save';
-  saveButton.type = 'submit';
-  editForm.append(editInput, saveButton)
-
-  editButton.addEventListener('click', () => {
-    newMessage.replaceWith(editForm);
-  })
-
-  editButton.addEventListener('submit', (event) => {
-    event.parentDefault();
-    userMessage = editInput.value;
-  });
-
-  editForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    userMessage = editInput.value;
 
-    newMessage.innerHTML = `
-    <a href = "mailto:${userEmail}">${userName}</a>
-    <span>${userMessage}</span>
-    `;
+    const userName = event.target.usersName.value;
+    const userEmail = event.target.usersEmail.value;
+    const userMessage = event.target.usersMessage.value;
+    
+    const messageSection = document.getElementById('messages');
+    const messageList = messageSection.querySelector('ul');
+    const newMessage = document.createElement('li');
+
+    newMessage.innerHTML = `<a href = "mailto:${userEmail}">${userName}</a><span> says: ${userMessage}</span>`;
+
+    const removeButton = document.createElement('button');
+    removeButton.innerText = 'Remove';
+    removeButton.type = 'button';
+
+    removeButton.addEventListener('click', (event) => {
+        const entry = event.target.parentNode;
+        entry.remove();
+    });
+
     newMessage.appendChild(removeButton);
-    newMessage.appendChild(editButton);
-    messageList.appendChild(newMessage)
-    editForm.remove();
-  })
+    messageList.appendChild(newMessage);
 
     messageForm.reset();
+});
+
+const dateFixer = (date) => {
+    return date.slice(0, 10);
+}
+
+// Method for getiing info from GitHub
+const gitHubRequest = new XMLHttpRequest();
+gitHubRequest.open("GET","https://api.github.com/users/engineeryulia/repos" );
+gitHubRequest.send();
+gitHubRequest.addEventListener('load', () => {
+    const repositories = JSON.parse(gitHubRequest.responseText);
+    console.log(repositories);
+
+// selecting ul in projects section
+const projectSection = document.getElementById('projects');
+const projectList = projectSection.querySelector('ul')
+
+//iterating over repo array to display repo data
+for(let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+
+    const projectLink = document.createElement('a');
+    projectLink.innerText = repositories[i].name;
+    projectLink.href = repositories[i].html_url;
+    projectLink.target = "_blank";
+
+    const projectDescription = document.createElement('p');
+    projectDescription.innerText = repositories[i].description;
+
+    const projectDate = document.createElement('p');
+    projectDate.innerText = dateFixer(repositories[i].pushed_at);
+
+    project.appendChild(projectLink);
+    project.appendChild(projectDate);
+    project.appendChild(projectDescription);
+    projectList.appendChild(project);
+
+    project.classList.add('projectStyle');
+
+}
 });
