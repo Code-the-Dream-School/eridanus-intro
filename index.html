@@ -5,17 +5,50 @@
     <link rel="stylesheet" href="/css/  index.css" />
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <section>
-      <h1>About</h1>
+      <h1 id="about">About</h1>
       <p>
         I am software developer with knowledge of HTML, CSS, Javasrcipt and
         Javasrcipt
       </p>
     </section>
-    <section>
-      <h1>Experience</h1>
-      <p>I have about 3 years of Experience working in web development.</p>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Job Title 1</h3>
+          <p>Company Name 1</p>
+          <p>Start Date - End Date</p>
+        </div>
+        <div class="grid-item">
+          <h3>Job Title 2</h3>
+          <p>Company Name 2</p>
+          <p>Start Date - End Date</p>
+        </div>
+        <div class="grid-item">
+          <h3>Job Title 3</h3>
+          <p>Company Name 3</p>
+          <p>Start Date - End Date</p>
+        </div>
+        <div class="grid-item">
+          <h3>Job Title 4</h3>
+          <p>Company Name 4</p>
+          <p>Start Date - End Date</p>
+        </div>
+      </div>
     </section>
+
     <section id="skills">
       <h2>Skills</h2>
       <ul></ul>
@@ -26,14 +59,22 @@
     </section>
     <section>
       <h2>Leave a Message</h2>
-      <form action="" name="leave_message">
-        <label for="userName">Name</label><br />
-        <input type="text" name="userName" required /><br />
-        <label for="userEmail">Email Addres</label><br />
-        <input type="email" name="userEmail" required /><br />
-        <label for="userMessage"> Message </label><br />
-        <textarea name="userMessage" required></textarea><br />
+      <form id="form" action="" name="leave_message">
+        <div>
+          <label for="userName">Name</label><br />
+          <input type="text" name="userName" required /><br />
+        </div>
+        <div>
+          <label for="userEmail">Email Addres</label><br />
+          <input type="email" name="userEmail" required /><br />
+        </div>
+        <div id ="textarea">
+          <label for="userMessage"> Message </label><br />
+          <textarea name="userMessage" required></textarea><br />
+        </div>
+        <div>
         <button type="submit">Submit</button>
+        <div>
       </form>
     </section>
     <section id="message">

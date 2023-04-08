@@ -1,4 +1,5 @@
 body {
+  margin: 0 30px;
   background-color: aliceblue;
   color: rgb(2, 21, 26);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -24,20 +25,20 @@ h2 {
 }
 
 label {
+  display: block;
   font-size: medium;
   color: rgb(17, 2, 2);
 }
-
-input {
-  display: inline-block;
+#textarea {
+  width: 100%;
 }
-
 input,
 textarea {
   font-size: medium;
   padding: 5px;
-  margin: 5px;
+  margin: -10px 5px;
   border: 1px solid black;
+  width: 100%;
 }
 
 button {
@@ -51,4 +52,93 @@ button {
 footer {
   background-color: rgb(220, 229, 236);
   padding: 10px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#experience {
+  margin: 50px 0;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  max-width: 600px;
+}
+
+form > div {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#about {
+  margin-top: 35px;
+}
+
+#removeButton {
+  float: right;
+}
+
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    display: flex;
+  }
+  .grid-item {
+    flex: 2;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }

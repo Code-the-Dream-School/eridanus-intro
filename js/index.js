@@ -34,10 +34,11 @@ messageForm.addEventListener("submit", function (event) {
   const messageList = messageSection.querySelector("ul:nth-child(2)");
   const newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href="mailto:email@example.com"> ${userName} </a>
-  <span>" Wrote : " ${userMessage}</span>`;
+  <span>" Wrote : "<br>${userMessage}</span>`;
   const removeButton = document.createElement("button");
   removeButton.innerText = "remove";
   removeButton.type = "button";
+  removeButton.id = "removeButton";
   removeButton.addEventListener("click", function (event) {
     let entry = removeButton.parentNode;
     entry.remove();
