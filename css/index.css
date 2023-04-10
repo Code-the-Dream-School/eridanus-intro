@@ -2,6 +2,7 @@ body {
     background-color: rgb(236, 250, 250);
     color: rgb(19, 101, 101);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 10px;
 }
 
 section, h1, h2, img, p {
@@ -34,20 +35,35 @@ h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
 
 }
 #skills li {
-    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
     text-align: center;
     border: 3px solid rgb(137, 150, 150);
     border-radius: 10px;
     margin: 20px 20px;
     padding: 20px;
     list-style-type:none;
-    max-width: fit-content;
+       
+
 }
 
 #skills li:hover {
     background-color: rgb(151, 245, 254);
     color: rgb(137, 150, 150);
 }
+
+#skills {
+    max-width: 75%;
+}
+
+
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
 
 label {
     color: rgb(40, 111, 111);
@@ -101,4 +117,45 @@ img {
     border-style: double;
     border-radius: 100%;
     box-shadow: 10px 5px rgb(137, 150, 150);
+}
+.nav-item {
+    display: inline;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-list {
+    display: flex;
+    background-color: rgb(240, 241, 241);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.message-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#messages li {
+    display: inline;
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 450px) {
+   p {
+    font-size: 1rem;
+   }
+
+   img {
+    border-radius: opx;
+   }
+
+   h1 {
+    color: aqua
+   }
 }
