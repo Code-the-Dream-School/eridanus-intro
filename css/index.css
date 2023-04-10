@@ -121,6 +121,7 @@ img {
 .nav-item {
     display: inline;
     padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-list {
     display: flex;
