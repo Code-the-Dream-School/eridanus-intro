@@ -135,7 +135,8 @@ a:visited{
     background-color: black;
     color:white;
 }
-.messsage-list{
+
+#messages ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -144,6 +145,7 @@ a:visited{
     display: inline;
     margin: 20px 10px;
 }
+
 @media screen and (max-width: 900px) {
     p{
         font-size: 3rem;

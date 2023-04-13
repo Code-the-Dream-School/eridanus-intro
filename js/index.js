@@ -20,15 +20,15 @@ for(let i=0; i<skills.length; i++){
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
-
+ //LEAVE A MESSAGE
 const messageForm = document.getElementsByName("leave_message")[0];//<--=document.forms.leave_message -->
 messageForm.addEventListener('submit', e => {
     e.preventDefault();
 
     
-    const usersName = e.target.usersName.value;//target=form
-    const usersEmail = e.target.usersEmail.value;
-    const usersMessage = e.target.usersMessage.value;
+    const usersName = e.target.user_name.value;//target=form
+    const usersEmail = e.target.email.value;
+    const usersMessage = e.target.user_message.value;
 
     console.log(usersName, usersEmail, usersMessage);
 
@@ -39,7 +39,7 @@ messageForm.addEventListener('submit', e => {
 
     newMessage.innerHTML = `
     <a href = "mailto:${usersEmail}">${usersName}</a>
-    <span>says: ${usersMessage}</span>
+    <span> says: ${usersMessage}</span>
     `;
 
     const removeButton = document.createElement("button");

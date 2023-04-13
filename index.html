@@ -49,21 +49,22 @@
             <h2> Experience </h2>
 
             <ul class="experience">
-
-                <li>2011 - Right after the college worked as QA at Mobile Apps Company Silent Communications</li>
-                <li>2015 - Finished course C# at Bucks county Comunity college </li>
+                <li>2011 - QA at Mobile Apps Company Silent Communications</li>
+                <li>2015 - C# Advanced Course at Bucks county Comunity college </li>
             </ul>
-        <section>
+        </section>
             
-        
         <section id="skills">
             <h2>Skills</h2>
             <ul></ul>
         </section>
+        
+        <!-- HTML will be inserted here via JS -->
         <section id="projects">
             <h2>Projects</h2>
             <ul></ul>
         </section>
+
         <section id= "contact">   
             <h2>Connect</h2>
             <ol>
@@ -84,7 +85,7 @@
                 <label for="user_name">Your Name:</label>
                 <input 
                     type="text" 
-                    id="usersName"
+                    id="user_name"
                     placeholder="name"
                     required = "true"
                 />
@@ -92,12 +93,12 @@
                 <label for="email">Your Email:</label>
                 <input 
                     type="email"
-                    id="usersEmail"
+                    id="email"
                     required = "true"
                 />
                 <br />
-                <label for="users_message">Your message here</label>
-                <textarea name="usersMessage" required = "true"></textarea>
+                <label for="user_message">Your message here</label>
+                <textarea id="user_message" name="usersMessage" required = "true"></textarea>
                 <br><br>
                 <button type="submit" class="button">
                     Submit
@@ -105,9 +106,10 @@
             </form>
         </section>
 
+        <!-- HTML will be inserted here via JS -->
         <section id="messages" style="display: none">
             <h2>Messages</h2>
-            <ul class:"message-list"></ul> 
+            <ul class="message-list"></ul> 
         </section>
 
         
