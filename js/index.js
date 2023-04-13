@@ -16,7 +16,7 @@ footer.appendChild(copyright);
 // Lesson-4-2 adding list of skills 
 //----------------------------------
 
- const skills = ["Java", "Java Script", "Type Script", "HTML", "CSS", "SQL"];
+ const skills = ["Java", "Java Script", "Type Script", "HTML", "CSS", "SQL","Playwright","Selenium"];
  const skillsection = document.getElementById("skills");
  const skillList = skillsection.querySelector("ul");
  for (let i = 0; i < skills.length; i++){
@@ -28,7 +28,7 @@ footer.appendChild(copyright);
  //Change the colore of the button
  const submitButton = document.getElementById('btn');
  function changeColore() {
-   submitButton.style.backgroundColor = "blue";
+   submitButton.style.backgroundColor = "purple";
  }
 submitButton.addEventListener("click", changeColore);
 
@@ -71,17 +71,4 @@ const messageForm = document.getElementById("leave_message_form");
 
 
 
-//Dom manipulation practice
 
-// //GetElementById()
-// const title = document.getElementById('main-heading');
-// console.log(title);
-// //GetElementByClass()
-// const listItems = document.getElementsByClassName('list-items');
-// console.log(listItems);
-// //GetElementByTagName()
-// const tagList = document.getElementsByTagName('li');
-// console.log(tagList);
-// // querySelector()
-
-//querySelectorAll()
