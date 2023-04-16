@@ -2,23 +2,49 @@
 
 <html>
 <head>
+    <!-- <div class="flex-container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div> -->
     <title>
         Christie's Webpage
     </title>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="30">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href ="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <section>
-        <h1>Christie Agbaosi</h1>
-        <img src="images/CTD.JPG" alt="Headshot" style="width: 200px;height:400px;">
-    </section>
+    <div>
+    <h1>Christie Agbaosi</h1>
+    </div>
+    <nav>
+        <ul class = "nav-list">
+            <li class = "nav-item">
+            <a href ="#about">About</a>
+            </li>
 
-    <section>
+            <li class = "nav-item">
+                <a href ="#experience">Experience</a>
+                </li>
+
+            <li class = "nav-item">
+            <a href ="#skills">Skills</a>
+            </li>
+
+            <li class = "nav-item">
+            <a href ="#connect">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJHIGptT5qX5m-0vExjO5No8xmVwbM3ivuQ&usqp=CAU" alt="Female coder" style="width: 300px;height:350px;">
+
+    <section id="about">
         <h1>About</h1>
         <p>I was first introduced to coding in middle school, and then again in high school. I took an introductory
             course to coding in college, which I also found interesting. I like how these courses, along with math, allowed me to
@@ -27,7 +53,7 @@
             instruction.</p>
     </section>
 
-    <section>
+    <section id="experience">
         <h1>Experience</h1>
         <ul class = experience> 
         <li>I have been a teacher for over 17 years</li>
@@ -35,14 +61,14 @@
         </ul>
     </section>
 
-    <section>
-
         <section id = "skills">
             <h2>Skills</h2>
             <ul>
 
             </ul>
         </section>
+
+        <section id ="connect">
         <h1>Connect</h1>
         <ul>
             <li>Chrissa03@gmail.com</li>
@@ -50,13 +76,15 @@
             <li>Twitter: https://twitter.com/chrissa003</li>
         </ul>
     </section>
-    <img src="http://placekitten.com/255/200" alt="basket of kittensgit" style="width: 200px;height:200px;">
-    <section>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRDvW4JnlJxE9wKHWPA0CD6o5ZTZZGmj0PA&usqp=CAU" alt="woman coding" style="width: 300px;height:200px;">
+    
+    <section id="leave_message">
         <h2>Leave a Message</h2>
         <form name ="leave_message">
             <br>
              <label for="usersName">Name</label>
-             <input type="text" name="usersName" placeholder = "Chris" required="true"/>
+             <input type="text" name="usersName" placeholder = "Chris Jackson" required="true"/>
             </br>
             <br>
               <label for="usersEmail">Email Address:</label>
@@ -73,7 +101,7 @@
     </section>
     <section id="messages">
         <h2>Messages</h2>
-        <ul>
+        <ul class = "message-list">
 
         </ul>
           

@@ -1,107 +1,275 @@
-
 body {
-    background-color: rgb(150, 49, 49);
-    color: rgb(4, 4, 68);
-    font-family: cursive;
-} 
+    background-color: rgb(209, 62, 62);
+    /* color: rgb(4, 4, 68); */
+    font-family: delicious handrawn;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#about {
+    font-size: 14pt;
+}
+
 img {
-    border: 10px groove rgb(6, 55, 79);
+    border: 4px groove rgb(6, 55, 79);
     border-radius: 20px;
-    margin:10px;
+    margin: 10px;
     padding: 0px;
-    width: 300px;
-    height:75px;  
-    image-orientation: 30grad;
+    height: 10px;
 }
 
 section {
+    color: rgb(4, 4, 68);
     padding: 15px;
-    border: 10px groove white;
+    /* border: 1px groove white; */
     margin: 30px;
     border-radius: 20pt;
+    max-width: 100%;
 }
 
 h1 {
-font-size: 20pt;
-font-weight: 700;
-color:rgb(4, 4, 68);
+    font-size: 20pt;
+    font-weight: 700;
+    color: rgb(4, 4, 68);
+    text-shadow: 4px 4px 4px #aaa;
+
 }
 
 h2 {
     font-size: 22pt;
     font-weight: 700;
-    color:rgb(4, 4, 68);
-    }
+    color: rgb(4, 4, 68);
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.nav-list {
+    background-color: rgb(238, 216, 173);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border: 2px groove rgb(6, 55, 79);
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.nav-item {
+    display: inline;
+    padding: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(4, 4, 68);
+
+}
+
+#connect li {
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    max-width: fit-content;
+    background-color: rgb(238, 216, 173);
+    text-align: center;
+}
+
+#connect {
+    max-width: 60%;
+}
+
+#connect ul {
+    color: rgb(4, 4, 68);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
 
 .experience li {
-    border: 3pt groove rgb(4, 4, 68); 
+    /* border: 3pt groove rgb(6, 55, 79);  */
+    color: rgb(4, 4, 68);
     padding: 5pt;
     margin: 5pt;
     border-radius: 10pt;
     max-width: fit-content;
-    background-color: rgb(197, 196, 194);
+    background-color: rgb(238, 216, 173);
 }
+
+#experience {
+    max-width: 60%;
+}
+
+#experience ul {
+    color: rgb(4, 4, 68);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
 #skills li {
-    border: 3pt groove rgb(6, 55, 79); 
+    /* border: 3pt groove rgb(6, 55, 79);  */
     padding: 5pt;
     margin: 5pt;
     max-width: fit-content;
     border-radius: 10pt;
-    background-color: rgb(197, 196, 194);
+    background-color: rgb(238, 216, 173);
     text-align: center;
+}
+
+#skills {
+    max-width: 60%;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 label {
     font-size: 22pt;
     color: rgb(4, 4, 68);
-    background-color:rgb(197, 196, 194);
-    border: 3pt groove rgb(6,55,79);
+    background-color: rgb(238, 216, 173);
+    /* border: 3pt groove rgb(6,55,79); */
     border-radius: 10pt;
-    margin:5pt;
-    max-width: fit-content;
-    padding: 5pt;
-    text-align: center;
-   
-}
-input,textarea {
-    font-size: 22pt;
-    border: 3pt groove rgb(6, 55, 79); 
-    padding: 5pt;
     margin: 5pt;
-    border-radius: 10pt;
-    background-color: rgb(197, 196, 194);
+    max-width: fit-content;
+    padding: 1pt;
+    text-align: center;
+
 }
 
-button {font-size: 22pt;
-    border: 5pt groove rgb(6, 55, 79); 
+input {
+    font-size: 22pt;
+    /* border: 3pt groove rgb(6, 55, 79);  */
+    padding: 1pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    background-color: rgb(238, 216, 173);
+}
+
+::placeholder {
+    color: rgb(4, 4, 68);
+    font-family: delicious handrawn;
+
+}
+
+textarea {
+    font-size: 22pt;
+    /* border: 3pt groove rgb(6, 55, 79);  */
+    padding: 5pt;
+    margin: 1pt;
+    border-radius: 10pt;
+    background-color: rgb(238, 216, 173);
+}
+
+
+button {
+    font-size: 22pt;
+    /* border: 5pt groove rgb(6, 55, 79);  */
     padding: 10pt;
     margin: 15pt;
     color: rgb(4, 4, 68);
     border-radius: 10pt;
-    background-color: rgb(197, 196, 194);
-    font-family: cursive;
+    background-color: rgb(238, 216, 173);
+    font-family: delicious handrawn;
 }
 
 button:hover {
-    background-color: rgb(241, 241, 6);
-    color:rgb(6, 55, 79);
+    background-color: rgb(74, 208, 245);
+    /* color:rgb(6, 55, 79); */
 }
-#messages  {
-    border: 3pt groove rgb(6, 55, 79); 
-    padding: 5pt;
-    margin: 5pt;
+
+#messages {
+    /* border: 3pt groove rgb(6, 55, 79);  */
     max-width: fit-content;
-    background-color: rgb(197, 196, 194);
+    padding: 1pt;
+    background-color: rgb(238, 216, 173);
     text-align: center;
 
 }
 
+#leave_message {
+    color: rgb(4, 4, 68);
+    display: grid;
+    gap: 20pt;
+    margin: 1pt;
+    padding: 1pt;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#messages li {
+    display: flex;
+    flex-direction: row;
+    margin: 10pt;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    body{
+    font-size: 20pt;
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        border-radius: 60pt;
+    }
+
+    #connect ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #skills ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #experience ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #leave_message {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 20pt;
+        margin: 1pt;
+        padding: 1pt;
+    }
+
+
+    .message-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
 footer {
-    background-color: rgb(197, 196, 194);
-    border: 3pt groove rgb(6, 55, 79); 
-    font-family:fantasy;
-    font-weight: 100;
-    font-size: 12pt;
-    border-radius: 10pt;
-    text-align:center;
+    background-color: rgb(238, 216, 173);
+    bottom: 0;
+    color: rgb(4, 4, 68);
+    left: 0; 
+    right: 0; 
+    width: 100%;
+    border: 2px groove rgb(6, 55, 79);
+    display: flex;
+    margin:auto;
+    /* padding:1px; */
+    position: fixed;
+    justify-content: center;
 }
