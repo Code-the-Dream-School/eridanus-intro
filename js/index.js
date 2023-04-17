@@ -65,14 +65,16 @@ const dateFixer = (date) => {
 }
 
 // Method for getiing info from GitHub
-const gitHubRequest = new XMLHttpRequest();
-gitHubRequest.open("GET","https://api.github.com/users/AnnaIurchyk/repos" );
-gitHubRequest.send();
-gitHubRequest.addEventListener('load', () => {
-    const repositories = JSON.parse(gitHubRequest.responseText);
-    console.log(repositories);
+fetch("https://api.github.com/users/AnnaIurchyk/repos")
+.then((response) => {
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    }
+    return response.json();
+})
+.then((repositories) => {
 
-// selecting ul in projects section
+    // selecting ul in projects section
 const projectSection = document.getElementById('projects');
 const projectList = projectSection.querySelector('ul')
 
@@ -96,7 +98,15 @@ for(let i = 0; i < repositories.length; i++) {
     project.appendChild(projectDescription);
     projectList.appendChild(project);
 
+    //styling
     project.classList.add('projectStyle');
 
-}
+    }
+})
+.catch((error) => {
+    console.warn(error);
+    const projectSection = document.getElementById('projects');
+    const errorMessage = document.createElement('h1');
+    errorMessage.innerText = `There was an error! Github error message: ${error.message}`;
+    projectSection.appendChild(errorMessage);
 });
