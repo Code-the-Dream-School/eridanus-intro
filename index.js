@@ -65,7 +65,7 @@ messageForm.addEventListener("submit", (event) => {
 const dateFixer = (date) => {
     return date.slice(0, 10);
 } 
-// Method for getiing info from GitHub
+// Method for gettiing info from GitHub
 fetch("https://api.github.com/users/engineeryulia/repos")
 .then((response) => {
 if (!response.ok) {
