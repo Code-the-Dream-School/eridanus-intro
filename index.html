@@ -76,20 +76,20 @@
       <a href="https://github.com/engineeryulia" target="_blank">gitHub</a>
     </section>
 
-    <section>
+    <section class="leaveMessage">
       <h2>Leave a Message</h2>
       <form name="leave_message">
-        <lable for="userName">Your Name</lable>
-        <input type="text" name="userName" required="true" /> <br />
-        <lable for="userEmail">Your Email</lable>
-        <input type="email" name="userEmail" required= "true" /><br />
-        <lable for="userMessage">Your Message</lable>
-        <textarea name="userMassage" required="true"></textarea>
+        <label for="usersName">Your Name</label>
+        <input type="text" name="usersName" required="true" /> <br />
+        <label for="usersEmail">Your Email</label>
+        <input type="email" name="usersEmail" required= "true" /><br />
+        <label for="usersMessage">Your Message</label>
+        <textarea name="usersMassage" required="true"></textarea>
         <button type="submit" class="button">Submit</button>
       </form>
     </section>
 
-    <section id="messages" style="display: none">
+    <section id="messages" >
       <h2>Messages</h2>
       <ul class="message-list"></ul>
     </section>
