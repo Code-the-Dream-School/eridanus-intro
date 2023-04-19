@@ -53,46 +53,98 @@ messageForm[0].addEventListener("submit", function answer(evt){
 
 // AJAX  request creat
 
-var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET',"https://api.github.com/users/AnastasiaKey/repos");
-githubRequest.send();
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open('GET',"https://api.github.com/users/AnastasiaKey/repos");
+// githubRequest.send();
 
-// selector for propogate data
+// // selector for propogate data
 
 
-githubRequest.addEventListener('load', () => {
-    const repositories = JSON.parse(githubRequest.responseText);
+// githubRequest.addEventListener('load', () => {
+//     const repositories = JSON.parse(githubRequest.responseText);
 
-    console.log(repositories);
+//     console.log(repositories);
 
-    const projectSection = document.getElementById('projects');
-    const projectList = projectSection.querySelector('ul');
+//     const projectSection = document.getElementById('projects');
+//     const projectList = projectSection.querySelector('ul');
 
-    for(let i = 0; i < repositories.length; i++) {
+//     for(let i = 0; i < repositories.length; i++) {
         
-        const project = document.createElement('li');
-        //project.innerText = repositories[i].name;
+//         const project = document.createElement('li');
+//         //project.innerText = repositories[i].name;
 
-        // console.log(project);
+//         // console.log(project);
         
-        const projectLink = document.createElement("a");
+//         const projectLink = document.createElement("a");
 
-        projectLink.innerText = repositories[i].name;
+//         projectLink.innerText = repositories[i].name;
 
-        console.log(repositories[i].name);
-        projectLink.href = repositories.html_url;
-        projectLink.target = "_blank";
+//         console.log(repositories[i].name);
+//         projectLink.href = repositories.html_url;
+//         projectLink.target = "_blank";
 
-        project.appendChild(projectLink);
-        projectList.appendChild(project);
-
-
-             //styling
-             project.style.listStyleType = "none";
-             project.style.borderBottom = "2px solid aqua";
-             project.style.margin = "1rem 0";
-
-    }
+//         project.appendChild(projectLink);
+//         projectList.appendChild(project);
 
 
-});
+//              //styling
+//              project.style.listStyleType = "none";
+//              project.style.borderBottom = "2px solid aqua";
+//              project.style.margin = "1rem 0";
+
+//     }
+
+
+// });
+//utility function for getting date from github data
+const dateFixer = (date) => {
+    return date.slice(0, 10);
+};
+
+// Method for getting info from github
+fetch("https://api.github.com/users/AnastasiaKey/repos")
+    .then((response) => response.json())
+    .then((repositories) => {
+        console.log(repositories);
+        // selecting ul in projects section
+        const projectSection = document.getElementById("projects");
+        const projectList = projectSection.querySelector("ul");
+        // iterating over repositories array to display repo data
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+
+            const projectLink = document.createElement("a");
+            projectLink.innerText = repositories[i].name;
+            projectLink.href = repositories[i].html_url;
+            projectLink.target = "_blank";
+
+            const projectDescription = document.createElement("p");
+            projectDescription.innerText = repositories[i].description;
+
+            const projectDate = document.createElement("p");
+            projectDate.innerText = `last pushed : ${dateFixer(
+                repositories[i].pushed_at
+            )}`;
+
+            const language = document.createElement("p");
+            language.innerText = repositories[i].language;
+
+            project.appendChild(projectLink);
+            project.appendChild(projectDate);
+            project.appendChild(projectDescription);
+            project.appendChild(language);
+            projectList.appendChild(project);
+
+            //styling
+                project.style.listStyleType = "none";
+                project.style.borderBottom = "0.5px solid aqua";
+                project.style.margin = "1rem 0";
+        }
+    })
+    .catch((error) => {
+        console.warn(error);
+        const projectSection = document.getElementById("projects");
+        const errorMessage = document.createElement("h1");
+        errorMessage.innerText = `There was an error! Github error message: ${error.message}`;
+        projectSection.appendChild(errorMessage);
+    });

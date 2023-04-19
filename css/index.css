@@ -34,6 +34,15 @@ h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
     list-style-type: none;
 
 }
+
+#projects p {
+ 
+    margin-top: 2px;
+    padding: 2px;
+
+}
+
+
 #skills li {
     margin-left: auto;
     margin-right: auto;
