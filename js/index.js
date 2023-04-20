@@ -10,7 +10,8 @@ const skills = ['JavaScript',
     'HTML',
     'CSS',
     'Cypress',
-    'Webdriver IO']
+    'Webdriver IO',
+    'GitHub']
     
 const skillsSection = document.getElementById("skills")
 const skillsList = skillsSection.querySelector("ul");
@@ -21,7 +22,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill)
 }
 
-const messageForm = document.forms.leave_message;
+const messageForm = document.forms.formID;
 
 messageForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -32,6 +33,8 @@ messageForm.addEventListener("submit", (event) => {
     const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
     let newMessage = document.createElement("li");
+
+    newMessage.setAttribute("id", "new-message")
 
 
     newMessage.innerHTML =

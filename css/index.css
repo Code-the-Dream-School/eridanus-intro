@@ -1,25 +1,50 @@
 * {
   background-color: rgb(6, 42, 91);
-  font-size: 40px;
-  color: #8fccf2;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-.avatar {
-  width: 229px;
-  height: 380px;
-  border-radius: 75%;
-  justify-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 7.5em
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 4%;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 25px;
+}
+
+.nav__links li a:hover {
+  color: #edb441;
+  font-size: 32px;
+}
+
+.nav__links li:last-child {
+  margin-right: 0;
 }
 
 h1 {
-  color: #ffffff;
-  font-family: 'Caveat', cursive;
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #141412;
+  color: rgb(184, 198, 30);
+  width: auto;
   text-align: center;
 }
 
@@ -27,46 +52,122 @@ h2 {
   color: #ee8a58;
   font-family: 'Caveat', cursive;
   font-size: 60px;
-  text-align: center;
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  justify-content: left;
+}
+
+#experience h2 {
+  margin-top: 60px;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
 }
 
 h3 {
   color: #ee8a58;
   font-family: 'Caveat', cursive;
   font-size: 60px;
-  text-align: center;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 40px;
 }
 
-form {
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  font-size: 30px;
-  font-weight: 100;
-  margin-bottom: 30px;
+#container-form-message {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid rgb(255, 255, 255);
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  gap: 1px;
+  padding: 40px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  max-width: 400px;
+  margin-left: 40px;
 }
 
-ul {
-  text-align: center;
+
+#container-form-message .text-input {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  gap: 1px;
+  padding-left: 20px;
+  padding-right: auto;
+  width: 70%;
 }
 
-p {
+#container-form-message .text-message {
+  display: flex;
+  padding-left: 20px;
+  padding-right: auto;
+  width: 85%;
+  gap: 10px;
+  text-align: left;
+}
+
+#container-form-message #submit-button {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  background-color: #28345d;
+  color: #28dde7;
+  font-size: 25px;
+  border: 2px solid #91c6dd;
+  border-radius: 15px;
+  font-family: monospace;
+  align-items: center;
+}
+
+#skills ul {
+  text-align: left;
+  margin-left: 40px;
+}
+
+#about p {
   color: rgb(181, 192, 64);
-  text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  word-wrap: break-word;
+  margin-left: 200px;
+  margin-top: 40px;
+  width: 1100px;
+  height: 218px;
+
 }
 
-#experience li {
-  display: block;
-  color: rgb(209, 228, 36);
-  margin: 10px;
-  padding: 5px;
-  border: 3px solid #4d92a3;
-  margin-top: 20px;
-  border-width: 3px;
-  margin-right: 25%;
-  margin-left: 25%;
-  text-align: center;
-  font-size: 30px;
+.avatar {
+  width: 8em;
+  height: 10em;
+  border-radius: 75%;
+  margin-left: 50px;
+  float: left;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.grid-container-exp {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, minmax(0, 4fr));
+  border: 1px solid #35cc83;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 10px;
+}
+
+div .item {
+  box-sizing: border-box;
+  border: 1px solid #35cc83;
+  font-size: 22px;
+  padding: 10px;
+  color: rgb(211, 222, 110);
+
 }
 
 #skills li {
@@ -82,20 +183,29 @@ p {
   font-size: 30px;
 }
 
+#contact h3 {
+  margin-top: 40px;
+}
+
 #contact li {
   list-style: none;
   display: inline;
 }
 
+#contact ul {
+  list-style: none;
+  display: inline;
+  padding-left: 40px;
+}
+
 label {
   color: #d150af;
   font-family: 'Indie Flower', cursive;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 input {
   border: 3px solid #000000;
-  background-color: rgb(6, 42, 91);
   border-style: inset;
   box-sizing: content-box;
   width: 16%;
@@ -107,48 +217,51 @@ input {
   line-height: 50px;
   outline: none;
   font-size: 25px;
+  font-size: medium;
 }
 
 textarea {
-  border: 2px solid #1a1a1a;
   border-style: inset;
-  width: 19%;
+  width: 30%;
   border-radius: 10px;
   box-shadow: 0 0 0 3px #000;
   border: 5px solid transparent;
   font-size: 20px;
   margin-top: 1%;
   margin-bottom: 1%;
+  text-align: left;
 }
 
-button {
-  background-color: #101f4f;
-  color: #28dde7;
-  font-size: 25px;
-  border: 2px solid #91c6dd;
-  border-radius: 10px;
-  font-family: monospace;
-  padding-top: 3px;
-  padding-right: 10px;
-  padding-bottom: 3px;
-  padding-left: 10px;
-}
-
-#messages li {
-  list-style: none;
+#messages ul {
   display: inline-block;
+  list-style: none;
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid #000000;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 20px;
   border-width: 3px;
   margin-right: 45px;
   margin-left: 38px;
-  margin-bottom: 25px;
-  height: 54px;
+  height: 65px;
   line-height: 50px;
   vertical-align: center;
-  white-space: nowrap;
-  overflow: hidden;
+  text-align: left;
+  inline-size: 450px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#messages h2 {
+  margin-top: 40px;
+}
+
+#messages li {
+  display: inline-block;
+  margin: 20px 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #remove-button {
@@ -157,20 +270,156 @@ button {
   font-family: monospace;
   font-size: 15px;
   border-radius: 45px;
-  height:65%;
+  height: 65%;
   bottom: 10%;
-  position: relative;
   padding-top: 3px;
   padding-right: 3px;
   padding-bottom: 3px;
-  padding-left: 3px;    
+  padding-left: 3px;
+  margin-right: 8px;
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 footer p {
-  left: 0;
-  bottom: 0;
-  background-color: #353636;
+  display: block;
+  background-color: #616f90;
+  border: 1px solid;
+  border-radius: 10px;
+  align-items: left;
+  justify-content: left;
   text-align: center;
+  padding: 7px;
   color: white;
-  width: 100%;
+  width: 20%;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1%;
+    width: 80%;
+  }
+
+    .nav__links li,
+    .nav__links li a {
+      display: none;
+    }
+
+  #container-form-message {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    border: 0;
+    margin-bottom: 50%;
+  }
+
+  #messages h2 {
+    text-align: left;
+    justify-content: left;
+  }
+
+  #about h3 {
+    top: 10%;
+    transform: translate(0%, -50%);
+    margin-top: 30%;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 28%;
+  }
+
+  #skills h3 {
+    text-align: center;
+    align-items: center;
+    align-items: center;
+  }
+
+  footer p {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  #remove-button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #skills li {
+    font-size: 25px;
+    display: grid;
+    list-style: none;
+  }
+
+  #experience h2 {
+    text-align: center;
+    margin-left: 30px;
+    align-items: center;
+  }
+
+  #messages li {
+    font-size: 5px;
+    inline-size: 250px;
+    gap: 30px;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  .avatar {
+    border-radius: 75%;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 45%;
+    margin-bottom: 45%;
+  }
+  
+
+   #about p {
+    display: inline-block; 
+    word-wrap: break-word; 
+    width: 360px;
+    height: 250px;
+    position: relative;
+    left: 20%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -10%);
+    margin-top: -50%;
+    margin-bottom: 80%;
+    margin-left: 50%;
+  } 
+
+  section {
+    padding: 1%;
+    align-items: center;
+  }
+} 
+
+@media (min-width: 768px) {
+  .nav__links li {
+    display: inline;
+    justify-content: space-between;
+    padding: 25px 0px;
+  }
+
+    #about p {
+      margin-right: 10%;
+      width: 900px;
+      text-align: left;
+      right: 20%;
+
+    } 
 }

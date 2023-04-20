@@ -10,46 +10,78 @@
     <title>ILLIA'S PORTFOLIO</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#container-form-message">Leave a message</a></li>
+            </ul>
+        </nav>
+    </header>
     <section>
-        <h1>
-            Illia Shabaiev
-        </h1>
-    </section>
-    <section id="about"></section>
-        <h3>About me</h3>
-        <p>My name is Illia Shabaiev and I am front-end developer who has limited experience in the field but has a
-            great
-            enthusiasm for learning.
-            Despite my lack of experience, I am highly motivated to acquire new skills and knowledge in front-end
-            development.
-            Also, I am dedicated and hard-working team member who is eager to contribute to projects and collaborate
-            with others to achieve shared goals.
-            With a positive attitude and a willingness to learn, I believe that I have the potential to become a skilled
-            front-end developer and a valuable asset to any team.</p>
+        <h1>Hey there! I'm Illia Shabaiev.</h1>
     </section>
 
-    <section>
-        <img src="images/pict_1.2.jpeg" alt="avatar" class="avatar">
+    <section id="about">
+        <h3>About me</h3>
+        <div id="avatar">
+            <img src="images/pict_1.2.jpeg" alt="avatar" class="avatar"> <img>
+            <p>My name is Illia Shabaiev and I am front-end developer who has limited experience in the field but has a
+                great
+                enthusiasm for learning.
+                Despite my lack of experience, I am highly motivated to acquire new skills and knowledge in front-end
+                development.
+                Also, I am dedicated and hard-working team member who is eager to contribute to projects and collaborate
+                with others to achieve shared goals.
+                With a positive attitude and a willingness to learn, I believe that I have the potential to become a
+                skilled
+                front-end developer and a valuable asset to any team.</p>
+        </div>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <ul>
-            <li>QA Engineer</li>
-            <li>QA Automation Engineer</li>
-            <li>Front End Enginner (codethedream)</li>
-        </ul>
+        <div class="grid-container-exp">
+            <div class="item">Quality Control Analyst (Intern)</div>
+            <div class="item">Quality Assurance Analyst</div>
+            <div class="item">Quality Assurance Engineer</div>
+            <div class="item">QA Automation Engineer</div>
+        </div>
     </section>
 
     <section id="skills">
         <h3>Skills</h3>
         <ul class="skillset"></ul>
+    </section>
+
+    <section id="leave_message">
+        <h2>Leave a Message</h2>
+        <div id="container-form-message">
+            <form id="formID">
+                <label for="name">Name* </label><br>
+                <input class="text-input" type="text" id="name" required><br>
+                <label for="email">Email* </label><br>
+                <input class="text-input" type="email" id="email" required><br>
+                <label for="message">Message*</label><br>
+                <textarea class="text-message" name="message" required="true" id="textarea-input" rows="4" cols="200"
+                    placeholder="Enter your message..."></textarea><br>
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
     </section>
 
     <section id="contact">
@@ -61,23 +93,6 @@
         </ul>
     </section>
 
-    <section>
-        <h2> Leave a Message</h2>
-        <form name="leave_message">
-            <label for="name">Name </label><br>
-            <input type="text" name="name" required="true"/><br>
-            <label for="email">Email </label><br>
-            <input type="email" name="email" required="true"/><br>
-            <label for="message">Message </label><br>
-            <textarea name="message" required="true" id="textarea-input" rows="7"; cols="60"; placeholder="Enter your message..."></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-    </section>
     <footer></footer>
     <script src="js/index.js"></script>
 </body>
