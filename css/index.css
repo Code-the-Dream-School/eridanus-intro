@@ -5,7 +5,7 @@ body {
     min-height: 10vh;
     background-position: center;
     background-color: white;
-    font-family: 'Lobster', cursive;
+    font-family: 'Poltawski Nowy', serif;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     padding: 20px;
+    align-self: center;
 }
 
 h2 {
@@ -36,6 +37,25 @@ section {
     font-size: 20px;
 }
 
+.leaveMessage {
+    background-color: aliceblue;
+    width: 500px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+#messages {
+    background-color: aliceblue;
+    width: 500px;
+    text-align: center;
+    /* margin-top: 110px; */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: #207FB4;
     text-align: center;
@@ -47,6 +67,8 @@ img {
     border-style: inset;
     border-radius: 150px;
     box-shadow: 10px 5px 10px #207FB4;
+    margin-top: 80px;
+    margin-right: 60px;
 }
 
 input, textarea {
@@ -72,9 +94,29 @@ button:hover {
     cursor: pointer;
 }
 
+.remove {
+    margin-left: 40px;
+}
+
 .nav-item {
     display: inline;
     padding: 5px;
+    font-size: 20px;
+}
+
+a {
+    color: #083653;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.skillsLi {
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px #083653, 0 0 5px #207FB4;
 }
 
 .navbar {
@@ -83,7 +125,7 @@ button:hover {
     left: 0;
     background-color: #207FB4;
     width: 100%;
-    padding: 5px;
+    padding: 15px;
     margin: 0;
     display: flex;
     justify-content: space-evenly;
@@ -168,3 +210,9 @@ button:hover {
     }
 
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+

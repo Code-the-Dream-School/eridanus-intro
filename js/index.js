@@ -26,6 +26,7 @@ for(let i = 0; i < skills.length; i++) {
 
     let skill = document.createElement('li');
     skill.innerText = skills[i];
+    skill.classList.add('skillsLi');
     skillsList.appendChild(skill);
 }
 
@@ -47,6 +48,7 @@ messageForm.addEventListener('submit', (event) => {
     const removeButton = document.createElement('button');
     removeButton.innerText = 'Remove';
     removeButton.type = 'button';
+    removeButton.classList.add('remove');
 
     removeButton.addEventListener('click', (event) => {
         const entry = event.target.parentNode;
