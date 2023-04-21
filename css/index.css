@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(209, 62, 62);
+    background-color: rgb(224, 112, 116);
     /* color: rgb(4, 4, 68); */
     font-family: delicious handrawn;
     padding-top: 65px;
@@ -10,12 +10,21 @@ body {
     font-size: 14pt;
 }
 
+#name{
+    margin:auto;
+    font-size: 50px;
+    text-align: center;
+}
 img {
     border: 4px groove rgb(6, 55, 79);
+    display: block;
     border-radius: 20px;
     margin: 10px;
+    margin-left: auto;
+    margin-right:auto;
     padding: 0px;
     height: 10px;
+    width:0%;
 }
 
 section {
@@ -43,8 +52,9 @@ h2 {
 
 }
 
+
 .nav-list {
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +83,7 @@ h2 {
     margin: 5pt;
     border-radius: 10pt;
     max-width: fit-content;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
     text-align: center;
 }
 
@@ -95,7 +105,7 @@ h2 {
     margin: 5pt;
     border-radius: 10pt;
     max-width: fit-content;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
 }
 
 #experience {
@@ -116,7 +126,7 @@ h2 {
     margin: 5pt;
     max-width: fit-content;
     border-radius: 10pt;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
     text-align: center;
 }
 
@@ -133,11 +143,12 @@ h2 {
 label {
     font-size: 22pt;
     color: rgb(4, 4, 68);
-    background-color: rgb(238, 216, 173);
+    background-color:rgb(197, 233, 248);
     /* border: 3pt groove rgb(6,55,79); */
     border-radius: 10pt;
     margin: 5pt;
     max-width: fit-content;
+    max-width: -moz-fit-content;
     padding: 1pt;
     text-align: center;
 
@@ -149,7 +160,7 @@ input {
     padding: 1pt;
     margin: 5pt;
     border-radius: 10pt;
-    background-color: rgb(238, 216, 173);
+    background-color:rgb(197, 233, 248);
 }
 
 ::placeholder {
@@ -164,7 +175,7 @@ textarea {
     padding: 5pt;
     margin: 1pt;
     border-radius: 10pt;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
 }
 
 
@@ -175,7 +186,7 @@ button {
     margin: 15pt;
     color: rgb(4, 4, 68);
     border-radius: 10pt;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
     font-family: delicious handrawn;
 }
 
@@ -188,7 +199,7 @@ button:hover {
     /* border: 3pt groove rgb(6, 55, 79);  */
     max-width: fit-content;
     padding: 1pt;
-    background-color: rgb(238, 216, 173);
+    background-color: rgb(197, 233, 248);
     text-align: center;
 
 }
@@ -269,7 +280,7 @@ footer {
     border: 2px groove rgb(6, 55, 79);
     display: flex;
     margin:auto;
-    /* padding:1px; */
+    padding:auto;
     position: fixed;
     justify-content: center;
 }
