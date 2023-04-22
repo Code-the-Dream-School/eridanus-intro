@@ -21,9 +21,9 @@ img {
     border-radius: 20px;
     margin: 10px;
     margin-left: auto;
-    margin-right:auto;
-    padding: 0px;
-    height: 10px;
+    margin-right:auto; 
+    /* padding: 0px; */
+    height: -50pt;
     width:0%;
 }
 
@@ -78,6 +78,16 @@ h2 {
 
 }
 
+#projects li {
+    /* border: 3pt groove rgb(6, 55, 79);  */
+    color: rgb(4, 4, 68);
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    max-width: fit-content;
+    background-color: rgb(197, 233, 248);
+    text-align: center;
+}
 #connect li {
     padding: 5pt;
     margin: 5pt;
@@ -248,6 +258,10 @@ button:hover {
         flex-wrap: wrap;
     }
     #experience ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #projects ul{
         display: flex;
         flex-wrap: wrap;
     }
