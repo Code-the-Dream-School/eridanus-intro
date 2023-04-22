@@ -34,6 +34,15 @@ h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
     list-style-type: none;
 
 }
+
+#projects p {
+ 
+    margin-top: 2px;
+    padding: 2px;
+
+}
+
+
 #skills li {
     margin-left: auto;
     margin-right: auto;
@@ -123,6 +132,8 @@ img {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 .nav-list {
     display: flex;
     background-color: rgb(240, 241, 241);
@@ -134,6 +145,7 @@ img {
     justify-content: space-around;
     margin: 0;
 }
+
 
 .message-list {
     display: flex;
