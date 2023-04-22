@@ -62,9 +62,34 @@ const messageForm = document.getElementById("leave_message_form");
     const entry = removeButton.parentNode;
     console.log(entry);
     entry.remove('li');
-  })
-  
+  })  
 })
+ // Fetch GitHub Repositories
+// function progectWithXML() {
+  let gitHubRequest = new XMLHttpRequest();
+  gitHubRequest.open('GET', "https://api.github.com/users/tatkh21/repos");
+  gitHubRequest.addEventListener('load', function(){
+  let repositories= JSON.parse(this.response);
+  const projectSection = document.getElementById("projects");
+  const projectList = projectSection.querySelector("ul");
+  for (let i = 0; i < repositories.length; i++){
+    let repo;
+    if (repositories[i].name == "Introduction-to-programming"){
+      repo = document.createElement('li');
+      repo.innerText = repositories[i].name;
+      projectList.appendChild(repo);
+    }
+ }
+
+}
+  )
+gitHubRequest.send();
+
+//}
+// document.addEventListener('DOMContentLoaded', () => {
+
+// }
+
  
 
 
