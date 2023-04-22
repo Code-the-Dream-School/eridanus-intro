@@ -132,6 +132,8 @@ img {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
 .nav-list {
     display: flex;
     background-color: rgb(240, 241, 241);
@@ -143,6 +145,7 @@ img {
     justify-content: space-around;
     margin: 0;
 }
+
 
 .message-list {
     display: flex;
