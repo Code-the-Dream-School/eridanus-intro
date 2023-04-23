@@ -64,33 +64,55 @@ const messageForm = document.getElementById("leave_message_form");
     entry.remove('li');
   })  
 })
- // Fetch GitHub Repositories
-// function progectWithXML() {
-  let gitHubRequest = new XMLHttpRequest();
-  gitHubRequest.open('GET', "https://api.github.com/users/tatkh21/repos");
-  gitHubRequest.addEventListener('load', function(){
-  let repositories= JSON.parse(this.response);
+
+//FETCH FUNCTION lesson 6.2
+//---------------------
+function loadWithFetch() {
+  fetch("https://api.github.com/users/tatkh21/repos")
+  .then(response => response.json())
+  .then(data => generateProgectList(data))
+
+  // Function generateProgectList
+//--------------------------
+function generateProgectList(data) {
   const projectSection = document.getElementById("projects");
   const projectList = projectSection.querySelector("ul");
-  for (let i = 0; i < repositories.length; i++){
-    let repo;
-    if (repositories[i].name == "Introduction-to-programming"){
-      repo = document.createElement('li');
-      repo.innerText = repositories[i].name;
-      projectList.appendChild(repo);
-    }
- }
-
+    for (let i = 0; i < data.length; i++){
+      let repo;
+      if (data[i].name == "Introduction-to-programming"){
+        repo = document.createElement('li');
+        //repo.innerText = repositories[i].name;
+        projectList.appendChild(repo);
+        const aTag = document.createElement('a');
+        aTag.setAttribute('href', 'https://github.com/tatkh21/Introduction-to-programming');
+        aTag.innerText = data[i].name;
+        repo.appendChild(aTag);
+      }
+}}
+  
 }
-  )
-gitHubRequest.send();
 
-//}
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+loadWithFetch();
+})
 
-// }
-
- 
+ // Function generateProgectList
+//--------------------------
+// function generateProgectList(data) {
+//   const projectSection = document.getElementById("projects");
+//   const projectList = projectSection.querySelector("ul");
+//     for (let i = 0; i < data.length; i++){
+//       let repo;
+//       if (data[i].name == "Introduction-to-programming"){
+//         repo = document.createElement('li');
+//         //repo.innerText = repositories[i].name;
+//         projectList.appendChild(repo);
+//         const aTag = document.createElement('a');
+//         aTag.setAttribute('href', 'https://github.com/tatkh21/Introduction-to-programming');
+//         aTag.innerText = data[i].name;
+//         repo.appendChild(aTag);
+//       }
+// }}
 
 
 
