@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>
+        My first website
+    </title>
+</head>
+ <body>  
+    <header class="main-header"><!--/.main header  -->
+      <h1 class="name">
+        Tatyana Khudaibergenova
+      </h1>
+      <ul class="main-nav">
+        <li class="flex-item flex-container1"><a href="#about">About</a> 
+        </li>
+        <li class="flex-item flex-container2"><a href="#skills">Skills</a>
+        </li>
+        <li class="flex-item flex-container3"><a href="#experience">Experience</a>
+        </li>
+        <li class="flex-item flex-container4"><a href="#projects">Project</a>
+        </li>
+        <li class="flex-item flex-container5"><a href="#contact">Contact</a>
+        </li>
+      </ul>    
+    </header>
+    <main>
+      <div class="banner"> <!--/.banner-->
+        <img class="logo" src="../images/TatHI.jpeg" alt="My picture" /> 
+        <h1 class="headline">Welcome to my page</h1>
+        <span class="tagline">Let me tell you about myself.</span>
+      </div>
+      <div class="row">
+        <section class="section col" id="about">
+          <h2>About me:</h2>
+          <p>
+            Meticulous, result driven and solution oriented SDET/QA Test Automation Engineer
+             with 6+ year of strong professional experience in various domains including Finances,
+             Logistics, CRM, ERP, and entertainment.
+          </p>
+        </section>
+        <section id="skills" class="section col" id="skills">
+          <h2>Skills</h2>
+          <ul id="list"></ul>
+        </section>
+        <section class="section col" id="experience">
+          <h2>Experience:</h2>
+          <ul role="list" class="grid">
+            <li class="card"><strong>QA Engeneer</strong> - ZIP Co</li>
+            <li class="card date">April 2022 - Present</li>
+            <li class="card"><strong>SDET</strong> - PSC Software Inc</li>
+            <li class="card date">November 2021 - April 2022</li>
+            <li class="card"><strong>Automation Engeneer</strong> - CRMly</li>
+            <li class="card date">May 2019 - November 2021</li>
+            <li class="card"><strong>QA Analist</strong> - Upgenix </li>
+            <li class="card date">May 2016 - May 2019</li>
+        </section>
+        <section class="section col" id="projects">
+          <h2>Projects</h2>
+          <ul class="Projects">
+            <!-- <li>
+              <a href="https://github.com/tatkh21/eridanus-intro">Introduction
+                to programming
+              </a>
+            </li> -->
+          </ul>
+        </section>
+        <section class="section col" id="contact">
+          <h2>Contact me</h2>
+          <p>
+            <a href="https://github.com/tatkh21">Github</a>
+          </p>
+          <p>
+            <a href="mailto:tatkh@gmail.com@gmail.com subject=subject text"
+              >Email</a
+            >
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/tatyana-khudaibergenova-sqa/"
+              >LinkedIn</a
+            >
+          </p>
+        </section>
+        <section class="section col">
+          <h2>Leave a Message</h2>
+          <div class="container">
+            <form name="leave_message" action="" method="" id="leave_message_form">
+              <label for="field_label_name" class="label-form">Name</label>
+              <br />
+              <input type="text" name="name" id="field_label_name" required /> 
+          </div>
+          <div class="container">
+            <br />
+            <label for="field_label_emal"class="label-form">Email</label>
+            <br />
+            <input type="email" name="email" id="field_label_emal" required />
+          </div>
+          <div class="container">
+            <br />
+            <label for="field_label_message"class="label-form">Message</label>
+            <br />
+            <textarea name="message" id="field_label_message" required></textarea>
+          </div>
+          <div class="button-container">
+            <br />
+            <button id="btn" type="submit" class="submit-btn">Submit</button>
+          </div>  
+          </form>
+        </section>
+        <section id="messages" class="section col">
+          <h2>Messages</h2>
+          <ul></ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
