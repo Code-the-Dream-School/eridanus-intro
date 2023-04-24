@@ -21,17 +21,17 @@ console.log(messageForm);
 
 messageForm[0].addEventListener("submit", function answer(evt){
     evt.preventDefault();
-    const name = evt.target.name.value;
-    const email = evt.target.email.value;
-    const message = evt.target.userMessage.value;
+    const usersName = evt.target.name.value;
+    const usersEmail = evt.target.email.value;
+    let usersMessage = evt.target.userMessage.value;
 
-    console.log(name, email, message);
+    console.log(usersName, usersEmail, usersMessage);
     
     const messageSection = document.getElementById("messages");
     // console.log(messageSection);
     const messageList = messageSection.querySelector('ul');
-    const newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href=mailto:${email}>${name}</a><span> wrote: ${message} </span>`;
+    let newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href=mailto:${usersEmail}>${usersName}</a><span> wrote: ${usersMessage} </span>`;
 
     const removeButton = document.createElement('button');
     removeButton.textContent = 'remove';
@@ -48,6 +48,40 @@ messageForm[0].addEventListener("submit", function answer(evt){
         messageSection.style.display = "block";
         newMessage.appendChild(removeButton);
         messageList.appendChild(newMessage);
+
+//    Edit Form
+const editButton = document.createElement("button");
+editButton.textContent = "edit";
+editButton.type = "button";
+editButton.className = "edit-button";
+
+const editForm = document.createElement("form");
+const editInput = document.createElement("input");
+editInput.type = "text";
+editInput.value = usersMessage;
+const saveButton = document.createElement("button");
+saveButton.textContent = "Save";
+saveButton.type = "submit";
+editForm.append(editInput, saveButton);
+
+editButton.addEventListener("click", () => {
+    newMessage.replaceWith(editForm);
+});
+
+editForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    usersMessage = editInput.value;
+    newMessage.innerHTML = `
+    <a href = "mailto:${usersEmail}">${usersName}</a>
+    <span>says: ${usersMessage}</span>
+    `;
+    newMessage.appendChild(removeButton);
+    newMessage.appendChild(editButton);
+    messageList.appendChild(newMessage);
+    editForm.remove();
+});
+
+newMessage.appendChild(editButton);
    
     messageForm[0].reset();
 });
@@ -72,7 +106,7 @@ messageForm[0].addEventListener("submit", function answer(evt){
 //     for(let i = 0; i < repositories.length; i++) {
         
 //         const project = document.createElement('li');
-//         //project.innerText = repositories[i].name;
+//         project.innerText = repositories[i].name;
 
 //         // console.log(project);
         
@@ -80,8 +114,11 @@ messageForm[0].addEventListener("submit", function answer(evt){
 
 //         projectLink.innerText = repositories[i].name;
 
-//         console.log(repositories[i].name);
-//         projectLink.href = repositories.html_url;
+//         // console.log(repositories[i].name);
+//         console.log(projectLink);
+//         projectLink.href = repositories[i].html_url;
+
+
 //         projectLink.target = "_blank";
 
 //         project.appendChild(projectLink);
@@ -97,6 +134,9 @@ messageForm[0].addEventListener("submit", function answer(evt){
 
 
 // });
+
+
+//-----------------------------------------------------------------
 //utility function for getting date from github data
 const dateFixer = (date) => {
     return date.slice(0, 10);

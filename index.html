@@ -14,29 +14,19 @@
          <nav>
             <ul class="nav-list">
                
-                <li class="nav-item">
-                    <a href="#about">Anastasia Klyucharova</a>
-                </li>
+                <li class="nav-item"><a href="#about">Anastasia Klyucharova</a></li>
 
-                <li class="nav-item">
-                    <a href="#about">About</a>
-                </li>
+                <li class="nav-item"><a href="#about">About</a></li>
                 
-                <li class="nav-item">
-                      <a href="#experience">Experience</a>
-                </li> 
+                <li class="nav-item"><a href="#experience">Experience</a></li> 
 
-                <li class="nav-item">
-                         <a href="#skills">Skills</a>
-                </li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
 
-                <li class="nav-item">
-                        <a href="#projects">Projects</a>
-                </li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
 
-                <li class="nav-item">
-                         <a href="#contact">Contact Me</a>
-                </li>
+                <li class="nav-item"><a href="#leave_message">Leave message</a></li>
+
+                <li class="nav-item"><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -72,22 +62,23 @@ new technology and software.
             <h2>Skills</h2>
             <ul></ul>
         </section>
+        
         <section id = "contact">
             <h2>Contact me</h2>
 <a href="mailto:klucharovanastya@gmail.com">Email</a> <br>
-<a href="www.linkedin.com/in/anastasia-klyucharova-38b209141">linkedin</a> <br>
+<a href="www.linkedin.com/in/anastasia-klyucharova-38b209141">Linkedin</a> <br>
 <a href="https://github.com/AnastasiaKey">GitHub</a> <br>
 <a href="https://www.facebook.com/profile.php?id=100005285920837&sk=about">Facebook</a> <br>
         </section>
-            <section>
+            <section id = "leave_message">
                 <h2>Leave a Message</h2>
                     <form name="leave_message" method="get">
                         <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name" required><br>
+                        <input type="text" id="name" name="name" required="true"/><br>
                         <label for="email">Email address</label><br>
-                        <input type="text" id="email" name="email" required><br>
+                        <input type="email" id="email" name="email" required="true"/><br>
                         <label for="submit">Message</label><br>
-                        <textarea name="userMessage"></textarea><br>
+                        <textarea name="userMessage" required="true"></textarea><br>
                         <button class="button" type="submit">Submit</button>                 
                      </form>
             </section>
