@@ -53,3 +53,65 @@ messageForm.addEventListener("submit", (event) => {
     messageList.appendChild(newMessage);
     messageForm.reset();
 })
+
+
+const formatingDate = (date) => {
+    return date.slice(0, 10);
+};
+const githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/shabaiev/repos");
+
+githubRequest.send();
+
+githubRequest.addEventListener("load", () => {
+    const repositories = JSON.parse(githubRequest.responseText);
+    console.log(repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+
+        const projectLink = document.createElement("a");
+        project.innerText = repositories[i].name;
+        project.href = repositories[i].html_url;
+        projectLink.target = "_blabk";
+
+
+        const projectDate = document.createElement("p");
+        projectDate.innerText = `last pushed : ${formatingDate(
+            repositories[i].pushed_at
+        )}`;
+
+
+        project.appendChild(projectLink);
+        projectList.appendChild(project);
+        project.appendChild(projectDate);
+
+
+        project.style.listStyleType = "none";
+        project.style.margin = "1rem 0";
+        project.style.marginLeft = "150px";
+        project.style.marginRight = "0px";
+        project.style.padding = "5px";
+        project.style.marginTop = "5px";
+        project.style.marginBottom = "5px";
+        project.style.width = "350px";
+        project.style.textAlign = "center";
+        projectDate.style.fontSize = "20px";
+        projectDate.style.fontStyle = "italic";
+        project.style.display = "inline-block";
+ 
+
+        // list-style: none;
+        // display: inline-block;
+
+        // projectDate.style.textAlign = "right";
+        // projectDate.style.marginTop = "5px";
+        // projectDate.style.marginBottom = "5px";
+    
+
+    }
+});

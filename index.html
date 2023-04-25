@@ -17,84 +17,101 @@
 <body>
     <header>
         <nav>
-            <ul class="nav__links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#container-form-message">Leave a message</a></li>
+            <ul class="nav">
+                <li class="nav__links"><a class="nav__links" href="#about">About</a></li>
+                <li class="nav__links"><a class="nav__links" href="#experience">Experience</a></li>
+                <li class="nav__links"><a class="nav__links" href="#skills">Skills</a></li>
+                <li class="nav__links"><a class="nav__links" href="#projects">Projects</a></li>
+                <li class="nav__links"><a class="nav__links" href="#contact_me">Contact</a></li>
+                <li class="nav__links"><a class="nav__links" href="#leave_message">Leave a message</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Hey there! I'm Illia Shabaiev.</h1>
-    </section>
 
-    <section id="about">
-        <h3>About me</h3>
-        <div id="avatar">
-            <img src="images/pict_1.2.jpeg" alt="avatar" class="avatar"> <img>
-            <p>My name is Illia Shabaiev and I am front-end developer who has limited experience in the field but has a
-                great
-                enthusiasm for learning.
-                Despite my lack of experience, I am highly motivated to acquire new skills and knowledge in front-end
-                development.
-                Also, I am dedicated and hard-working team member who is eager to contribute to projects and collaborate
-                with others to achieve shared goals.
-                With a positive attitude and a willingness to learn, I believe that I have the potential to become a
-                skilled
-                front-end developer and a valuable asset to any team.</p>
-        </div>
-    </section>
+    <main class="container">
+        <section>
+            <h1>HEY THERE! I'M ILLIA SHABAIEV.</h1>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="grid-container-exp">
-            <div class="item">Quality Control Analyst (Intern)</div>
-            <div class="item">Quality Assurance Analyst</div>
-            <div class="item">Quality Assurance Engineer</div>
-            <div class="item">QA Automation Engineer</div>
-        </div>
-    </section>
+        <section id="about">
+            <h3>About me</h3>
+            <div id="avatar">
+                <img src="images/pict_1.2.jpeg" alt="avatar" class="avatar"> <img>
+            </div>
 
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul class="skillset"></ul>
-    </section>
+            <div id="about-me-text">
+                <p>I am a highly skilled and motivated QA Engineer with 4 years of experience in manual and automation
+                    testing.
+                    I am proficient in using various testing tools and techniques to ensure software quality and
+                    stability.
+                    Throughout my career, I have a proven track record of creating and executing test plans and test
+                    cases to meet specific requirements.
+                    I am skilled in developing and maintaining automation scripts and frameworks for effective
+                    regression testing.
+                </p>
+        </section>
 
-    <section id="leave_message">
-        <h2>Leave a Message</h2>
-        <div id="container-form-message">
-            <form id="formID">
-                <label for="name">Name* </label><br>
-                <input class="text-input" type="text" id="name" required><br>
-                <label for="email">Email* </label><br>
-                <input class="text-input" type="email" id="email" required><br>
-                <label for="message">Message*</label><br>
-                <textarea class="text-message" name="message" required="true" id="textarea-input" rows="4" cols="200"
-                    placeholder="Enter your message..."></textarea><br>
-                <button id="submit-button" type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="grid-container-exp">
+                <div class="item">
+                    <span>
+                        <strong>Quality Control Analyst (Intern) - Allstate</strong>
+                        </span>
+                        <span class="emphasis">January 2017 - August 2017</span>
+                        </div>
+                <div class="item">Quality Assurance Analyst - BCBS</div>
+                <div class="item">Quality Assurance Engineer - Sidley Austin LLP</div>
+                <div class="item">Quality Assurance Engineer - Spoton </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul class="skillset"></ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul></ul>
+        </section>
 
 
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-    </section>
+        <section id="leave_message">
+            <h2>Leave a Message</h2>
+            <div class="container-form-message">
+                <form id="formID">
+                    <label for="name">Name* </label><br>
+                    <input class="text-input" type="text" id="name" required><br>
+                    <label for="email">Email* </label><br>
+                    <input class="text-input" type="email" id="email" required><br>
+                    <label for="message">Message*</label><br>
+                    <textarea class="text-message" name="message" required id="textarea-input" rows="4"
+                        cols="200" placeholder="Enter your message..."></textarea><br>
+                    <button id="submit-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h3>Contact</h3>
-        <ul>
-            <li><a href="mailto:shabievi@gmail.com">Email</a></li>
-            <li><a href="https://github.com/shabaiev">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/illiashabaiev/">LinkedIn</a></li>
-        </ul>
-    </section>
 
-    <footer></footer>
-    <script src="js/index.js"></script>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+        </section>
+<!-- 
+        <section id="contact">
+            <h3>Contact</h3> -->
+            <ul id="contact_me" >
+                <li class="contactMe"><a href="mailto:shabievi@gmail.com"> <img class="contactMe" src="images/email_orange.svg" alt="Email"></a></li>
+                <li class="contactMe" ><a href="https://github.com/shabaiev"><img class="contactMe"  src="images/github_orange.svg" alt="GitHub"></a></li>
+                <li class="contactMe"><a href="https://www.linkedin.com/in/illiashabaiev/"><img  class="contactMe"  src="images/linkedin_orange.svg" alt="In"></a></li>
+            </ul>
+            <img src="images" alt="">
 </body>
+</main>
+
+<footer></footer>
+<script src="js/index.js"></script>
+
 
 </html>
