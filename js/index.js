@@ -25,14 +25,6 @@ footer.appendChild(copyright);
     skillList.appendChild(skill);
  }
 
- //Change the colore of the button
- const submitButton = document.getElementById('btn');
- function changeColore() {
-   submitButton.style.backgroundColor = "purple";
- }
-submitButton.addEventListener("click", changeColore);
-
-
 //Lesson-4-3 selecting form
 //------------------------------
 
@@ -43,7 +35,6 @@ const messageForm = document.getElementById("leave_message_form");
   const nameValue = e.target.name.value;
   const emailValue = e.target.email.value;
   const messageValue = e.target.message.value;
-  console.log(nameValue, emailValue, messageValue);
   messageForm.reset();
 
  //creating Message section
@@ -96,23 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 loadWithFetch();
 })
 
- // Function generateProgectList
-//--------------------------
-// function generateProgectList(data) {
-//   const projectSection = document.getElementById("projects");
-//   const projectList = projectSection.querySelector("ul");
-//     for (let i = 0; i < data.length; i++){
-//       let repo;
-//       if (data[i].name == "Introduction-to-programming"){
-//         repo = document.createElement('li');
-//         //repo.innerText = repositories[i].name;
-//         projectList.appendChild(repo);
-//         const aTag = document.createElement('a');
-//         aTag.setAttribute('href', 'https://github.com/tatkh21/Introduction-to-programming');
-//         aTag.innerText = data[i].name;
-//         repo.appendChild(aTag);
-//       }
-// }}
+ 
 
 
 
