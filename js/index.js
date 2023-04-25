@@ -47,21 +47,20 @@ messageForm.addEventListener("submit", function (event) {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
-let githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/alirezanabavi/repos");
-githubRequest.send();
 
-githubRequest.addEventListener("load", function () {
-  let repositories = JSON.parse(githubRequest.response);
-  console.log(repositories);
+fetch("https://api.github.com/users/alirezanabavi/repos")
+  .then((response) => response.json())
+  .then((data) => {
+    let repositories = data;
+    console.log(repositories);
 
-  const projectSection = document.getElementById("projects");
-  console.log(projectSection);
-  let projectList = projectSection.querySelector("ul");
-  console.log(projectList);
-  for (let i = 0; i < repositories.length; i++) {
-    let project = document.createElement("li");
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-  }
-});
+    const projectSection = document.getElementById("projects");
+    console.log(projectSection);
+    let projectList = projectSection.querySelector("ul");
+    console.log(projectList);
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  });
