@@ -1,8 +1,10 @@
 body {
-  //background-color: rgb(231, 175, 153);
+  background-image: url(/images/tom-nora.jpg);
   color:rgb(80, 25, 4);
   font-family: 'Poppins';
   font-size: 40px;
+  margin: 5px;
+  padding: 5px;
 }
 
 section {
@@ -46,51 +48,67 @@ max-width: fit-content;
   margin: 20px 0;
   padding: 20px;
   list-style-type: none;
-  border-radius: 500px;
+  border-radius: 400px;
   max-width: fit-content;
 }
 #skills li:hover {
-  background-color: white;
-  color:aqua;
+  background-color: rgb(200, 138, 216);
+  color:cornsilk;
   cursor: pointer;
 }
 
+#pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: none;
+}
 
 label {
-  background-color: blanchedalmond;
-  color: darkgoldenrod;
+  color: rgb(80, 25, 4);;
 }
 
-input:focus {
-  border: none;
-  
+input {
+  width: 30%;
+  height: 50% auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
+  
+
 
 .button {
   padding: 25px;
   margin-top: 10px;
   background-color: rgb(126, 24, 24);
-  color: rgb(211, 148, 188);
+  color: white;
   font-size: 2rem;
 }
 
 button:hover {
-  background-color: rgb(226, 55, 183);
-  color: yellow;
+  background-color: rgb(200, 138, 216);
+  color: rgb(126, 24, 24);
+}
+
+button: {
+  color: white;
+  font-size: 1rem;
 }
 
 footer {
-  background-color: rgb(111, 64, 114);
+  background-color: rgb(126, 24, 24);
+  width: 100%;
   color: white;
   margin-top: 20px;
   padding: 20px;
 }
 
-img {
+#my_photo {
   border: 5px sold powderblue;
   border-style: inset;
-  border-radius: full;
-  box-shadow: 10px 5px gray;
+  border-radius: 15px;
+  box-shadow: 20px 15px rgb(134, 75, 73);
 }
 
 a {
@@ -107,7 +125,7 @@ a {
 
 .nav-item {
   font-family: 'Poppins';
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .message-list {
@@ -116,17 +134,20 @@ a {
   
 }
 
+textarea {
+  padding: 20px;
+}
 @media all and (max-width: 800px) {
   body {
     font-size: 20px;
   }
   .nava {
-    justify-content: flex-start;
-    
-  }
+    display:flex ; 
+    Flex-direction : column;
+    }
   .nav-item {
-    padding: 10px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 35px;
   }
   h1 {
     margin-left: 10px;
@@ -138,6 +159,13 @@ a {
     
   }
 
+  #pic {
+    display:flex ; 
+    Flex-direction : column
+  }
+
+  
+
   #skills ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -146,7 +174,12 @@ a {
 @media all and (max-width: 500px) {
   .nav-item {
     padding: 5px;
-    font-size: 10px;
+    font-size: 20px;
+  }
+
+  .nava {
+    display:flex ; 
+    Flex-direction : column;
+    
   }
 }
-

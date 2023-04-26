@@ -10,9 +10,9 @@ footer.appendChild(copyright);
 const skills= [
   "HTML",
   "Node.js",
-  "Customer service",
-  'Bisiness',
-  'Analitics',
+  "Cypress",
+  'Figma',
+  'API',
   'CSS', 
   'JavaScript',
   'DevTools',
