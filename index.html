@@ -11,11 +11,13 @@
 </head>
     <body>
        <header>
-         <nav>
-            <ul class="nav-list">
-               
-                <li class="nav-item"><a href="#about">Anastasia Klyucharova</a></li>
-
+         <nav class="navbar">
+                <p>Anastasia Klyucharova</p>
+                <!-- <a href="#about">Anastasia Klyucharova</a> -->
+            <div class="dropdown">
+                    
+                    <div class="dropdown-content">
+                        <ul class="nav-list">
                 <li class="nav-item"><a href="#about">About</a></li>
                 
                 <li class="nav-item"><a href="#experience">Experience</a></li> 
@@ -26,21 +28,35 @@
 
                 <li class="nav-item"><a href="#leave_message">Leave message</a></li>
 
-                <li class="nav-item"><a href="#contact">Contact Me</a></li>
-            </ul>
+                <li class="nav-item"><a href="#footerContact">Contact Me</a></li>
+                         </ul>
+                    </div>
+                    <button class="dropbnt">
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+            </div>
+            
         </nav>
     </header>
-        <h1>Anastasia Klyucharova</h1>
-        <img src="./image/nastya_small6.svg" alt="Anastasia Klyucharova">
+        <h1>Hi, I'm Anastasia!</h1>
+        
+
         <section id = "about">
+        <div class="img">
+            <img src="./image/nastya_small6.svg" alt="Anastasia Klyucharova"> 
+        </div>       
+                
+        <div>
             <h2>About</h2>
-                <p>Experienced IT Specialist in various fields including engineering, marketing, and video production. Skilled
-in fundamental IT knowledge and digital marketing. Experienced in providing installation and support to
-customers. Strong analytical skills. Creator of images and video for social media. Master’s degree in
-Engineering and Technology and additional education in the marketing industry. Able to quickly learn
-new technology and software.
-                </p>
+            <p>Experienced IT Specialist in various fields including engineering, marketing, and video production. Skilled
+                in fundamental IT knowledge and digital marketing. Experienced in providing installation and support to
+                customers. Strong analytical skills. Creator of images and video for social media. Master’s degree in
+                Engineering and Technology and additional education in the marketing industry. Able to quickly learn
+                new technology and software.</p>
+        </div>     
+
         </section>
+    
         <section id = "experience">
             <h2>Experience</h2> 
                 <ul class="experience">
@@ -54,22 +70,24 @@ new technology and software.
                     Joint-Stock Company «Radio Engineering Corporation», «VEGA», Moscow, Russia</li>
                 </ul>
         </section>
+
         <section id = "projects">
             <h2>Projects</h2>
              <ul></ul>
         </section>
+
         <section id="skills">
             <h2>Skills</h2>
             <ul></ul>
         </section>
         
-        <section id = "contact">
-            <h2>Contact me</h2>
-<a href="mailto:klucharovanastya@gmail.com">Email</a> <br>
-<a href="www.linkedin.com/in/anastasia-klyucharova-38b209141">Linkedin</a> <br>
+        <!-- <section id = "contact"> -->
+            <!-- <h2>Contact me</h2> -->
+<!-- <a href="mailto:klucharovanastya@gmail.com">Email</a> <br>
+<a href="https://www.linkedin.com/in/anastasia-klyucharova-38b209141">Linkedin</a> <br>
 <a href="https://github.com/AnastasiaKey">GitHub</a> <br>
 <a href="https://www.facebook.com/profile.php?id=100005285920837&sk=about">Facebook</a> <br>
-        </section>
+        </section> -->
             <section id = "leave_message">
                 <h2>Leave a Message</h2>
                     <form name="leave_message" method="get">
@@ -86,7 +104,23 @@ new technology and software.
                <h2>Messages</h2> 
                <ul class="message-list"></ul>
             </section>
-        <footer id="footer"></footer>
+        <footer id="footerContact">
+            
+            <section id="lab_social_icon_footer">
+                <!-- Include Font Awesome Stylesheet in Header -->
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+                <div class="container">
+                         <div id="footer_copy">
+                         </div>
+                        <div class="text-center center-block">
+                                <a href="https://www.facebook.com/profile.php?id=100005285920837&sk=about"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                                <a href="https://github.com/AnastasiaKey"><i id="social-tw" class="fa fa-git-square fa-3x social"></i></a>
+                                <a href="https://www.linkedin.com/in/anastasia-klyucharova-38b209141"><i id="social-gp" class="fa fa-linkedin-square fa-3x social"></i></a>
+                                <a href="mailto:klucharovanastya@gmail.com"><i id="social-gp" class="fa fa-envelope-square fa-3x social"></i></a>
+                        </div>   
+                </div>
+                </section>
+        </footer>
         <script src="js/index.js"></script>
     </body>
 </html>

@@ -1,21 +1,36 @@
 body {
+    display: inline-block;
     background-color: rgb(236, 250, 250);
     color: rgb(19, 101, 101);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0 10px;
 }
 
-section, h1, h2, img, p {
+
+
+section, h2, img {
     margin: 15px;
     padding: 15px;
 }
 
+
+#about {
+    display: flex;
+}
+
+.img {
+    padding: 20px;
+}
 h1 {
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    text-indent: 340px;
     font-weight: bold;
     font-style: italic;
     color: rgb(40, 111, 111);
+    margin-top: 70px;
+   
 }
 
 h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -74,6 +89,10 @@ h2 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
 }
 
 
+{
+    box-sizing: border-box;
+}
+
 label {
     color: rgb(40, 111, 111);
     font-size: 17px;
@@ -82,11 +101,13 @@ label {
 }
 
 input, textarea {
+    width: 30%;
     font-size: 1rem;
-    padding: 25px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border: 3px solid rgb(137, 150, 150);
     border-radius: 10px;
+    
 }
 
 input:focus {
@@ -94,32 +115,22 @@ input:focus {
 }
 
 .button {
-    padding: 15px;
-    margin: 20px;
-    background-color: rgb(240, 241, 241);
-    color: rgb(137, 150, 150);
-    border: 3px solid rgb(137, 150, 150);
-    border-radius: 10px;
-}
-
-#messages li {
-    display: inline;
-    background-color: rgb(240, 241, 241);
-    color: rgb(137, 150, 150);
-}
-
-.removebutton {
+    margin: 10px;
     background-color: rgb(240, 241, 241);
     color: rgb(137, 150, 150);
     border: 3px solid rgb(137, 150, 150);
     border-radius: 5px;
 }
 
-footer {
-    background-color: azure;
-    margin-top: 10px;
-    padding: 10px;
+
+.removebutton, .edit-button{
+    background-color: rgb(240, 241, 241);
+    color: rgb(137, 150, 150);
+    border: 3px solid rgb(137, 150, 150);
+    border-radius: 5px;
+    margin: 5px;
 }
+
 
 img {
     border: 5px solid  rgb(240, 241, 241);
@@ -127,16 +138,58 @@ img {
     border-radius: 100%;
     box-shadow: 10px 5px rgb(137, 150, 150);
 }
+
+footer {
+    background-color: rgb(241, 249, 249);
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+/* Контейнер навигации */
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(241, 249, 249);
+    font-family: 'Lucida Grande';
+  }
+
+/* Выпадающий контейнер */
+.dropdown {
+    float: left;
+    font-family: inherit;
+      }
+
+  
+/* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+ /* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+ .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+/* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 .nav-item {
     display: inline;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 .nav-list {
     display: flex;
     background-color: rgb(240, 241, 241);
+    font-family: inherit;
     position: sticky;
     top: 0;
     left: 0;
@@ -145,19 +198,84 @@ img {
     justify-content: space-around;
     margin: 0;
 }
-
+  
+.nav-list a {
+    float: none;
+    color: rgb(40, 111, 111);
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+  
 
 .message-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #messages li {
     display: inline;
+    background-color: rgb(240, 241, 241);
+    color: rgb(137, 150, 150);
     margin: 10px 10px;
 }
 
+
+
+
+/* icons */
+#lab_social_icon_footer {
+    padding: 10px 0;
+    /* background-color: #dedede; */
+  }
+  
+  #lab_social_icon_footer a {
+    color:  rgb(19, 101, 101);
+  }
+  
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  /*
+      Multicoloured Hover Variations
+  */
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+  }
+  
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+  }
+  
+  #lab_social_icon_footer #social-gp:hover {
+    color: #d34836;
+  }
+  
+  #lab_social_icon_footer #social-em:hover {
+    color: #f39c12;
+  }
+  .container {
+    display: flex;
+    font-family: inherit;
+    justify-content: space-between;
+
+  }
+ 
 @media screen and (max-width: 450px) {
    p {
     font-size: 1rem;
@@ -168,6 +286,12 @@ img {
    }
 
    h1 {
-    color: aqua
+    font-size: 30px;
+    text-indent: 340px;
+    color: rgb(105, 121, 121);
+       
    }
+
+
 }
+

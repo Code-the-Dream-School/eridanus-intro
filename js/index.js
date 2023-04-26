@@ -1,10 +1,11 @@
 
 const today = new Date();
 const thisYear = today.getFullYear();
-const footer = document.querySelector('#footer');
+const footerContact = document.querySelector('#footer_copy');
 const copyright = document.createElement('p');
 copyright.innerHTML = 'Anastasia Klyucharova &copy ' + thisYear;
-footer.appendChild(copyright);
+footerContact.appendChild(copyright);
+
 let skills = ['Agile', 'HTML', 'CSS', 'Windows 365', 'Customer service', 'Digital marketing'];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
