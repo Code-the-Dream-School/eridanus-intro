@@ -6,6 +6,14 @@ body {
     background-position: center;
     background-color: white;
     font-family: 'Poltawski Nowy', serif;
+    margin: 0px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -24,6 +32,12 @@ h2 {
     -webkit-background-clip: text;
     font-size: 30px;
     font-weight: bold;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 section {
@@ -98,29 +112,8 @@ button:hover {
     margin-left: 40px;
 }
 
-.nav-item {
-    display: inline;
-    padding: 5px;
-    font-size: 20px;
-}
-
-a {
-    color: #083653;
-    text-decoration: none;
-}
-
-.nav-item:hover {
-    cursor: pointer;
-    font-size: 30px;
-}
-
-.skillsLi {
-    color: white;
-    text-shadow: 1px 1px 2px white, 0 0 25px #083653, 0 0 5px #207FB4;
-}
-
 .navbar {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     background-color: #207FB4;
@@ -129,6 +122,27 @@ a {
     margin: 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+.nav-item {
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+a {
+    color: #083653;
+    text-decoration: none;
+}
+
+.skillsLi {
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px #083653, 0 0 5px #207FB4;
 }
 
 #skills {
@@ -177,6 +191,11 @@ a {
     border-bottom: 1px dashed #083653;
 }
 
+#myVideo {
+    width: 100%;
+    margin: 0;
+}
+
 
 @media all and (max-width: 800px) {
     h1 {
@@ -188,31 +207,35 @@ a {
     img {
         margin-left: 90px;
     }
+
+    #skills li:hover {
+        background-color: #207FB4;
+        color: #083653;
+        cursor: pointer;
+    }
 }
 
 @media all and (max-width: 500px) {
     h1 {
         font-size: 30px;
         font-weight: bold;
-        margin-top: 30px;
     }
 
     img {
         align-self: center;
     }
 
+    .flex {
+        flex-direction: column;
+    }
+
     #skills li {
         padding: 5px;
     }
 
-    label {
-        color: white;
+    .nav-item {
+        font-size: 13px;
     }
-
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
 
