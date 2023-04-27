@@ -1,36 +1,46 @@
 body {
-    background-color: rgb(224, 112, 116);
-    /* color: rgb(4, 4, 68); */
+    /* background-color: rgb(235, 209, 228); */
+    background-color: rgb(245, 128, 214);
     font-family: delicious handrawn;
+    font-size: larger;
     padding-top: 65px;
     padding-bottom: 65px;
 }
 
 #about {
-    font-size: 14pt;
+    font-size: 20pt;
+};
+
+.spacing{
+padding:50px; 
 }
 
 #name{
     margin:auto;
-    font-size: 50px;
+    font-size: 20pt;
     text-align: center;
 }
 img {
-    border: 4px groove rgb(6, 55, 79);
     display: block;
     border-radius: 20px;
-    margin: 10px;
     margin-left: auto;
     margin-right:auto; 
-    /* padding: 0px; */
-    height: -50pt;
-    width:0%;
+    padding: 0px;
+ 
 }
 
+
+.image1{
+    border-radius: 20px;
+    float:right;
+    padding-right: 200px;
+}
+.image1{
+    width:50px;
+}
 section {
     color: rgb(4, 4, 68);
     padding: 15px;
-    /* border: 1px groove white; */
     margin: 30px;
     border-radius: 20pt;
     max-width: 100%;
@@ -54,12 +64,11 @@ h2 {
 
 
 .nav-list {
-    background-color: rgb(197, 233, 248);
+    background-color: rgb(214, 237, 247);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
     border: 2px groove rgb(6, 55, 79);
     display: flex;
     margin: 0;
@@ -79,7 +88,6 @@ h2 {
 }
 
 #projects li {
-    /* border: 3pt groove rgb(6, 55, 79);  */
     color: rgb(4, 4, 68);
     padding: 5pt;
     margin: 5pt;
@@ -98,7 +106,7 @@ h2 {
 }
 
 #connect {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 #connect ul {
@@ -109,7 +117,6 @@ h2 {
 }
 
 .experience li {
-    /* border: 3pt groove rgb(6, 55, 79);  */
     color: rgb(4, 4, 68);
     padding: 5pt;
     margin: 5pt;
@@ -118,20 +125,9 @@ h2 {
     background-color: rgb(197, 233, 248);
 }
 
-#experience {
-    max-width: 60%;
-}
-
-#experience ul {
-    color: rgb(4, 4, 68);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
 
 
 #skills li {
-    /* border: 3pt groove rgb(6, 55, 79);  */
     padding: 5pt;
     margin: 5pt;
     max-width: fit-content;
@@ -165,8 +161,8 @@ label {
 }
 
 input {
+    font-family: delicious handrawn;
     font-size: 22pt;
-    /* border: 3pt groove rgb(6, 55, 79);  */
     padding: 1pt;
     margin: 5pt;
     border-radius: 10pt;
@@ -181,6 +177,7 @@ input {
 
 textarea {
     font-size: 22pt;
+    font-family: delicious handrawn;
     /* border: 3pt groove rgb(6, 55, 79);  */
     padding: 5pt;
     margin: 1pt;
@@ -191,7 +188,6 @@ textarea {
 
 button {
     font-size: 22pt;
-    /* border: 5pt groove rgb(6, 55, 79);  */
     padding: 10pt;
     margin: 15pt;
     color: rgb(4, 4, 68);
@@ -202,14 +198,10 @@ button {
 
 button:hover {
     background-color: rgb(74, 208, 245);
-    /* color:rgb(6, 55, 79); */
 }
-
 #messages {
-    /* border: 3pt groove rgb(6, 55, 79);  */
     max-width: fit-content;
     padding: 1pt;
-    background-color: rgb(197, 233, 248);
     text-align: center;
 
 }
@@ -233,9 +225,6 @@ button:hover {
     flex-direction: row;
     margin: 10pt;
 }
-
-
-
 
 @media screen and (max-width: 900px) {
     body{
@@ -276,18 +265,18 @@ button:hover {
         padding: 1pt;
     }
 
-
     .message-list {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-
+    
 }
 footer {
     background-color:rgb(197, 233, 248);
     bottom: 0;
     color: rgb(4, 4, 68);
+    font-size: larger;
     left: 0; 
     right: 0; 
     width: 100%;

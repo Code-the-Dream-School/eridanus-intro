@@ -7,7 +7,7 @@ console.log(thisYear);
 
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML = `Christie Agbaosi ${thisYear} &#9889`;
+copyright.innerHTML = `&#169 Christie Agbaosi ${thisYear} &#9889`;
 footer.appendChild(copyright);
 
 const skills = ["Javascript",

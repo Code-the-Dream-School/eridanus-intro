@@ -1,80 +1,84 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-    <!-- <div class="flex-container">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-    </div> -->
     <title>
-        Christie's Webpage
+        Christie Agbaosi's Webpage
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta lang="en"/>
-    <link rel="stylesheet" href ="css/index.css">
+    <meta lang="en" />
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div>
-    <h1 element id = "name">Christie Agbaosi</h1>
+        <h1 element id="name" style=" text-align:center">Christie Agbaosi</h1>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJHIGptT5qX5m-0vExjO5No8xmVwbM3ivuQ&usqp=CAU"
+            alt="Female coder" style="width: 150px;height:100px;" />
     </div>
     <nav>
-        <ul class = "nav-list">
-            <li class = "nav-item">
-            <a href ="#about">About</a>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#about">About</a>
             </li>
 
-            <li class = "nav-item">
-                <a href ="#experience">Experience</a>
-                </li>
-
-            <li class = "nav-item">
-            <a href ="#skills">Skills</a>
+            <li class="nav-item">
+                <a href="#experience">Experience</a>
             </li>
 
-            <li class = "nav-item">
-            <a href ="#connect">Contact Me</a>
+            <li class="nav-item">
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#connect">Contact Me</a>
             </li>
         </ul>
-        <section id ="projects">
-            <h2>Projects</h2>
-            <ul>
-                
-            </ul>
-        </section>
     </nav>
-    
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJHIGptT5qX5m-0vExjO5No8xmVwbM3ivuQ&usqp=CAU" alt="Female coder" style="width: 300px;height:350px;">
 
     <section id="about">
+        <div id = "spacing"> 
         <h1>About</h1>
         <p>I was first introduced to coding in middle school, and then again in high school. I took an introductory
-            course to coding in college, which I also found interesting. I like how these courses, along with math, allowed me to
+            course to coding in college, which I also found interesting. I like how these courses, along with math,
+            allowed me to
             develop
             problem solving skills. Code the Dream is the first program that I have attended for official coding
             instruction.</p>
+        </div>
     </section>
 
     <section id="experience">
         <h1>Experience</h1>
-        <ul class = experience> 
-        <li>I have been a teacher for over 17 years</li>
-        <li>I am currently enrolled in Code the Dream, where I am developing my coding skills.</li>
+        <ul class=experience>
+            <li>I have been a teacher for over 17 years</li>
+            <li>I am currently enrolled in Code the Dream, where I am developing my coding skills.</li>
         </ul>
     </section>
 
-        <section id = "skills">
-            <h2>Skills</h2>
-            <ul>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
 
-            </ul>
-        </section>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
 
-        <section id ="connect">
+        </ul>
+        <img id="image2"
+            src="https://media3.giphy.com/media/UDclWKlmfmq7twI3iJ/200w.webp?cid=ecf05e47aopgficp7g2zk066cja2foye3q29y9ozfv73fsd9&rid=200w.webp&ct=g"
+            alt="owl typing gif" style="width: 300px;height:200px;">
+
+    </section>
+    <section id="connect">
         <h1>Connect</h1>
         <ul>
             <li>Chrissa03@gmail.com</li>
@@ -83,34 +87,34 @@
         </ul>
     </section>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeRDvW4JnlJxE9wKHWPA0CD6o5ZTZZGmj0PA&usqp=CAU" alt="woman coding" style="width: 300px;height:200px;">
-    
     <section id="leave_message">
         <h2>Leave a Message</h2>
-        <form name ="leave_message">
+        <form name="leave_message">
+            <div id = "form_styling"> 
             <br>
-             <label for="usersName">Name</label>
-             <input type="text" name="usersName" placeholder = "Chris Jackson" required="true"/>
+            <label for="usersName">Name</label>
+            <input type="text" name="usersName" placeholder="Chris Jackson" required="true" />
             </br>
             <br>
-              <label for="usersEmail">Email Address:</label>
-              <input type="email" name="usersEmail" placeholder = "you@example.com" required="true" />
+            <label for="usersEmail">Email Address:</label>
+            <input type="email" name="usersEmail" placeholder="you@example.com" required="true" />
             </br>
             <br>
-              <label for="usersMessage">Your  Message:</label>
-              <textarea name="usersMessage" placeholder = "Type your message here" required="true"></textarea>
+            <label for="usersMessage">Your Message:</label>
+            <textarea name="usersMessage" placeholder="Type your message here" required="true"></textarea>
             </br>
             <br>
-              <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
             </br>
+        </div>
         </form>
     </section>
     <section id="messages">
         <h2>Messages</h2>
-        <ul class = "message-list">
+        <ul class="message-list">
 
         </ul>
-          
+
     </section>
     <footer> </footer>
     <script src="js/index.js" defer></script>
