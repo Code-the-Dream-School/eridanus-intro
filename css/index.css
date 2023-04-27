@@ -1,0 +1,242 @@
+body {
+    background-image: url(/images/4.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    min-height: 10vh;
+    background-position: center;
+    background-color: white;
+    font-family: 'Poltawski Nowy', serif;
+    margin: 0px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1 {
+    background: linear-gradient(to left, #083653 , #207FB4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    align-self: center;
+}
+
+h2 {
+    background: linear-gradient(to left, #083653 , #207FB4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section {
+    margin: 20px
+}
+
+.experience, .connect li, .about, .leaveMessage{
+    color: #083653;
+    padding: 5px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.leaveMessage {
+    background-color: aliceblue;
+    width: 500px;
+    text-align: center;
+    margin-top: 110px;
+}
+
+#messages {
+    background-color: aliceblue;
+    width: 500px;
+    text-align: center;
+    /* margin-top: 110px; */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #207FB4;
+    text-align: center;
+    padding: 3px;
+}
+
+img {
+    border: 5px solid #207FB4;
+    border-style: inset;
+    border-radius: 150px;
+    box-shadow: 10px 5px 10px #207FB4;
+    margin-top: 80px;
+    margin-right: 60px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 10px;
+    background-origin: none;
+    color: #083653;
+}
+
+button {
+    padding: 15px;
+    margin-top: 10px;
+    background-color:#207FB4;
+    color: #083653;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: #083653;
+    color: #207FB4;
+    cursor: pointer;
+}
+
+.remove {
+    margin-left: 40px;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #207FB4;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+a {
+    color: #083653;
+    text-decoration: none;
+}
+
+.skillsLi {
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px #083653, 0 0 5px #207FB4;
+}
+
+#skills {
+    max-width: 75%;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+#skills li {
+    font-size: 20px;
+    list-style-type: none;
+    color: #083653;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    text-align: center;
+    border: 1px dashed #083653;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 500px;
+}
+
+#skills li:hover {
+    background-color: #207FB4;
+    color: #083653;
+    cursor: pointer;
+}
+
+.message-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#messages li {
+    display: inline;
+    margin: 20px 10px;
+}
+
+.projectStyle {
+    list-style-type: none;
+    border-bottom: 1px dashed #083653;
+}
+
+#myVideo {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    img {
+        margin-left: 90px;
+    }
+
+    #skills li:hover {
+        background-color: #207FB4;
+        color: #083653;
+        cursor: pointer;
+    }
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    #skills li {
+        padding: 5px;
+    }
+
+    .nav-item {
+        font-size: 13px;
+    }
+}
+
+
