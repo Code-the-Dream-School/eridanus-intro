@@ -4,10 +4,19 @@ let footer = document.querySelector("footer");
 
 let p = document.createElement("p");
 let thisYear = today.getFullYear();
-p.textContent = "Ali Reza " + thisYear;
+p.innerHTML = "&copy;" + " Ali Reza " + thisYear;
 footer.appendChild(p);
 
-let skills = ["HTML", "CSS", "Java", "JavaScript"];
+let skills = [
+  "HTML",
+  "CSS",
+  "Java",
+  "JavaScript",
+  "React",
+  "My Sql",
+  "Sql Server",
+  "Node.js",
+];
 
 let skillSection = document.querySelector("#skills");
 
@@ -19,6 +28,14 @@ for (let i = 0; i < skills.length; i++) {
   skill.textContent = skills[i];
 
   skillsList.appendChild(skill);
+}
+function toggleDropdown() {
+  var dropdownMenu = document.querySelector(".dropdown-menu");
+  if (dropdownMenu.style.display === "block") {
+    dropdownMenu.style.display = "none";
+  } else {
+    dropdownMenu.style.display = "block";
+  }
 }
 
 let messageForm = document.getElementsByName("leave_message")[0];
@@ -32,6 +49,10 @@ messageForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const messageSection = document.querySelector("#message");
   const messageList = messageSection.querySelector("ul:nth-child(2)");
+
+  if (messageSection.style.display === "none") {
+    messageSection.style.display = "block";
+  }
   const newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href="mailto:email@example.com"> ${userName} </a>
   <span>" Wrote : "<br>${userMessage}</span>`;
@@ -39,6 +60,7 @@ messageForm.addEventListener("submit", function (event) {
   removeButton.innerText = "remove";
   removeButton.type = "button";
   removeButton.id = "removeButton";
+
   removeButton.addEventListener("click", function (event) {
     let entry = removeButton.parentNode;
     entry.remove();

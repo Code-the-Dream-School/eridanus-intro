@@ -30,7 +30,7 @@ label {
   color: rgb(17, 2, 2);
 }
 #textarea {
-  width: 100%;
+  width: 97%;
 }
 input,
 textarea {
@@ -44,8 +44,8 @@ textarea {
 button {
   margin: 5px;
   padding: 5px;
-  border: 1px solid blue;
-  background-color: blue;
+  border: 1px solid #0072e0;
+  background: #0072e0;
   color: white;
 }
 
@@ -60,7 +60,7 @@ header {
   padding: 10px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 93%;
 }
 
 nav ul {
@@ -84,7 +84,7 @@ nav a {
 }
 
 #experience {
-  margin: 50px 0;
+  margin: 5px 0;
 }
 
 .grid-container {
@@ -113,26 +113,102 @@ form > div {
 }
 
 #about {
-  margin-top: 35px;
+  margin-top: 90px;
 }
 
 #removeButton {
+  display: flex;
   float: right;
+}
+.social-icons a {
+  margin-left: 10px;
+  margin-top: 20px;
+  color: #333;
+  font-size: 24px;
+  display: inline-flex;
+  float: right;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn */
+}
+
+.social-icons a:hover {
+  color: #24292e; /* Github */
+}
+
+.social-icons a:hover {
+  color: #1da1f2; /* Twitter */
+}
+.messageList li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.messageList li {
+  list-style-type: none;
 }
 
 @media (max-width: 600px) {
-  form {
+  form,
+  .grid-container {
     display: flex;
     flex-direction: column;
   }
-}
 
+  #textarea {
+    width: 100%;
+  }
+  /* Hide the navigation bar */
+  header {
+    display: none;
+  }
+
+  /* Display the dropdown menu */
+
+  .dropdown-toggle {
+    padding: 20px;
+  }
+
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    margin-left: -58px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #81919e;
+    color: #fff;
+    padding: 10px;
+  }
+
+  dropdown .dropdown-menu ul {
+    list-style: none;
+  }
+
+  .dropdown-menu ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+
+  .dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
 @media (max-width: 900px) {
   .grid-container {
     display: flex;
   }
   .grid-item {
     flex: 2;
+  }
+  header {
+    width: 85%;
   }
 }
 
@@ -141,4 +217,8 @@ form > div {
     margin-left: 10%;
     margin-right: 10%;
   }
+}
+
+p {
+  line-height: 1.6;
 }
