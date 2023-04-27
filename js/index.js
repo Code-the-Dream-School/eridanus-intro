@@ -93,8 +93,8 @@ githubRequest.addEventListener("load", () => {
 
         project.style.listStyleType = "none";
         project.style.margin = "1rem 0";
-        project.style.marginLeft = "150px";
-        project.style.marginRight = "0px";
+        project.style.marginLeft = "5%";
+        project.style.marginRight = "5%";
         project.style.padding = "5px";
         project.style.marginTop = "5px";
         project.style.marginBottom = "5px";
@@ -111,7 +111,7 @@ githubRequest.addEventListener("load", () => {
         // projectDate.style.textAlign = "right";
         // projectDate.style.marginTop = "5px";
         // projectDate.style.marginBottom = "5px";
-    
+        projectDate.style.color = "white";
 
     }
 });
