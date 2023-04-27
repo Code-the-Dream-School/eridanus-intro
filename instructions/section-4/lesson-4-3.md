@@ -41,9 +41,9 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Inside the new `<section>` element, create a level-two heading that says "Leave a Message"
 - [ ] After the heading, create an HTML `<form>` element with a `name` attribute that equals "leave_message"
 - [ ] Inside the `<form>` element, add the following:
-  1. `<input>` element with attributes: `type` "text", `name` "name", and `required` true
-  2. `<input>` element with attributes: `type` "email", `name` "email", and `required` true
-  3. `<textarea>` element with attributes: `name` "message" and `required` true
+  1. `<input>` element with attributes: `type` "text", `name` "usersName", and `required` true
+  2. `<input>` element with attributes: `type` "email", `name` "usersEmail", and `required` true
+  3. `<textarea>` element with attributes: `name` "usersMessage" and `required` true
   4. `<button>` element that says "Submit" and has `type` attribute equal to "submit"
   5. Each form field should also have a corresponding `<label>` element
   6. (Optional) Use `<br>` elements to stack the form fields
@@ -63,7 +63,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Add an event listener to the `messageForm` element that handles the "submit" event
   - hint: `addEventListener` method
 - [ ] Inside the callback function for your event listener, create a new variable for each of the three form fields and retrieve the value from the event
-  - hint: `event.target` is the form, `event.target.name` is the first input element
+  - hint: `event.target` is the form, `event.target.usersName` is the first input element
 - [ ] Inside the callback function for your event listener, add a `console.log` statement to log the three variables you created in the previous step
 - [ ] Save and refresh your browser
 - [ ] Fill out the HTML form in your browser and hit "Submit"
