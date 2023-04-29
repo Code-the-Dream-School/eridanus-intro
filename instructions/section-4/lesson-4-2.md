@@ -33,7 +33,7 @@ Now, open the project directory in your code editor and continue to the next sec
 
 #### Create a JavaScript file
 
-- [ ] Create a folder called `js/` at the root level (the same level as your instructions folder and inde.xhtml file)
+- [ ] Create a folder called `js/` at the root level (the same level as your instructions folder and index.html file)
 - [ ] Inside that folder, create a JavaScript file called `index.js`
 
 #### Link your JavaScript file to your HTML file
