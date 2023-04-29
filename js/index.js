@@ -42,11 +42,13 @@ const messageForm = document.getElementById("leave_message_form");
   const messageList = messageSection.querySelector("ul");
   const newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href = mailto:${emailValue}>${nameValue}</a> sent message: <span>${messageValue}</span>`;
+  newMessage.setAttribute("class", "new-message");
   messageList.appendChild(newMessage);
   //creating remove button
   const removeButton = document.createElement('button');
   removeButton.innerText = "Remove";
   removeButton.setAttribute("type", "button");
+  removeButton.setAttribute("class","remove-btn");
   newMessage.appendChild(removeButton);
 
   removeButton.addEventListener('click', function(e) {

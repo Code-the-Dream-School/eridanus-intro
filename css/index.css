@@ -55,6 +55,7 @@
 .main-nav a:hover {
 	color: hsl(203, 78%, 49%);
 }
+
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -96,12 +97,13 @@ footer {
 .submit-btn {
   background-color: rgb(213, 182, 240);
   color: rgb(94, 19, 151);
-  padding: 15px 150px;
+  padding: 15px 150px 15px 100px;
   border: 2px solid rgb(94, 19, 151);
   font-size: 22px;
   font-weight: 900;
   border-radius: 20px;
-  width: 30%;  
+  width: 20%; 
+  text-align: center; 
   }
   .submit-btn:active{
     background-color: rgb(240, 236, 244);
@@ -111,7 +113,7 @@ footer {
   font-family: inherit;
   }
 #field_label_name, #field_label_emal, #field_label_message {
-   border-color: rgb(193, 144, 239); 
+  border-color: rgb(193, 144, 239); 
   border-radius: 10px;
   padding: 10px;
   width: 50%;
@@ -131,7 +133,25 @@ footer {
     margin: 15px auto;
     grid-gap:15px 20px;   
   }
-  
+  /* Flex for Message section */
+  /* ============================== */
+  .container-message {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .new-message {
+    flex-basis: 30%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .remove-btn {
+    align-self: flex-end;
+    justify-self: flex-end;
+    background-color: rgb(213, 182, 240);
+    border-radius: 20px;
+    margin-left: 20px;
+  }
 
 #field_label_message {
   height: 40%;
@@ -143,7 +163,7 @@ footer {
  
 @media (min-width: 769px) {
   .main-header,
-	.main-nav {
+	.main-nav{
 		display: flex;
 	}
   
@@ -151,6 +171,9 @@ footer {
 		flex-direction: column;
     align-items: center; 
 	}
+  .name{
+    align-items: center;
+  }
  
   .main-header,
   .row {
