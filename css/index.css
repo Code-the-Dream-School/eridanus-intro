@@ -5,7 +5,6 @@ body {
   margin: 0;
 }
 
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -20,10 +19,8 @@ body {
   color: #f9f9f9;
 }
 
-
 .nav__links:hover {
   color: #ee8a58;
-
 }
 
 h1 {
@@ -32,13 +29,11 @@ h1 {
   text-align: center;
   color: #EAFC49;
   border: 3px solid #35cc83;
-  border-radius: 17%;
   width: 40%;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
 }
-
 
 h3 {
   color: #ee8a58;
@@ -72,7 +67,6 @@ h3 {
   height: 100%;
   margin-bottom: 20px;
   border: 2px solid #35cc83;
-  border-radius: 5%;
   margin-right: 220px;
 }
 
@@ -85,7 +79,7 @@ h2 {
 }
 
 #experience h2 {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -97,48 +91,72 @@ h2 {
 
 #leave_message {
   justify-content: center;
-  margin-left: 580px;
+  margin-left: 650px;
+  margin-right: 0;
+}
+
+#leave_message h2 {
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 .container-form-message {
   display: flex;
-  align-items: center;
   border: 2px solid #35cc83;
   flex-wrap: wrap;
-  gap: 1px;
-  padding: 40px;
-  width: 400px;
+  padding: 50px;
+  width: 350px;
 }
 
 
 .container-form-message .text-input {
-  text-align: left;
-  width: 70%;
+  width: 80%;
+  border-style: inset;
+  box-sizing: content-box;
+  margin-bottom: 1%;
+  height: 40px;
+  line-height: 50px;
+  outline: none;
+  font-size: 25px;
+  font-size: medium;
+  box-shadow: 0 0 0 2px #35cc83;
+  margin-left: 30px;
+  padding-left: 5px;
 }
 
 .container-form-message .text-message {
   display: flex;
   padding-left: 5px;
-  padding-right: auto;
-  width: 85%;
+  width: 80%;
   gap: 10px;
   text-align: left;
+  margin-left: 30px;
+}
+
+input,
+textarea {
+  background-color: #c4e7d6;
 }
 
 .container-form-message #submit-button {
   display: flex;
-  width: 27%;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(2, 24, 56);
   color: #ee8a58;
   font-size: 25px;
   border: 2px solid #f9f9f9;
   border-radius: 45px;
   font-family: monospace;
-  align-items: center;
+  /* align-items: center; */
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
+  margin-left: 20px;
+  /* align-items: center; */
+}
+
+.container-form-message #submit-button:hover {
+  border: 2px solid #35cc83;
+  color: white;
 }
 
 #skills ul {
@@ -150,24 +168,33 @@ h2 {
   background-color: rgba(242, 145, 41, 0.916);
 }
 
-.grid-container-exp {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(2, minmax(0, 4fr));
-  border: 1px solid #35cc83;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 10px;
 
+.grid-container-exp {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #35cc83;
 }
 
-div .item {
-  box-sizing: border-box;
-  border: 1px solid #35cc83;
-  font-size: 22px;
-  padding: 10px;
-  color: #EAFC49;
 
+.emphasis {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 200;
+  justify-content: right;
+  font-size: 18px;
+}
+
+
+div .item {
+  border: 1.5px solid #35cc83;
+  font-size: 22px;
+  padding: 30px;
+  color: #EAFC49;
 }
 
 #skills h3 {
@@ -176,10 +203,9 @@ div .item {
   font-size: 60px;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 #skills li {
@@ -206,32 +232,14 @@ label {
   color: #f4efef;
   font-family: 'Indie Flower', cursive;
   font-size: 30px;
-}
-
-input {
-  border: 3px solid #000000;
-  border-style: inset;
-  box-sizing: content-box;
-  width: 16%;
-  padding: 4px 8px;
-  margin-bottom: 1%;
-  padding: 0 20px;
-  min-width: 100px;
-  height: 40px;
-  line-height: 50px;
-  outline: none;
-  font-size: 25px;
-  font-size: medium;
-  box-shadow: 0 0 0 3px #35cc83;
+  margin-left: 30px;
 }
 
 textarea {
-  border: 3px solid #000000;
   border-style: inset;
   width: 30%;
   border-radius: 10px;
   box-shadow: 0 0 0 3px #35cc83;
-  border: 5px solid transparent;
   font-size: 20px;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -247,7 +255,7 @@ textarea {
   margin-top: 20px;
   border-width: 3px;
   margin-right: 45px;
-  margin-left: 38px;
+  margin-left: 75px;
   height: 65px;
   line-height: 50px;
   vertical-align: center;
@@ -260,12 +268,17 @@ textarea {
   gap: 5px;
 }
 
-#leave_message h2 {
-  /* text-align: center; */
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 3.5rem;
+#new-message a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
 }
+
+#new-message a:hover {
+  font-weight: bold;
+  border: 3px solid #35cc83;
+}
+
 
 #messages h2 {
   margin-top: 40px;
@@ -280,28 +293,29 @@ textarea {
 
 #remove-button {
   background-color: #a42323;
-  color: #d5d2d2;
-  font-family: monospace;
+  color: #ffffff;
   font-size: 15px;
   border-radius: 45px;
   height: 75%;
   bottom: 10%;
-  padding-top: 3px;
-  padding-right: 3px;
-  padding-bottom: 3px;
-  padding-left: 3px;
+  padding: 10px;
   margin-right: 8px;
   width: 80px;
   margin-bottom: 10px;
 }
 
-footer > p {
+#remove-button:hover {
+  background-color: #d72b2b;
+  border: 1px solid white;
+}
+
+footer>p {
   color: white;
   font-size: 25px;
-  font-weight: 400;  
-  margin: 10px;
-
-
+  font-weight: 400;
+  margin: 5px;
+  margin-left: 25px;
+  font-family: cursive;
 }
 
 #projects li {
@@ -311,10 +325,16 @@ footer > p {
   padding: 0;
 }
 
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+}
+
 #projects h2 {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 1px;
 }
 
 #contact_me {
@@ -327,6 +347,11 @@ footer > p {
   width: 50px;
   height: 50px;
   color: rgb(6, 42, 91);
+}
+
+.contactMe:hover {
+  border: 1.2px solid #ffffff;
+  border-radius: 80%;
 }
 
 
@@ -353,7 +378,6 @@ footer > p {
     height: 100%;
     margin-bottom: 20px;
     border: 2px solid #35cc83;
-    border-radius: 5%;
     width: 50%;
     margin-left: 23%;
   }
@@ -365,14 +389,11 @@ footer > p {
     height: 400px;
     border-radius: 75%;
     margin-left: 33%;
-
   }
 
   #skills h3 {
     margin-bottom: 5%;
   }
-
-
 
   #projects {
     font-size: medium;
@@ -405,64 +426,35 @@ footer > p {
     margin-left: 0px;
     margin-right: 70px;
   }
-  }
+}
 
 
 
 @media only screen and (max-width: 450px) {
-
-
-
   .nav__links li {
-    /* display: inline-block; */
-    /* justify-content: space-between; */
     font-size: 30px;
-    /* margin-left: 45%; */
-    /* width: 20px; */
-    /* margin-bottom: 80px auto; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    text-align: center;
-}
+  }
 
 
   .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
-    /* padding: 30px 3%; */
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 100%;
   }
 
   h1 {
-    /* padding: 0; */
     font-size: 30px;
-    /* position: relative; */
     top: 20%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     margin-top: 1%;
-    /* width: 80%; */
     margin-left: 50%;
     margin-right: 50px;
     align-items: center;
     width: 70%;
-  }
-
-
-  /* 
-  #avatar {
-    width: 400px;
-    height: 400px;
-    border-radius: 75%;
-    /* margin-top: 1.5rem; */
-  /* margin-right: 120%; */
-  /* margin-left: 80%; */
-
-  #container_about {
-    display: flex;
-    flex-direction: column;
   }
 
   #container_about #avatar {
@@ -476,9 +468,6 @@ footer > p {
     margin-left: 30%;
   }
 
-
-
-
   #experience h2 {
     margin-top: 40px;
     text-align: center;
@@ -486,10 +475,11 @@ footer > p {
   }
 
   .grid-container-exp {
-    width: max-content;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: small;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: auto;
   }
 
 
@@ -497,64 +487,24 @@ footer > p {
     font-size: medium;
   }
 
-
   #skills h3 {
     margin-left: 70%;
   }
 
   #skills ul {
-    /* margin-left: 105%; */
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
     flex-direction: column;
     text-align: center;
-    /* margin-left: 40px; */
     margin: 0 auto;
-    /* margin: 25px 20px; */
-    /* padding: 40px; */
-    /* justify-content: space-between; */
-    /* margin-left: 75%;  */
-    /* margin-right: 185%;  */
-    /* text-align: center; */
-    /* padding: 10%; */
-    /* width: max-content; */
     width: 85px;
   }
 
   #skills li {
-    /* margin-left: 55%;
-  width: max-content; */
     justify-content: center;
     align-items: center;
     margin-left: 4.2rem;
-  }
-
-
-  /* .skillset {
-  text-align: center;
-  margin-left: 240px;
-  margin-top: 60px;
-} */
-
-
-  .skillset {
-    /* text-align: center; */
-    /* margin-left: 160px;
-  margin-top: 60px; */
-    display: inline-block;
-  }
-
-  .container-form-message #formID {
-    /* padding: 0; */
-    margin-left: 0px;
-    margin-right: 0px;
-    justify-content: center;
-    border: 0;
-    margin-bottom: 50%;
   }
 
   h3 {
@@ -568,8 +518,6 @@ footer > p {
   }
 
   #projects h2 {
-    /* width: 2000%; */
-
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -577,62 +525,39 @@ footer > p {
   }
 
   #projects {
-    /* width: 140%; */
-    /* display: inline-block; */
     font-size: medium;
-    /* display: inline-table; */
-    /* padding: 0; */
     justify-content: center;
     align-items: center;
-    display: inline-block;
-    margin-left: 25%;
+    margin-left: 35%;
     margin-right: 0;
   }
 
   #leave_message h2 {
-    margin-left: 55%;
-    width: 85%;
-  }
-
-
-
-
-  #leave_message h2 {
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 3.8rem;
+    margin-left: 15.8px;
+    width: fit-content;
   }
 
-  #leave_message {
-    width: fit-content;
-    margin-left: 100px;
+  .container-form-message {
+    align-items: center;
+    margin-left: -15%;
+
   }
 
 
   #messages h2 {
     text-align: center;
-    /* margin-left: 50px; */
-    margin-left: 50%;
-    width: 85%;
+    margin-left: 55%;
   }
 
   .contactMe {
     justify-content: center;
     margin-left: 80px;
     margin-right: 0;
-    /* background-color: #000000; */
   }
 
-  /* .container-form-message #formID {
-      margin-left: 45%;
-    } */
-
-
-  
- footer  {
-  /* background-color: #a42323; */
-  /* width: fit-content; */
-  /* align-items: center; */
-  /* max-width: 100%; */
- }
-}
+    footer {
+      margin-left: 25px;
+    }
+  }
