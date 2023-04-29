@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio website">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Illia Shabaiev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILLIA'S PORTFOLIO</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li class="nav__links"><a class="nav__links" href="#about">About</a></li>
+                <li class="nav__links"><a class="nav__links" href="#experience">Experience</a></li>
+                <li class="nav__links"><a class="nav__links" href="#skills">Skills</a></li>
+                <li class="nav__links"><a class="nav__links" href="#projects">Projects</a></li>
+
+                <li class="nav__links"><a class="nav__links" href="#leave_message">Leave a message</a></li>
+                <li class="nav__links"><a class="nav__links" href="#contact_me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>HEY THERE! I'M ILLIA SHABAIEV</h1>
+    </section>
+
+    <section id="about">
+        <h3>About me</h3>
+        <div id="container_about">
+            <img id="avatar" src="images/pict_1.2.jpeg" alt="avatar"> <img>
+            <p id="about-me-text">I am a highly skilled and motivated QA Engineer with 4 years of experience in manual
+                and automation
+                testing.
+                I am proficient in using various testing tools and techniques to ensure software quality and
+                stability.
+                Throughout my career, I have a proven track record of creating and executing test plans and test
+                cases to meet specific requirements.
+                I am skilled in developing and maintaining automation scripts and frameworks for effective
+                regression testing.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="grid-container-exp">
+            <div class="item">
+                <span>
+                    <strong>Quality Assurance Engineer</strong> - Spoton:
+                </span>
+                <span class="emphasis">January 2021 - Present</span>
+            </div>
+            <div class="item">
+                <span>
+                    <strong>Quality Assurance Engineer</strong> - Sidley Austin LLP:
+                </span>
+                <span class="emphasis">January 2018 - December 2020</span>
+            </div>
+            <div class="item">
+                <span>
+                    <strong>Quality Assurance Analyst </strong> - BCBS:
+
+                </span>
+                <span class="emphasis">August 2017 - January 2018</span>
+            </div>
+            <div class="item">
+                <span>
+                    <strong> Quality Control Analyst (Intern)</strong> - Allstate:
+                </span>
+
+                <span class="emphasis">January 2017 - August 2017</span>
+                </span>
+            </div>
+    </section>
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <ul class="skillset"></ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul></ul>
+    </section>
+
+
+    <section id="leave_message">
+        <h2>Leave a Message</h2>
+        <div class="container-form-message">
+            <form id="formID">
+                <label for="name">Name* </label><br>
+                <input class="text-input" type="text" id="name" required><br>
+                <label for="email">Email* </label><br>
+                <input class="text-input" type="email" id="email" required><br>
+                <label for="message">Message*</label><br>
+                <textarea class="text-message" name="message" required id="textarea-input" rows="4" cols="200"
+                    placeholder="Enter your message..."></textarea><br>
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+
+    <ul id="contact_me">
+        <li class="contactMe"><a href="mailto:shabievi@gmail.com"> <img class="contactMe" src="images/email_orange.svg"
+                    alt="Email"></a></li>
+        <li class="contactMe"><a href="https://github.com/shabaiev"><img class="contactMe"
+                    src="images/github_orange.svg" alt="GitHub"></a></li>
+        <li class="contactMe"><a href="https://www.linkedin.com/in/illiashabaiev/"><img class="contactMe"
+                    src="images/linkedin_orange.svg" alt="In"></a></li>
+    </ul>
+    <img src="images" alt="">
+
+    <footer></footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

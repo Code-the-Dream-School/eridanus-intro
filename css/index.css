@@ -1,0 +1,563 @@
+body {
+  background-color: rgb(6, 42, 91);
+  font-size: 30px;
+  color: #f9f9f9;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 3%;
+}
+
+.nav__links {
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  color: #f9f9f9;
+}
+
+.nav__links:hover {
+  color: #ee8a58;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #EAFC49;
+  border: 3px solid #35cc83;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h3 {
+  color: #ee8a58;
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 40px;
+  height: 1.5rem;
+}
+
+#container_about {
+  display: flex;
+  flex-direction: row;
+}
+
+#avatar {
+  width: 400px;
+  height: 400px;
+  border-radius: 75%;
+  margin-right: 5rem;
+  margin-left: 11rem;
+}
+
+#about-me-text {
+  color: #EAFC49;
+  font-size: 25px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding: 20px 20px;
+  height: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #35cc83;
+  margin-right: 220px;
+}
+
+h2 {
+  color: #ee8a58;
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+#experience h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.skillset {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+#leave_message {
+  justify-content: center;
+  margin-left: 650px;
+  margin-right: 0;
+}
+
+#leave_message h2 {
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.container-form-message {
+  display: flex;
+  border: 2px solid #35cc83;
+  flex-wrap: wrap;
+  padding: 50px;
+  width: 350px;
+}
+
+
+.container-form-message .text-input {
+  width: 80%;
+  border-style: inset;
+  box-sizing: content-box;
+  margin-bottom: 1%;
+  height: 40px;
+  line-height: 50px;
+  outline: none;
+  font-size: 25px;
+  font-size: medium;
+  box-shadow: 0 0 0 2px #35cc83;
+  margin-left: 30px;
+  padding-left: 5px;
+}
+
+.container-form-message .text-message {
+  display: flex;
+  padding-left: 5px;
+  width: 80%;
+  gap: 10px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+input,
+textarea {
+  background-color: #c4e7d6;
+}
+
+.container-form-message #submit-button {
+  display: flex;
+  background-color: rgb(2, 24, 56);
+  color: #ee8a58;
+  font-size: 25px;
+  border: 2px solid #f9f9f9;
+  border-radius: 45px;
+  font-family: monospace;
+  /* align-items: center; */
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 20px;
+  /* align-items: center; */
+}
+
+.container-form-message #submit-button:hover {
+  border: 2px solid #35cc83;
+  color: white;
+}
+
+#skills ul {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#skills li:hover {
+  background-color: rgba(242, 145, 41, 0.916);
+}
+
+
+.grid-container-exp {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #35cc83;
+}
+
+
+.emphasis {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: 200;
+  justify-content: right;
+  font-size: 18px;
+}
+
+
+div .item {
+  border: 1.5px solid #35cc83;
+  font-size: 22px;
+  padding: 30px;
+  color: #EAFC49;
+}
+
+#skills h3 {
+  color: #ee8a58;
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#skills li {
+  list-style: none;
+  display: inline-block;
+  color: #EAFC49;
+  margin: 15px;
+  padding: 25px;
+  border: 3px solid #35cc83;
+  margin-top: 40px;
+  border-width: 3px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#contact h3 {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+label {
+  color: #f4efef;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+textarea {
+  border-style: inset;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px #35cc83;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+#messages ul {
+  display: inline-block;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 35%;
+  padding-right: 10px;
+  margin-top: 20px;
+  border-width: 3px;
+  margin-right: 45px;
+  margin-left: 75px;
+  height: 65px;
+  line-height: 50px;
+  vertical-align: center;
+  text-align: left;
+  inline-size: 450px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+#new-message a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+
+#new-message a:hover {
+  font-weight: bold;
+  border: 3px solid #35cc83;
+}
+
+
+#messages h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#messages li {
+  display: inline-block;
+  margin: 20px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#remove-button {
+  background-color: #a42323;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 45px;
+  height: 75%;
+  bottom: 10%;
+  padding: 10px;
+  margin-right: 8px;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+#remove-button:hover {
+  background-color: #d72b2b;
+  border: 1px solid white;
+}
+
+footer>p {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 5px;
+  margin-left: 25px;
+  font-family: cursive;
+}
+
+#projects li {
+  border: 2px solid #35cc83;
+  color: #EAFC49;
+  font-size: 25px;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+
+#contact_me {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1%;
+}
+
+.contactMe {
+  width: 50px;
+  height: 50px;
+  color: rgb(6, 42, 91);
+}
+
+.contactMe:hover {
+  border: 1.2px solid #ffffff;
+  border-radius: 80%;
+}
+
+
+@media only screen and (max-width: 820px) {
+  #container_about {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .nav__links li {
+    display: inline;
+    justify-content: space-between;
+    padding: 25px 0px;
+  }
+
+  #about-me-text {
+    color: #EAFC49;
+    font-size: 25px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 20px 20px;
+    height: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #35cc83;
+    width: 50%;
+    margin-left: 23%;
+  }
+
+
+
+  #container_about>#avatar {
+    width: 300px;
+    height: 400px;
+    border-radius: 75%;
+    margin-left: 33%;
+  }
+
+  #skills h3 {
+    margin-bottom: 5%;
+  }
+
+  #projects {
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 0;
+  }
+
+  #projects h2 {
+    text-align: center;
+    justify-content: center;
+    margin-right: 23%;
+
+  }
+
+  #leave_message h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 3.8rem;
+  }
+
+  #leave_message {
+    width: fit-content;
+    margin-left: 180px;
+  }
+
+  #messages ul {
+    margin-left: 0px;
+    margin-right: 70px;
+  }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  .nav__links li {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+    top: 20%;
+    margin-top: 1%;
+    margin-left: 50%;
+    margin-right: 50px;
+    align-items: center;
+    width: 70%;
+  }
+
+  #container_about #avatar {
+    margin-left: 50%;
+  }
+
+  #about-me-text {
+    margin-left: 50%;
+    width: 400px;
+    height: 20%;
+    margin-left: 30%;
+  }
+
+  #experience h2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 55%;
+  }
+
+  .grid-container-exp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-right: auto;
+  }
+
+
+  .grid-container-exp .item {
+    font-size: medium;
+  }
+
+  #skills h3 {
+    margin-left: 70%;
+  }
+
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 85px;
+  }
+
+  #skills li {
+    justify-content: center;
+    align-items: center;
+    margin-left: 4.2rem;
+  }
+
+  h3 {
+    color: #ee8a58;
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 70%;
+    height: 1.5rem;
+  }
+
+  #projects h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+  }
+
+  #projects {
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 0;
+  }
+
+  #leave_message h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 15.8px;
+    width: fit-content;
+  }
+
+  .container-form-message {
+    align-items: center;
+    margin-left: -15%;
+
+  }
+
+
+  #messages h2 {
+    text-align: center;
+    margin-left: 55%;
+  }
+
+  .contactMe {
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 0;
+  }
+
+    footer {
+      margin-left: 25px;
+    }
+  }
