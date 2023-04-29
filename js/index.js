@@ -7,7 +7,7 @@ console.log(thisYear);
 
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML = `Christie Agbaosi ${thisYear} &#9889`;
+copyright.innerHTML = `&#169 Christie Agbaosi ${thisYear} &#9889`;
 footer.appendChild(copyright);
 
 const skills = ["Javascript",
@@ -46,8 +46,7 @@ messageForm.addEventListener('submit', function(event){
 
     newMessage.innerHTML = 
     `<a href = "mailto:${usersEmail}">${usersName}</a>
-    <span>${usersMessage}</span>`
-    ;
+    <span>${usersMessage}</span>`;
     
     const removeButton = document.createElement('button');
     removeButton.innerText = "remove";
@@ -61,6 +60,31 @@ messageForm.addEventListener('submit', function(event){
     messageList.appendChild(newMessage);
 
     messageForm.reset();
+});
+
+// 
+const githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/chrissa03/repos");
+githubRequest.send();
+
+// Handle Response from Server
+
+
+fetch('https://api.github.com/users/chrissa03/repos')
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(response){
+    const repositories = JSON.parse(githubRequest.responseText);
+    console.log(repositories);
+    // Display Repositories in List
+    const projectSection = document.getElementById('projects')
+    const projectList = projectSection.querySelector('ul');
+    for (i=0; i < repositories.length; i++){
+    const project = document.createElement('li');
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+}    
 });
 
 
