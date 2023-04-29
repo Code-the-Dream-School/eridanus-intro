@@ -1,0 +1,185 @@
+body {
+  background-image: url(/images/tom-nora.jpg);
+  color:rgb(80, 25, 4);
+  font-family: 'Poppins';
+  font-size: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+
+section {
+  margin: 5px;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Poppins';
+  font-weight: bold
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+.experience  li{
+text-align: center;
+border: 5px solid bisque;
+border-radius: 10px;
+margin-top: 10px;
+padding: 5px;
+background-color: lemonchiffon;
+list-style-type: none;
+border-radius: 500px;
+max-width: fit-content;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+#skills li {
+  text-align: center;
+  border: 1px dashed brown;
+  margin: 20px 0;
+  padding: 20px;
+  list-style-type: none;
+  border-radius: 400px;
+  max-width: fit-content;
+}
+#skills li:hover {
+  background-color: rgb(200, 138, 216);
+  color:cornsilk;
+  cursor: pointer;
+}
+
+#pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: none;
+}
+
+label {
+  color: rgb(80, 25, 4);;
+}
+
+input {
+  width: 30%;
+  height: 50% auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+  
+
+
+.button {
+  padding: 25px;
+  margin-top: 10px;
+  background-color: rgb(126, 24, 24);
+  color: white;
+  font-size: 2rem;
+}
+
+button:hover {
+  background-color: rgb(200, 138, 216);
+  color: rgb(126, 24, 24);
+}
+
+button: {
+  color: white;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: rgb(126, 24, 24);
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#my_photo {
+  border: 5px sold powderblue;
+  border-style: inset;
+  border-radius: 15px;
+  box-shadow: 20px 15px rgb(134, 75, 73);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nava{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: sticky ;
+  margin-top: 30px;
+}
+
+.nav-item {
+  font-family: 'Poppins';
+  list-style-type: none;
+}
+
+.message-list {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+textarea {
+  padding: 20px;
+}
+@media all and (max-width: 800px) {
+  body {
+    font-size: 20px;
+  }
+  .nava {
+    display:flex ; 
+    Flex-direction : column;
+    }
+  .nav-item {
+    padding: 20px;
+    font-size: 35px;
+  }
+  h1 {
+    margin-left: 10px;
+    font-size: 35px;
+  }
+
+  #skills li {
+    padding: 5px;
+    
+  }
+
+  #pic {
+    display:flex ; 
+    Flex-direction : column
+  }
+
+  
+
+  #skills ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 500px) {
+  .nav-item {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .nava {
+    display:flex ; 
+    Flex-direction : column;
+    
+  }
+}
