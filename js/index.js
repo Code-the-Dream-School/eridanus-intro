@@ -1,91 +1,96 @@
-
 const today = new Date();
 console.log(today);
 
+
 const thisYear = today.getFullYear();
 console.log(thisYear);
+
 
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
 copyright.innerHTML = `&#169 Christie Agbaosi ${thisYear} &#9889`;
 footer.appendChild(copyright);
 
+
 const skills = ["Javascript",
-    "Microsoft Word",
-    "PowerPoint",
-    "Excel",
-    "Google Docs",
-    "Slides",
-    "Sheets",
-    "Bilingual(English, Spanish)"];
+   "Microsoft Word",
+   "PowerPoint",
+   "Excel",
+   "Google Docs",
+   "Slides",
+   "Sheets",
+   "Bilingual(English, Spanish)"];
+
 
 const skillsSection = document.querySelector('#skills');
 
+
 const skillsList = skillsSection.querySelector('ul');
 
+
 for (let i = 0; i < skills.length; i++) {
-    let skill = document.createElement('li');
-    skill.innerText = skills[i];
-    skillsList.appendChild(skill);
+   let skill = document.createElement('li');
+   skill.innerText = skills[i];
+   skillsList.appendChild(skill);
 }
 // Using "DOM Selection", select the "leave_message" form by name attribute and store it in a variable named messageForm
+
 
 const messageForm = document.forms.leave_message;
 //Add an event listener to the messageForm element that handles the "submit" event
 //hint: addEventListener method
 messageForm.addEventListener('submit', function(event){
-    event.preventDefault();
-    const usersName = event.target.usersName.value;
-    const usersEmail = event.target.usersEmail.value;
-    const usersMessage = event.target.usersMessage.value;
-    console.log(usersEmail,usersMessage, usersMessage);
-    
-    const messageSection = document.getElementById("messages");
-    const messageList = messageSection.querySelector("ul");
-    const newMessage = document.createElement("li");
+   event.preventDefault();
+   const usersName = event.target.usersName.value;
+   const usersEmail = event.target.usersEmail.value;
+   const usersMessage = event.target.usersMessage.value;
+   console.log(usersEmail,usersMessage, usersMessage);
+  
+   const messageSection = document.getElementById("messages");
+   const messageList = messageSection.querySelector("ul");
+   const newMessage = document.createElement("li");
 
-    newMessage.innerHTML = 
-    `<a href = "mailto:${usersEmail}">${usersName}</a>
-    <span>${usersMessage}</span>`;
-    
-    const removeButton = document.createElement('button');
-    removeButton.innerText = "remove";
-    removeButton.type = "button";
-    removeButton.addEventListener("click", function(event){
-        const entry = event.target.parentNode;
-        entry.remove();
 
-    });
-    newMessage.appendChild(removeButton);
-    messageList.appendChild(newMessage);
+   newMessage.innerHTML =
+   `<a href = "mailto:${usersEmail}">${usersName}</a>
+   <span>${usersMessage}</span>`;
+  
+   const removeButton = document.createElement('button');
+   removeButton.innerText = "remove";
+   removeButton.type = "button";
+   removeButton.addEventListener("click", function(event){
+       const entry = event.target.parentNode;
+       entry.remove();
 
-    messageForm.reset();
+
+   });
+   newMessage.appendChild(removeButton);
+   messageList.appendChild(newMessage);
+
+
+   messageForm.reset();
 });
 
-// 
-const githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/chrissa03/repos");
-githubRequest.send();
 
-// Handle Response from Server
+fetch("https://api.github.com/users/chrissa03/repos")
+   .then(function(response){
+      return response.json()
+   })
+   .then(function(repositories){
+       const projectSection = document.getElementById("projects");
+       const projectList = projectSection.querySelector("ul");
+       for(let i =0; i <repositories.length; i++) {
+           const project = document.createElement("li")
+           const projectUrl = document.createElement("a");
+           projectUrl.innerText = repositories[i].name
+           projectUrl.href = repositories[i].html_url;
+           projectUrl.target = "_blank";
+           project.appendChild(projectUrl);
+           projectList.appendChild(project);
+       }
+  
+   });
 
-
-fetch('https://api.github.com/users/chrissa03/repos')
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(response){
-    const repositories = JSON.parse(githubRequest.responseText);
-    console.log(repositories);
-    // Display Repositories in List
-    const projectSection = document.getElementById('projects')
-    const projectList = projectSection.querySelector('ul');
-    for (i=0; i < repositories.length; i++){
-    const project = document.createElement('li');
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-}    
-});
 
 
 
