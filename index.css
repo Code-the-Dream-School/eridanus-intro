@@ -1,0 +1,198 @@
+/* Change the background color of the page body */
+body {
+    background-color: #ffffff;
+  }
+  
+  /* Change the default text color */
+  body {
+    color: #161616;
+  }
+  
+  /* Define the font family for the entire page or just a section */
+  body {
+    font-family: Georgia, serif;
+  }
+
+  /* Header with links read horizontally */
+  header {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /*  About  */
+  #about {
+    margin: 50px 0;
+    text-align: left;
+  }
+  
+  #about h1 {
+    /* font-size: 36px;  */
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    margin: 0 40px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+
+  /* Styles for the rest of the website */
+  section {
+    margin-top: 40px;
+  }
+  
+  
+  /* Add spacing (padding/margin) between sections */
+  section {
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Change the font size, weight, and color of all headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #232222;
+  }
+  
+  /* Transform the "Experience" list items into styled blocks */
+  #experience {
+    margin: 50px 0;
+  }
+  
+  #experience h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #experience ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #experience li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #2985d1;
+  }
+  
+  /* Transform the "Skills" list items into styled blocks */
+  #skills {
+    margin: 50px 0;
+  }
+  
+  #skills h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #skills li {
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px solid #2985d1;
+  }
+  
+  #skills li:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
+  /* Style the "Leave a Message" form elements */    
+  section {
+    margin: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #2985d1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2985d1;
+  }
+  
+  /* Change the spacing and background color of the footer */
+  footer {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f2f2f2;
+  }
+  
