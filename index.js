@@ -60,11 +60,11 @@ messageForm.addEventListener('submit', function(event) {
 });
 
 // Fetch Github Repositories 
-const githubRequest = new XMLHttpRequest();
+/*const githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/J-C-X/repos');
 githubRequest.send();
 
-githubRequest.addEventListener('load', function() {
+  githubRequest.addEventListener('load', function() {
   const repositories = JSON.parse(this.response);
   console.log(repositories);
 
@@ -80,4 +80,36 @@ githubRequest.addEventListener('load', function() {
   //githubRequest.send();
   githubRequest.setRequestHeader('User-Agent', 'J-C-X');
 
-});
+}); 
+ */// End of comment for Lesson 6-1
+
+// Fetch API's   
+const gitHubApiUrl = 'https://api.github.com/users/J-C-X/repos';
+
+fetch(gitHubApiUrl, {
+  headers: {
+    'User-Agent': 'J-C-X'
+  }
+})
+  .then((response) => response.json())
+  .then((repositories) => {
+    console.log(repositories);
+
+    const projectSection = document.querySelector('#projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      //project.innerText = repositories[i].name;
+      project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error('Error fetching data:', error);
+  });
+
+
+
+
+
