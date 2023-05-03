@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First WebSite!</title>
+    <link rel="stylesheet" href="/css/  index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#message">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="dropdown-toggle" onclick="toggleDropdown()"><i class="fa fa-bars fa-2xl"></i></button>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a href="#about" onclick=toggleDropdown()>About</a></li>
+        <li><a href="#experience" onclick=toggleDropdown()>Experience</a></li>
+        <li><a href="#skills" onclick=toggleDropdown()>Skills</a></li>
+        <li><a href="#projects" onclick=toggleDropdown()>Projects</a></li>
+        <li><a href="#message" onclick=toggleDropdown()>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+    <section>
+      <h1 id="about">About</h1>
+      <p>
+        As a web developer, I am skilled in designing and developing websites that are both aesthetically pleasing and highly functional. I have expertise in HTML, CSS, JavaScript, and other programming languages, which enables me to create dynamic, interactive websites that meet the needs of clients and end-users.
+      </p>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Software developer</h3>
+          <p>Bank of America</p>
+          <p>Oct 2021 - Present</p>
+        </div>
+        <div class="grid-item">
+          <h3>Fullstack Developer</h3>
+          <p>Furniture World</p>
+          <p>Sep 2020 - Oct 2021</p>
+        </div>
+        <div class="grid-item">
+          <h3>Frontend Developer</h3>
+          <p>Progressive</p>
+          <p>Jan 2019 - Sep 2020</p>
+        </div>
+        <div class="grid-item">
+          <h3>Web Developer Intern</h3>
+          <p>Lowe's</p>
+          <p>Jan 2018 - Jan 2019</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul></ul>
+    </section>
+    <section id="projects">
+<h2>Projects</h2>
+       <ul>
+       </ul>
+    </section>
+  
+    <section>
+      <h2>Leave a Message</h2>
+      <form id="form" action="" name="leave_message">
+        <div>
+          <label for="userName">Name</label><br />
+          <input type="text" name="userName" required /><br />
+        </div>
+        <div>
+          <label for="userEmail">Email Addres</label><br />
+          <input type="email" name="userEmail" required /><br />
+        </div>
+        <div id ="textarea">
+          <label for="userMessage"> Message </label><br />
+          <textarea name="userMessage" required></textarea><br />
+        </div>
+        <div>
+        <button type="submit">Submit</button>
+        <div>
+      </form>
+    </section>
+    <section id="message">
+      <h2>Messages</h2>
+      <ul class="messageList"></ul>
+    </section>
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
