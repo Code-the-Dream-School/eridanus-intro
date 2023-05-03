@@ -59,30 +59,6 @@ messageForm.addEventListener('submit', function(event) {
   messageForm.reset();
 });
 
-// Fetch Github Repositories 
-/*const githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/J-C-X/repos');
-githubRequest.send();
-
-  githubRequest.addEventListener('load', function() {
-  const repositories = JSON.parse(this.response);
-  console.log(repositories);
-
-  const projectSection = document.querySelector('#projects');
-  const projectList = projectSection.querySelector('ul');
-
-  for (let i = 0; i < repositories.length; i++) {
-    const project = document.createElement('li');
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-  }
-
-  //githubRequest.send();
-  githubRequest.setRequestHeader('User-Agent', 'J-C-X');
-
-}); 
- */// End of comment for Lesson 6-1
-
 // Fetch API's   
 const gitHubApiUrl = 'https://api.github.com/users/J-C-X/repos';
 

@@ -14,45 +14,49 @@ body {
   }
 
   /* Header with links read horizontally */
-  header {
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 20px;
-  }
-  
-  nav li:first-child {
-    margin-left: 0;
-  }
-  
-  nav li:last-child {
-    margin-right: 0;
-  }
-  
-  nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #93ccdf;
+}
+
+/* Profile image and name styles */
+.profile-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #555;
+}
+
   
   /*  About  */
   #about {
@@ -191,8 +195,41 @@ body {
   
   /* Change the spacing and background color of the footer */
   footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     font-size: 15px;
-    background-color: #f2f2f2;
+    background-color: #93ccdf;
   }
   
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  
+/* For mobile devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
