@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-family: “Lato”, “Courier New”, Courier, monospace;
+    line-height: 1.6;
+    color: rgb(94, 19, 151);
+	  margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 1.8em;
+  }
+  h2, a {
+    color: rgb(94, 19, 151);
+  }
+  h2{
+    margin-top: 10;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  /* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+  color: rgb(94, 19, 151);
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: hsl(203, 78%, 49%);
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.banner,footer {
+	text-align: center;
+  background-color: rgb(225, 205, 242);
+}
+.banner {
+	color: #fff;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.col a:hover{
+    color: #1198eb;
+}
+
+ 
+footer {
+  margin: auto;
+  padding: 20px;
+  font-size: larger;  
+}
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+  border-radius: 100px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.submit-btn {
+  background-color: rgb(213, 182, 240);
+  color: rgb(94, 19, 151);
+  padding: 15px 150px 15px 100px;
+  border: 2px solid rgb(94, 19, 151);
+  font-size: 22px;
+  font-weight: 900;
+  border-radius: 20px;
+  width: 20%; 
+  text-align: center; 
+  }
+  .submit-btn:active{
+    background-color: rgb(240, 236, 244);
+  }
+.label-form {
+  padding: 20px;
+  font-family: inherit;
+  }
+#field_label_name, #field_label_emal, #field_label_message {
+  border-color: rgb(193, 144, 239); 
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  }
+  .card{
+    background-color:rgb(225, 205, 242);
+    border-radius: 0.285em;
+    box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+    padding-left: 5%;
+  }
+  .grid{
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(4,30px);
+    background:white;
+    margin: 15px auto;
+    grid-gap:15px 20px;   
+  }
+  /* Flex for Message section */
+  /* ============================== */
+  .container-message {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .new-message {
+    flex-basis: 30%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .remove-btn {
+    align-self: flex-end;
+    justify-self: flex-end;
+    background-color: rgb(213, 182, 240);
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+
+#field_label_message {
+  height: 40%;
+  size-adjust: 100%;
+  }
+  /* ================================= 
+  Media Queries with flex
+==================================== */
+ 
+@media (min-width: 769px) {
+  .main-header,
+	.main-nav{
+		display: flex;
+	}
+  
+	.main-header{
+		flex-direction: column;
+    align-items: center; 
+	}
+  .name{
+    align-items: center;
+  }
+ 
+  .main-header,
+  .row {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
